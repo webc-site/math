@@ -5,51 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@webc.site/math</title>
     <link rel="stylesheet" href="https://registry.npmmirror.com/18s/0.2.24/files/_.css">
-    <script type="module" crossorigin src="/assets/index-BJoLEFtJ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DbnwY7LE.css">
+    <script type="module" crossorigin src="/assets/index-DybE7zJ7.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CeRQiS1o.css">
   </head>
   <body>
-    <header>
-      <div class="header-content">
-        <h1><a id="ui-title" href="https://www.npmjs.com/package/@webc.site/math" target="_blank">@webc.site/math</a></h1>
-        <p class="subtitle" id="ui-subtitle">全球最小的网页数学公式渲染器</p>
-      </div>
-      <div class="header-controls">
-        <select id="lang-select"></select><a class="github-link" href="https://github.com/webc-site/math" target="_blank" aria-label="GitHub Repository">
-          <svg viewBox="0 0 16 16" width="22" height="22" fill="currentColor">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-          </svg></a>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <div class="main-row">
-          <div class="left-col">
-            <div class="card usage-card Lg">
-              <div class="card-header">
-                <h2 id="ui-usage-title">使用示例</h2><a class="tag" id="ui-source-link" href="https://github.com/webc-site/math/blob/dev/src/lib.js" target="_blank">源代码</a>
+    <c-vs>
+      <header>
+        <div class="header-content">
+          <h1><a id="ui-title" href="https://www.npmjs.com/package/@webc.site/math" target="_blank">@webc.site/math</a></h1>
+          <p class="subtitle" id="ui-subtitle">全球最小的网页数学公式渲染器</p>
+        </div>
+        <div class="header-controls">
+          <select id="lang-select"></select><a class="github-link" href="https://github.com/webc-site/math" target="_blank" aria-label="GitHub Repository">
+            <svg viewBox="0 0 16 16" width="22" height="22" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg></a>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="main-row">
+            <div class="left-col">
+              <div class="card usage-card Lg">
+                <div class="card-header">
+                  <h2 id="ui-usage-title">使用示例</h2><a class="tag" id="ui-source-link" href="https://github.com/webc-site/math/blob/dev/src/lib.js" target="_blank">源代码</a>
+                </div>
+                <pre class="code-block"><code id="ui-usage-code"></code></pre>
               </div>
-              <pre class="code-block"><code id="ui-usage-code"></code></pre>
-            </div>
-            <div class="card editor-card Lg">
-              <h2 id="ui-editor-title">交互式编辑器</h2>
-              <p class="tip" id="ui-editor-tip">输入 LaTeX 公式（例如：使用 $公式$ 或 $$公式$$ 包裹）</p>
-              <textarea id="formula-input" placeholder="在此输入带有公式的文本..."></textarea>
-              <div class="math-display Lg" id="math-preview"></div>
+              <div class="card editor-card Lg">
+                <h2 id="ui-editor-title">交互式编辑器</h2>
+                <p class="tip" id="ui-editor-tip">输入 LaTeX 公式（例如：使用 $公式$ 或 $$公式$$ 包裹）</p>
+                <textarea id="formula-input" placeholder="在此输入带有公式的文本..."></textarea>
+                <div class="math-display Lg" id="math-preview"></div>
+              </div>
             </div>
           </div>
-          <div class="card benchmark-card Lg">
-            <div class="benchmark-header">
-              <h2 id="ui-benchmark-title"></h2><span class="tip" id="ui-benchmark-tip"></span>
+          <div class="right-col">
+            <div class="card benchmark-card Lg">
+              <div class="benchmark-header">
+                <h2 id="ui-benchmark-size-title"></h2><span class="tip" id="ui-benchmark-size-tip"></span>
+              </div>
+              <div class="benchmark-img-container"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjYwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeDI9IjAlIiB5MT0iMTAwJSIgeTI9IjAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJiIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIiB4PSItMjAlIiB5PSItMjAlIj48ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgZmxvb2QtY29sb3I9IiM2MzY2ZjEiIGZsb29kLW9wYWNpdHk9Ii4yNSIgc3RkRGV2aWF0aW9uPSI2Ii8+PC9maWx0ZXI+PC9kZWZzPjxwYXRoIHN0cm9rZT0iI2YxZjVmOSIgc3Ryb2tlLWRhc2hhcnJheT0iNCw0IiBkPSJNMzAgNDBoMzQwTTMwIDEyMGgzNDAiLz48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iMTkiIHg9IjYwIiB5PSIxODEiIGZpbGw9InVybCgjYSkiIGZpbHRlcj0idXJsKCNiKSIgcng9IjQiLz48cGF0aCBmaWxsPSIjZjU5ZTBiIiBkPSJtODUgMTY1LjMgMS45IDMuOCA0LjIuNi0zIDMgLjcgNC4yLTMuOC0yLTMuOCAyIC43LTQuMi0yLjktMyA0LjEtLjZaIi8+PHRleHQgeD0iODUiIHk9IjE1NyIgZmlsbD0iIzI1NjNlYiIgZm9udC1mYW1pbHk9Ii1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zLjkxIEtCPC90ZXh0Pjx0ZXh0IHg9Ijg1IiB5PSIyMjIiIGZpbGw9IiMwZjE3MmEiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QHdlYmMuc2l0ZS9tYXRoIHYwLjEuMjA8L3RleHQ+PHJlY3Qgd2lkdGg9IjUwIiBoZWlnaHQ9IjgzIiB4PSIxNzUiIHk9IjExNyIgZmlsbD0iI2NiZDVlMSIgcng9IjQiLz48dGV4dCB4PSIyMDAiIHk9IjEwNyIgZmlsbD0iIzY0NzQ4YiIgZm9udC1mYW1pbHk9Ii1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xOS4yeDwvdGV4dD48dGV4dCB4PSIyMDAiIHk9IjkzIiBmaWxsPSIjNjQ3NDhiIiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjc1LjE1IEtCPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMjIyIiBmaWxsPSIjNDc1NTY5IiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkthVGVYPC90ZXh0PjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSIxNjAiIHg9IjI5MCIgeT0iNDAiIGZpbGw9IiM5NGEzYjgiIHJ4PSI0Ii8+PHRleHQgeD0iMzE1IiB5PSIzMCIgZmlsbD0iIzY0NzQ4YiIgZm9udC1mYW1pbHk9Ii1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj43MS4zeDwvdGV4dD48dGV4dCB4PSIzMTUiIHk9IjE2IiBmaWxsPSIjNjQ3NDhiIiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjI3OC4zOSBLQjwvdGV4dD48dGV4dCB4PSIzMTUiIHk9IjIyMiIgZmlsbD0iIzQ3NTU2OSIgZm9udC1mYW1pbHk9Ii1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYXRoSmF4PC90ZXh0Pjwvc3ZnPg==" alt="Size Comparison"></div>
             </div>
-            <div class="benchmark-img-container"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjYwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeDI9IjAlIiB5MT0iMTAwJSIgeTI9IjAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJiIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIiB4PSItMjAlIiB5PSItMjAlIj48ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgZmxvb2QtY29sb3I9IiM2MzY2ZjEiIGZsb29kLW9wYWNpdHk9Ii4yNSIgc3RkRGV2aWF0aW9uPSI2Ii8+PC9maWx0ZXI+PC9kZWZzPjxwYXRoIHN0cm9rZT0iI2YxZjVmOSIgc3Ryb2tlLWRhc2hhcnJheT0iNCw0IiBkPSJNMzAgNDBoMzQwTTMwIDEyMGgzNDAiLz48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iMTkiIHg9IjYwIiB5PSIxODEiIGZpbGw9InVybCgjYSkiIGZpbHRlcj0idXJsKCNiKSIgcng9IjQiLz48cGF0aCBmaWxsPSIjZjU5ZTBiIiBkPSJtODUgMTY1LjMgMS45IDMuOCA0LjIuNi0zIDMgLjcgNC4yLTMuOC0yLTMuOCAyIC43LTQuMi0yLjktMyA0LjEtLjZaIi8+PHRleHQgeD0iODUiIHk9IjE1NyIgZmlsbD0iIzI1NjNlYiIgZm9udC1mYW1pbHk9Ii1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zLjkyIEtCPC90ZXh0Pjx0ZXh0IHg9Ijg1IiB5PSIyMjIiIGZpbGw9IiMwZjE3MmEiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QHdlYmMuc2l0ZS9tYXRoIHYwLjEuMjA8L3RleHQ+PHJlY3Qgd2lkdGg9IjUwIiBoZWlnaHQ9IjgzIiB4PSIxNzUiIHk9IjExNyIgZmlsbD0iI2NiZDVlMSIgcng9IjQiLz48dGV4dCB4PSIyMDAiIHk9IjEwNyIgZmlsbD0iIzY0NzQ4YiIgZm9udC1mYW1pbHk9Ii1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xOS4yeDwvdGV4dD48dGV4dCB4PSIyMDAiIHk9IjkzIiBmaWxsPSIjNjQ3NDhiIiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjc1LjE1IEtCPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMjIyIiBmaWxsPSIjNDc1NTY5IiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkthVGVYPC90ZXh0PjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSIxNjAiIHg9IjI5MCIgeT0iNDAiIGZpbGw9IiM5NGEzYjgiIHJ4PSI0Ii8+PHRleHQgeD0iMzE1IiB5PSIzMCIgZmlsbD0iIzY0NzQ4YiIgZm9udC1mYW1pbHk9Ii1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj43MS4weDwvdGV4dD48dGV4dCB4PSIzMTUiIHk9IjE2IiBmaWxsPSIjNjQ3NDhiIiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjI3OC4zOSBLQjwvdGV4dD48dGV4dCB4PSIzMTUiIHk9IjIyMiIgZmlsbD0iIzQ3NTU2OSIgZm9udC1mYW1pbHk9Ii1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYXRoSmF4PC90ZXh0Pjwvc3ZnPg==" alt="Size Comparison"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjYwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeDI9IjAlIiB5MT0iMTAwJSIgeTI9IjAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJiIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIiB4PSItMjAlIiB5PSItMjAlIj48ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgZmxvb2QtY29sb3I9IiMxMGI5ODEiIGZsb29kLW9wYWNpdHk9Ii4yNSIgc3RkRGV2aWF0aW9uPSI2Ii8+PC9maWx0ZXI+PC9kZWZzPjxwYXRoIHN0cm9rZT0iI2YxZjVmOSIgc3Ryb2tlLWRhc2hhcnJheT0iNCw0IiBkPSJNMzAgNDBoMzQwTTMwIDEyMGgzNDAiLz48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iMTYwIiB4PSI2MCIgeT0iNDAiIGZpbGw9InVybCgjYSkiIGZpbHRlcj0idXJsKCNiKSIgcng9IjQiLz48cGF0aCBmaWxsPSIjZjU5ZTBiIiBkPSJtODUgMjQuMyAxLjkgMy44IDQuMi42LTMgMyAuNyA0LjItMy44LTItMy44IDIgLjctNC4yLTIuOS0zIDQuMS0uNloiLz48dGV4dCB4PSI4NSIgeT0iMTYiIGZpbGw9IiMxMGI5ODEiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTE1ayBvcHMvczwvdGV4dD48dGV4dCB4PSI4NSIgeT0iMjIyIiBmaWxsPSIjMGYxNzJhIiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkB3ZWJjLnNpdGUvbWF0aCB2MC4xLjIwPC90ZXh0PjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1NiIgeD0iMTc1IiB5PSIxNDQiIGZpbGw9IiNjYmQ1ZTEiIHJ4PSI0Ii8+PHRleHQgeD0iMjAwIiB5PSIxMzQiIGZpbGw9IiM2NDc0OGIiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Mi45eCBzbG93ZXI8L3RleHQ+PHRleHQgeD0iMjAwIiB5PSIxMjAiIGZpbGw9IiM2NDc0OGIiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjUwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NDBrIG9wcy9zPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMjIyIiBmaWxsPSIjNDc1NTY5IiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkthVGVYPC90ZXh0PjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSIxMCIgeD0iMjkwIiB5PSIxOTAiIGZpbGw9IiM5NGEzYjgiIHJ4PSI0Ii8+PHRleHQgeD0iMzE1IiB5PSIxODAiIGZpbGw9IiM2NDc0OGIiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTIuM3ggc2xvd2VyPC90ZXh0Pjx0ZXh0IHg9IjMxNSIgeT0iMTY2IiBmaWxsPSIjNjQ3NDhiIiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjJrIG9wcy9zPC90ZXh0Pjx0ZXh0IHg9IjMxNSIgeT0iMjIyIiBmaWxsPSIjNDc1NTY5IiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1hdGhKYXg8L3RleHQ+PC9zdmc+" alt="Speed Comparison"></div>
+            <div class="card benchmark-card Lg">
+              <div class="benchmark-header">
+                <h2 id="ui-benchmark-speed-title"></h2><span class="tip" id="ui-benchmark-speed-tip"></span>
+              </div>
+              <div class="benchmark-img-container"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjYwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeDI9IjAlIiB5MT0iMTAwJSIgeTI9IjAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJiIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIiB4PSItMjAlIiB5PSItMjAlIj48ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgZmxvb2QtY29sb3I9IiMxMGI5ODEiIGZsb29kLW9wYWNpdHk9Ii4yNSIgc3RkRGV2aWF0aW9uPSI2Ii8+PC9maWx0ZXI+PC9kZWZzPjxwYXRoIHN0cm9rZT0iI2YxZjVmOSIgc3Ryb2tlLWRhc2hhcnJheT0iNCw0IiBkPSJNMzAgNDBoMzQwTTMwIDEyMGgzNDAiLz48cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iMTYwIiB4PSI2MCIgeT0iNDAiIGZpbGw9InVybCgjYSkiIGZpbHRlcj0idXJsKCNiKSIgcng9IjQiLz48cGF0aCBmaWxsPSIjZjU5ZTBiIiBkPSJtODUgMjQuMyAxLjkgMy44IDQuMi42LTMgMyAuNyA0LjItMy44LTItMy44IDIgLjctNC4yLTIuOS0zIDQuMS0uNloiLz48dGV4dCB4PSI4NSIgeT0iMTYiIGZpbGw9IiMxMGI5ODEiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTEzayBvcHMvczwvdGV4dD48dGV4dCB4PSI4NSIgeT0iMjIyIiBmaWxsPSIjMGYxNzJhIiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkB3ZWJjLnNpdGUvbWF0aCB2MC4xLjIwPC90ZXh0PjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1NCIgeD0iMTc1IiB5PSIxNDYiIGZpbGw9IiNjYmQ1ZTEiIHJ4PSI0Ii8+PHRleHQgeD0iMjAwIiB5PSIxMzYiIGZpbGw9IiM2NDc0OGIiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+My4weCBzbG93ZXI8L3RleHQ+PHRleHQgeD0iMjAwIiB5PSIxMjIiIGZpbGw9IiM2NDc0OGIiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjUwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MzhrIG9wcy9zPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMjIyIiBmaWxsPSIjNDc1NTY5IiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkthVGVYPC90ZXh0PjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSIxMCIgeD0iMjkwIiB5PSIxOTAiIGZpbGw9IiM5NGEzYjgiIHJ4PSI0Ii8+PHRleHQgeD0iMzE1IiB5PSIxODAiIGZpbGw9IiM2NDc0OGIiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTIuNHggc2xvd2VyPC90ZXh0Pjx0ZXh0IHg9IjMxNSIgeT0iMTY2IiBmaWxsPSIjNjQ3NDhiIiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjJrIG9wcy9zPC90ZXh0Pjx0ZXh0IHg9IjMxNSIgeT0iMjIyIiBmaWxsPSIjNDc1NTY5IiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI1MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1hdGhKYXg8L3RleHQ+PC9zdmc+" alt="Speed Comparison"></div>
+            </div>
+          </div>
+          <div class="formulas-section">
+            <h2 id="ui-formulas-title">经典公式</h2>
+            <div class="formulas-grid" id="formulas-grid"></div>
           </div>
         </div>
-        <div class="formulas-section">
-          <h2 id="ui-formulas-title">经典公式</h2>
-          <div class="formulas-grid" id="formulas-grid"></div>
-        </div>
-      </div>
-    </main>
+      </main>
+    </c-vs>
   </body>
 </html>
