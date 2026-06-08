@@ -1,0 +1,80 @@
+{
+  "name": "@webc.site/math",
+  "version": "0.1.20",
+  "description": "The world's smallest and fastest web Markdown formula renderer / 全球最小最快的网页Markdown公式渲染器",
+  "keywords": [
+    "markdown",
+    "math",
+    "mathml",
+    "render",
+    "tex"
+  ],
+  "homepage": "https://math.webc.site",
+  "license": "MulanPSL-2.0",
+  "author": "i18n.site@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webc-site/math.git"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/mathml.d.ts",
+      "default": "./src/mathml.js"
+    },
+    "./md.js": {
+      "types": "./src/md.d.ts",
+      "default": "./src/md.js"
+    },
+    "./*": "./src/*"
+  },
+  "scripts": {
+    "prepare": "husky"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@3-/gci": "^0.1.8",
+    "@3-/log": "^0.1.9",
+    "@3-/mdt": "^0.1.5",
+    "@3-/read": "^0.1.4",
+    "@3-/stylfmt": "^0.1.7",
+    "@3-/stylus": "^0.1.17",
+    "@3-/write": "^0.0.2",
+    "@3-/zx": "^0.1.18",
+    "@mathjax/mathjax-mhchem-font-extension": "^4.1.2",
+    "browserslist": "^4.28.2",
+    "cli-table3": "^0.6.5",
+    "env-paths": "^4.0.0",
+    "html-minifier": "^4.0.0",
+    "husky": "^9.1.7",
+    "js-yaml": "^4.2.0",
+    "katex": "^0.17.0",
+    "knip": "^6.16.1",
+    "lightningcss": "^1.32.0",
+    "lint-staged": "^17.0.7",
+    "markdown-it": "^14.2.0",
+    "marked": "^18.0.5",
+    "mathjax": "^4.1.2",
+    "oxc-parser": "^0.134.0",
+    "oxfmt": "^0.53.0",
+    "oxlint": "^1.68.0",
+    "pug": "^3.0.4",
+    "remark-html": "^16.0.1",
+    "remark-math": "^6.0.0",
+    "remark-parse": "^11.0.0",
+    "rolldown": "^1.1.0",
+    "simple-git": "^3.36.0",
+    "svgo": "^4.0.1",
+    "unified": "^11.0.5",
+    "vite": "^8.0.16",
+    "yargs": "^18.0.0",
+    "zx": "^8.8.5"
+  },
+  "lint-staged": {
+    "**/*.svg": "bun sh/hook/svg.js",
+    "**/*.styl": "bun sh/hook/styl.js"
+  }
+}

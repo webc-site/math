@@ -1,0 +1,385 @@
+- - $${}^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mrow
+    data-mjx-tex></mrow><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">{}^2</annotation></semantics></math>
+- - $$x^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">x^2</annotation></semantics></math>
+- - $$x^3$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup></mrow><annotation
+    encoding="application/x-tex">x^3</annotation></semantics></math>
+- - $${}_3$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><mrow
+    data-mjx-tex></mrow><mn>3</mn></msub></mrow><annotation
+    encoding="application/x-tex">{}_3</annotation></semantics></math>
+- - $$x_3$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><mi>x</mi><mn>3</mn></msub></mrow><annotation
+    encoding="application/x-tex">x_3</annotation></semantics></math>
+- - $$x^a_3$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mi>x</mi><mn>3</mn><mi>a</mi></msubsup></mrow><annotation
+    encoding="application/x-tex">x^a_3</annotation></semantics></math>
+- - $$\sum^2_1$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><munderover><mo>&#x2211;</mo><mn>1</mn><mn>2</mn></munderover></mrow><annotation
+    encoding="application/x-tex">\sum^2_1</annotation></semantics></math>
+- - $$\left( \sum_1^n \right)^{2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mrow data-mjx-tex><mo
+    data-mjx-tex>(</mo><munderover><mo>&#x2211;</mo><mn>1</mn><mi>n</mi></munderover><mo
+    data-mjx-tex>)</mo></mrow><mrow
+    data-mjx-tex><mn>2</mn></mrow></msup></mrow><annotation
+    encoding="application/x-tex">\left( \sum_1^n
+    \right)^{2}</annotation></semantics></math>
+- - $$\sum_{i=1}^n$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mrow><annotation
+    encoding="application/x-tex">\sum_{i=1}^n</annotation></semantics></math>
+- - $$\sum_{i=1}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><munder><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow></munder></mrow><annotation
+    encoding="application/x-tex">\sum_{i=1}</annotation></semantics></math>
+- - $$\sum^n$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mover><mo>∑</mo><mi>n</mi></mover></mrow><annotation
+    encoding="application/x-tex">\sum^n</annotation></semantics></math>
+- - $$\int_a^b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mrow><annotation
+    encoding="application/x-tex">\int_a^b</annotation></semantics></math>
+- - $$\int_a$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><mo>∫</mo><mi>a</mi></msub></mrow><annotation
+    encoding="application/x-tex">\int_a</annotation></semantics></math>
+- - $$\int^b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mo>∫</mo><mi>b</mi></msup></mrow><annotation
+    encoding="application/x-tex">\int^b</annotation></semantics></math>
+- - $$\overline{\sum^2_3}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mover><mrow><mo
+    rspace="0"></mo><munderover><mo lspace="0"
+    rspace="0">&#x2211;</mo><mn>3</mn><mn>2</mn></munderover></mrow><mo
+    accent="true">&#x2015;</mo></mover></mrow><annotation
+    encoding="application/x-tex">\overline{\sum^2_3}</annotation></semantics></math>
+- - $$\overline{\sum}^2_3$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mover><mo
+    movablelimits="false">&#x2211;</mo><mo
+    accent="true">&#x2015;</mo></mover><mn>3</mn><mn>2</mn></msubsup></mrow><annotation
+    encoding="application/x-tex">\overline{\sum}^2_3</annotation></semantics></math>
+- - $$\overline{X}_ {y}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><mover><mi>X</mi><mo
+    accent="true">&#x2015;</mo></mover><mrow
+    data-mjx-tex><mi>y</mi></mrow></msub></mrow><annotation
+    encoding="application/x-tex">\overline{X}_
+    {y}</annotation></semantics></math>
+- - $$    x   ^ y    $$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup></mrow><annotation
+    encoding="application/x-tex"> x ^ y </annotation></semantics></math>
+- - $$x^2_3$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mi>x</mi><mn>3</mn><mn>2</mn></msubsup></mrow><annotation
+    encoding="application/x-tex">x^2_3</annotation></semantics></math>
+- - $$x_2^3$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mi>x</mi><mn>2</mn><mn>3</mn></msubsup></mrow><annotation
+    encoding="application/x-tex">x_2^3</annotation></semantics></math>
+- - $$x^{2+3}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mrow><mn>2</mn><mo>+</mo><mn>3</mn></mrow></msup></mrow><annotation
+    encoding="application/x-tex">x^{2+3}</annotation></semantics></math>
+- - $$x_{3-2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><mi>x</mi><mrow><mn>3</mn><mo>−</mo><mn>2</mn></mrow></msub></mrow><annotation
+    encoding="application/x-tex">x_{3-2}</annotation></semantics></math>
+- - $$x^{2+3}_3$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mi>x</mi><mn>3</mn><mrow><mn>2</mn><mo>+</mo><mn>3</mn></mrow></msubsup></mrow><annotation
+    encoding="application/x-tex">x^{2+3}_3</annotation></semantics></math>
+- - $$x^2_{3-2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mi>x</mi><mrow><mn>3</mn><mo>−</mo><mn>2</mn></mrow><mn>2</mn></msubsup></mrow><annotation
+    encoding="application/x-tex">x^2_{3-2}</annotation></semantics></math>
+- - $$x^{2+3}_{3-2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mi>x</mi><mrow><mn>3</mn><mo>−</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>+</mo><mn>3</mn></mrow></msubsup></mrow><annotation
+    encoding="application/x-tex">x^{2+3}_{3-2}</annotation></semantics></math>
+- - $$x_{3-2}^{2+3}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mi>x</mi><mrow><mn>3</mn><mo>−</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>+</mo><mn>3</mn></mrow></msubsup></mrow><annotation
+    encoding="application/x-tex">x_{3-2}^{2+3}</annotation></semantics></math>
+- - $$x_3^{2+3}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mi>x</mi><mn>3</mn><mrow><mn>2</mn><mo>+</mo><mn>3</mn></mrow></msubsup></mrow><annotation
+    encoding="application/x-tex">x_3^{2+3}</annotation></semantics></math>
+- - $$x_{3-2}^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mi>x</mi><mrow><mn>3</mn><mo>−</mo><mn>2</mn></mrow><mn>2</mn></msubsup></mrow><annotation
+    encoding="application/x-tex">x_{3-2}^2</annotation></semantics></math>
+- - $$x^{x^x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><msup><mi>x</mi><mi>x</mi></msup></msup></mrow><annotation
+    encoding="application/x-tex">x^{x^x}</annotation></semantics></math>
+- - $$x^{x_x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><msub><mi>x</mi><mi>x</mi></msub></msup></mrow><annotation
+    encoding="application/x-tex">x^{x_x}</annotation></semantics></math>
+- - $$x_{x^x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><mi>x</mi><msup><mi>x</mi><mi>x</mi></msup></msub></mrow><annotation
+    encoding="application/x-tex">x_{x^x}</annotation></semantics></math>
+- - $$x_{x_x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><mi>x</mi><msub><mi>x</mi><mi>x</mi></msub></msub></mrow><annotation
+    encoding="application/x-tex">x_{x_x}</annotation></semantics></math>
+- - $$x^{\left( x \right)}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mrow><mo
+    fence="true">(</mo><mi>x</mi><mo
+    fence="true">)</mo></mrow></msup></mrow><annotation
+    encoding="application/x-tex">x^{\left( x
+    \right)}</annotation></semantics></math>
+- - $$\int_i^n$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mo>∫</mo><mi>i</mi><mi>n</mi></msubsup></mrow><annotation
+    encoding="application/x-tex">\int_i^n</annotation></semantics></math>
+- - $$\sum_{k = 0}^{\infty} x^k$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi
+    mathvariant="normal">∞</mi></munderover><msup><mi>x</mi><mi>k</mi></msup></mrow><annotation
+    encoding="application/x-tex">\sum_{k = 0}^{\infty}
+    x^k</annotation></semantics></math>
+- - $$x^y$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup></mrow><annotation
+    encoding="application/x-tex">x^y</annotation></semantics></math>
+- - $$e^1 23$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>e</mi><mn>1</mn></msup><mn>23</mn></mrow><annotation
+    encoding="application/x-tex">e^1 23</annotation></semantics></math>
+- - $$x_3^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mi>x</mi><mn>3</mn><mn>2</mn></msubsup></mrow><annotation
+    encoding="application/x-tex">x_3^2</annotation></semantics></math>
+- - $$A^{2} + B^{2+3} + ^{12}C + E_{2}^{3} + F_{2+3}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>+</mo><msup><mi>B</mi><mrow><mn>2</mn><mo>+</mo><mn>3</mn></mrow></msup><msup><mo>+</mo><mn>12</mn></msup><mi>C</mi><mo>+</mo><msubsup><mi>E</mi><mn>2</mn><mn>3</mn></msubsup><mo>+</mo><msub><mi>F</mi><mrow><mn>2</mn><mo>+</mo><mn>3</mn></mrow></msub></mrow><annotation
+    encoding="application/x-tex">A^{2} + B^{2+3} + ^{12}C + E_{2}^{3} +
+    F_{2+3}</annotation></semantics></math>
+- - $$x_2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub></mrow><annotation
+    encoding="application/x-tex">x_2</annotation></semantics></math>
+- - $$x^{2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">x^{2}</annotation></semantics></math>
+- - $$x^2+x^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">x^2+x^2</annotation></semantics></math>
+- - $$1^{23}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mn>1</mn><mn>23</mn></msup></mrow><annotation
+    encoding="application/x-tex">1^{23}</annotation></semantics></math>
+- - $$x^2+y^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">x^2+y^2</annotation></semantics></math>
+- - $$0^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mn>0</mn><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">0^2</annotation></semantics></math>
+- - $$\text{sin}^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mtext>sin</mtext><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">\text{sin}^2</annotation></semantics></math>
+- - $$x_\text x$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><mi>x</mi><mtext>x</mtext></msub></mrow><annotation
+    encoding="application/x-tex">x_\text x</annotation></semantics></math>
+- - $$\int\limits_2^2 3$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><munderover><mo>∫</mo><mn>2</mn><mn>2</mn></munderover><mn>3</mn></mrow><annotation
+    encoding="application/x-tex">\int\limits_2^2
+    3</annotation></semantics></math>
+- - $$\sum\nolimits_3^4 4$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mo>∑</mo><mn>3</mn><mn>4</mn></msubsup><mn>4</mn></mrow><annotation
+    encoding="application/x-tex">\sum\nolimits_3^4
+    4</annotation></semantics></math>
+- - $$\int\nolimits_i^n$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><mo>∫</mo><mi>i</mi><mi>n</mi></msubsup></mrow><annotation
+    encoding="application/x-tex">\int\nolimits_i^n</annotation></semantics></math>
+- - $$\boxed{x^2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="box"><mstyle
+    scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="true"><msup><mi>x</mi><mn>2</mn></msup></mstyle></mstyle></mstyle></menclose></mrow><annotation
+    encoding="application/x-tex">\boxed{x^2}</annotation></semantics></math>
+- - $$\boxed{x}^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><menclose notation="box"><mstyle
+    scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="true"><mi>x</mi></mstyle></mstyle></mstyle></menclose><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">\boxed{x}^2</annotation></semantics></math>
+- - $$\boxed{x}_2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><menclose notation="box"><mstyle
+    scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="true"><mi>x</mi></mstyle></mstyle></mstyle></menclose><mn>2</mn></msub></mrow><annotation
+    encoding="application/x-tex">\boxed{x}_2</annotation></semantics></math>
+- - $$\boxed{x}_2^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><menclose notation="box"><mstyle
+    scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="true"><mi>x</mi></mstyle></mstyle></mstyle></menclose><mn>2</mn><mn>2</mn></msubsup></mrow><annotation
+    encoding="application/x-tex">\boxed{x}_2^2</annotation></semantics></math>
+- - $$\boxed )^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><menclose notation="box"><mstyle
+    scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mo
+    stretchy="false" lspace="0em"
+    rspace="0em">)</mo></mstyle></mstyle></mstyle></menclose><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">\boxed )^2</annotation></semantics></math>
+- - $$\cancel{x^2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose
+    notation="updiagonalstrike"><msup><mi>x</mi><mn>2</mn></msup></menclose></mrow><annotation
+    encoding="application/x-tex">\cancel{x^2}</annotation></semantics></math>
+- - $$\cancel{x}^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><menclose
+    notation="updiagonalstrike"><mi>x</mi></menclose><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">\cancel{x}^2</annotation></semantics></math>
+- - $$\cancel x^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><menclose
+    notation="updiagonalstrike"><mi>x</mi></menclose><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">\cancel x^2</annotation></semantics></math>
+- - $$\cancel{x}_2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><menclose
+    notation="updiagonalstrike"><mi>x</mi></menclose><mn>2</mn></msub></mrow><annotation
+    encoding="application/x-tex">\cancel{x}_2</annotation></semantics></math>
+- - $$\cancel{x}_2^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><menclose
+    notation="updiagonalstrike"><mi>x</mi></menclose><mn>2</mn><mn>2</mn></msubsup></mrow><annotation
+    encoding="application/x-tex">\cancel{x}_2^2</annotation></semantics></math>
+- - $$\sout{x}^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><menclose
+    notation="horizontalstrike"><mi>x</mi></menclose><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">\sout{x}^2</annotation></semantics></math>
+- - $$\sout{x}_2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><menclose
+    notation="horizontalstrike"><mi>x</mi></menclose><mn>2</mn></msub></mrow><annotation
+    encoding="application/x-tex">\sout{x}_2</annotation></semantics></math>
+- - $$\sout{x}_2^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msubsup><menclose
+    notation="horizontalstrike"><mi>x</mi></menclose><mn>2</mn><mn>2</mn></msubsup></mrow><annotation
+    encoding="application/x-tex">\sout{x}_2^2</annotation></semantics></math>
+- - $$\cancel )^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><menclose
+    notation="updiagonalstrike"><mo stretchy="false" lspace="0em"
+    rspace="0em">)</mo></menclose><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">\cancel )^2</annotation></semantics></math>
+- - $$\phantom{x^2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mphantom><msup><mi>x</mi><mn>2</mn></msup></mphantom></mrow><annotation
+    encoding="application/x-tex">\phantom{x^2}</annotation></semantics></math>
+- - $$\phantom{x}^2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mphantom><mi>x</mi></mphantom><mn>2</mn></msup></mrow><annotation
+    encoding="application/x-tex">\phantom{x}^2</annotation></semantics></math>
+- - $$\overline{\int\limits^2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mover><mrow><mo rspace="0"></mo><mover><mo
+    lspace="0" rspace="0">&#x222B;</mo><mn>2</mn></mover></mrow><mo
+    accent="true">&#x2015;</mo></mover></mrow><annotation
+    encoding="application/x-tex">\overline{\int\limits^2}</annotation></semantics></math>

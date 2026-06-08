@@ -1,0 +1,4 @@
+export const ERR_EXTRA_END = 0,
+  ERR_MISSING_RIGHT = 1,
+  ERR_EXTRA_RIGHT = 2,
+  ERR_MISSING_BRACE = 3;

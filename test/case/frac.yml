@@ -1,0 +1,207 @@
+- - $$\frac{n}{k}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mfrac><mi>n</mi><mi>k</mi></mfrac></mrow><annotation
+    encoding="application/x-tex">\frac{n}{k}</annotation></semantics></math>
+- - $$a_\frac{n}{k}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msub><mi>a</mi><mfrac><mi>n</mi><mi>k</mi></mfrac></msub></mrow><annotation
+    encoding="application/x-tex">a_\frac{n}{k}</annotation></semantics></math>
+- - $$\div(\frac{a}{b}c)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#xF7;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mi>c</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\div(\frac{a}{b}c)</annotation></semantics></math>
+- - $$\sin(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\sin(\frac{x}{y})</annotation></semantics></math>
+- - $$\cos(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>cos</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\cos(\frac{x}{y})</annotation></semantics></math>
+- - $$\tan(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>tan</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\tan(\frac{x}{y})</annotation></semantics></math>
+- - $$\sin|\frac{x}{y}|$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo data-mjx-tex
+    stretchy="false">|</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo data-mjx-tex
+    stretchy="false">|</mo></mrow><annotation
+    encoding="application/x-tex">\sin|\frac{x}{y}|</annotation></semantics></math>
+- - $$\sin[\frac{x}{y}]$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">[</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">]</mo></mrow><annotation
+    encoding="application/x-tex">\sin[\frac{x}{y}]</annotation></semantics></math>
+- - $$(\frac{a}{[bc]})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    stretchy="false">(</mo><mfrac><mi>a</mi><mrow><mo
+    stretchy="false">[</mo><mi>b</mi><mi>c</mi><mo
+    stretchy="false">]</mo></mrow></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">(\frac{a}{[bc]})</annotation></semantics></math>
+- - $$\frac{a}{b}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac></mrow><annotation
+    encoding="application/x-tex">\frac{a}{b}</annotation></semantics></math>
+- - $$\left(\frac{a}{\left[bc\right]}\right)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>(</mo><mfrac><mi>a</mi><mrow data-mjx-tex><mo
+    data-mjx-tex>[</mo><mi>b</mi><mi>c</mi><mo
+    data-mjx-tex>]</mo></mrow></mfrac><mo
+    data-mjx-tex>)</mo></mrow></mrow><annotation
+    encoding="application/x-tex">\left(\frac{a}{\left[bc\right]}\right)</annotation></semantics></math>
+- - $$\frac{x}{y}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mfrac><mi>x</mi><mi>y</mi></mfrac></mrow><annotation
+    encoding="application/x-tex">\frac{x}{y}</annotation></semantics></math>
+- - $$x^\frac x y$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mfrac><mi>x</mi><mi>y</mi></mfrac></msup></mrow><annotation
+    encoding="application/x-tex">x^\frac x y</annotation></semantics></math>
+- - $$\frac {\left( x \right)} y$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mfrac><mrow><mo
+    fence="true">(</mo><mi>x</mi><mo
+    fence="true">)</mo></mrow><mi>y</mi></mfrac></mrow><annotation
+    encoding="application/x-tex">\frac {\left( x \right)}
+    y</annotation></semantics></math>
+- - $$\frac x {\left( y \right)}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mfrac><mi>x</mi><mrow><mo
+    fence="true">(</mo><mi>y</mi><mo
+    fence="true">)</mo></mrow></mfrac></mrow><annotation
+    encoding="application/x-tex">\frac x {\left( y
+    \right)}</annotation></semantics></math>
+- - $$\left<\frac{1}{x}\right>$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    fence="true">&lt;</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo
+    fence="true">&gt;</mo></mrow><annotation
+    encoding="application/x-tex">\left&lt;\frac{1}{x}\right&gt;</annotation></semantics></math>
+- - $$x^\frac{1}{2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>x</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup></mrow><annotation
+    encoding="application/x-tex">x^\frac{1}{2}</annotation></semantics></math>
+- - $$\sinh(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sinh</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\sinh(\frac{x}{y})</annotation></semantics></math>
+- - $$\arcsin(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>arcsin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\arcsin(\frac{x}{y})</annotation></semantics></math>
+- - $$\cosh(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>cosh</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\cosh(\frac{x}{y})</annotation></semantics></math>
+- - $$\arccos(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>arccos</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\arccos(\frac{x}{y})</annotation></semantics></math>
+- - $$\tanh(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>tanh</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\tanh(\frac{x}{y})</annotation></semantics></math>
+- - $$\arctan(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>arctan</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\arctan(\frac{x}{y})</annotation></semantics></math>
+- - $$\exp((\frac{a}{a}a){a})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>exp</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mo
+    stretchy="false">(</mo><mfrac><mi>a</mi><mi>a</mi></mfrac><mi>a</mi><mo
+    stretchy="false">)</mo><mrow data-mjx-tex><mi>a</mi></mrow><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\exp((\frac{a}{a}a){a})</annotation></semantics></math>
+- - $$\csc(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>csc</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\csc(\frac{x}{y})</annotation></semantics></math>
+- - $$\sec(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sec</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\sec(\frac{x}{y})</annotation></semantics></math>
+- - $$\cot(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>cot</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\cot(\frac{x}{y})</annotation></semantics></math>
+- - $$\coth(\frac{x}{y})$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>coth</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo
+    stretchy="false">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\coth(\frac{x}{y})</annotation></semantics></math>

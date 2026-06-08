@@ -1,0 +1,33 @@
+{
+  "name": "@webc.site/math-remark",
+  "version": "0.1.5",
+  "description": "Remark plugin for @webc.site/math / @webc.site/math 的 Remark 插件",
+  "keywords": [
+    "markdown",
+    "math",
+    "mathml",
+    "remark",
+    "remark-plugin",
+    "render",
+    "tex"
+  ],
+  "homepage": "https://math.webc.site",
+  "license": "MulanPSL-2.0",
+  "author": "i18n.site@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webc-site/math.git",
+    "directory": "plugin/remark"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "peerDependencies": {
+    "@webc.site/math": ">=0.1.5",
+    "remark-math": ">=6.0.0"
+  }
+}

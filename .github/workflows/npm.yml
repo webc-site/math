@@ -1,0 +1,36 @@
+name: npm
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "package.json"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v6
+
+      - name: 安装 Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+
+      - name: 生成配置
+        run: bun sh/github/pkg.js
+
+      - name: 发布
+        run: npm publish --access=public --provenance
+        working-directory: ./lib

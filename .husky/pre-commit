@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+bun x lint-staged
+./test.sh
+git add -u

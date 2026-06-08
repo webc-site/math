@@ -1,0 +1,33 @@
+{
+  "name": "@webc.site/math-markdown-it",
+  "version": "0.1.1",
+  "description": "Markdown-it plugin for @webc.site/math / @webc.site/math 的 Markdown-it 插件",
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "math",
+    "mathml",
+    "render",
+    "tex"
+  ],
+  "homepage": "https://math.webc.site",
+  "license": "MulanPSL-2.0",
+  "author": "i18n.site@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webc-site/math.git",
+    "directory": "plugin/markdown-it"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "peerDependencies": {
+    "@webc.site/math": ">=0.1.5",
+    "markdown-it": ">=14.2.0"
+  }
+}

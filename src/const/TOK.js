@@ -1,0 +1,11 @@
+export const TOK_EOF = 0,
+  TOK_NUM = 1,
+  TOK_IDENT = 2,
+  TOK_OP = 3,
+  TOK_CMD = 4,
+  TOK_SUB = 5,
+  TOK_SUP = 6,
+  TOK_LBRACE = 7,
+  TOK_RBRACE = 8,
+  TOK_LPAREN = 9,
+  TOK_RPAREN = 10;

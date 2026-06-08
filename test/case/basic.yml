@@ -1,0 +1,1272 @@
+- - $$a$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi></mrow><annotation
+    encoding="application/x-tex">a</annotation></semantics></math>
+- - $$hello$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>h</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow><annotation
+    encoding="application/x-tex">hello</annotation></semantics></math>
+- - $$hello ( world$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>h</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>o</mi><mo
+    stretchy="false">(</mo><mi>w</mi><mi>o</mi><mi>r</mi><mi>l</mi><mi>d</mi></mrow><annotation
+    encoding="application/x-tex">hello ( world</annotation></semantics></math>
+- - $$hello ) world$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>h</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>o</mi><mo
+    stretchy="false">)</mo><mi>w</mi><mi>o</mi><mi>r</mi><mi>l</mi><mi>d</mi></mrow><annotation
+    encoding="application/x-tex">hello ) world</annotation></semantics></math>
+- - $$hello ( world ) boo$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>h</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>o</mi><mo
+    stretchy="false">(</mo><mi>w</mi><mi>o</mi><mi>r</mi><mi>l</mi><mi>d</mi><mo
+    stretchy="false">)</mo><mi>b</mi><mi>o</mi><mi>o</mi></mrow><annotation
+    encoding="application/x-tex">hello ( world )
+    boo</annotation></semantics></math>
+- - $$hello [[ world ]] boo$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>h</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>o</mi><mo
+    stretchy="false">[</mo><mo
+    stretchy="false">[</mo><mi>w</mi><mi>o</mi><mi>r</mi><mi>l</mi><mi>d</mi><mo
+    stretchy="false">]</mo><mo
+    stretchy="false">]</mo><mi>b</mi><mi>o</mi><mi>o</mi></mrow><annotation
+    encoding="application/x-tex">hello [[ world ]]
+    boo</annotation></semantics></math>
+- - $$hello ( world ) boo ( more ) stuff$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>h</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>o</mi><mo
+    stretchy="false">(</mo><mi>w</mi><mi>o</mi><mi>r</mi><mi>l</mi><mi>d</mi><mo
+    stretchy="false">)</mo><mi>b</mi><mi>o</mi><mi>o</mi><mo
+    stretchy="false">(</mo><mi>m</mi><mi>o</mi><mi>r</mi><mi>e</mi><mo
+    stretchy="false">)</mo><mi>s</mi><mi>t</mi><mi>u</mi><mi>f</mi><mi>f</mi></mrow><annotation
+    encoding="application/x-tex">hello ( world ) boo ( more )
+    stuff</annotation></semantics></math>
+- - $$hello ( world ) boo ( left$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>h</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>o</mi><mo
+    stretchy="false">(</mo><mi>w</mi><mi>o</mi><mi>r</mi><mi>l</mi><mi>d</mi><mo
+    stretchy="false">)</mo><mi>b</mi><mi>o</mi><mi>o</mi><mo
+    stretchy="false">(</mo><mi>l</mi><mi>e</mi><mi>f</mi><mi>t</mi></mrow><annotation
+    encoding="application/x-tex">hello ( world ) boo (
+    left</annotation></semantics></math>
+- - $$hello ( world { ) } ) boo$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>h</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>o</mi><mo
+    stretchy="false">(</mo><mi>w</mi><mi>o</mi><mi>r</mi><mi>l</mi><mi>d</mi><mo
+    stretchy="false" lspace="0em" rspace="0em">)</mo><mo
+    stretchy="false">)</mo><mi>b</mi><mi>o</mi><mi>o</mi></mrow><annotation
+    encoding="application/x-tex">hello ( world { ) } )
+    boo</annotation></semantics></math>
+- - $$x$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>x</mi></mrow><annotation
+    encoding="application/x-tex">x</annotation></semantics></math>
+- - $$xy$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>x</mi><mi>y</mi></mrow><annotation
+    encoding="application/x-tex">xy</annotation></semantics></math>
+- - $$A$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>A</mi></mrow><annotation
+    encoding="application/x-tex">A</annotation></semantics></math>
+- - $$2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>2</mn></mrow><annotation
+    encoding="application/x-tex">2</annotation></semantics></math>
+- - $$3.14$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>3.14</mn></mrow><annotation
+    encoding="application/x-tex">3.14</annotation></semantics></math>
+- - $$.14$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>.14</mn></mrow><annotation
+    encoding="application/x-tex">.14</annotation></semantics></math>
+- - $$.$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>.</mo></mrow><annotation
+    encoding="application/x-tex">.</annotation></semantics></math>
+- - $$3,14$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>3</mn><mo>,</mo><mn>14</mn></mrow><annotation
+    encoding="application/x-tex">3,14</annotation></semantics></math>
+- - $$,14$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>,</mo><mn>14</mn></mrow><annotation
+    encoding="application/x-tex">,14</annotation></semantics></math>
+- - $$,$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>,</mo></mrow><annotation
+    encoding="application/x-tex">,</annotation></semantics></math>
+- - $$a++b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo>+</mo><mo>+</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a++b</annotation></semantics></math>
+- - $$a+=b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo>+</mo><mo>=</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a+=b</annotation></semantics></math>
+- - $$a++$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo>+</mo><mo>+</mo></mrow><annotation
+    encoding="application/x-tex">a++</annotation></semantics></math>
+- - $$a||b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo data-mjx-tex
+    stretchy="false">|</mo><mo data-mjx-tex
+    stretchy="false">|</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a||b</annotation></semantics></math>
+- - $$a))b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo stretchy="false">)</mo><mo
+    stretchy="false">)</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a))b</annotation></semantics></math>
+- - $$++a$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>+</mo><mo>+</mo><mi>a</mi></mrow><annotation
+    encoding="application/x-tex">++a</annotation></semantics></math>
+- - $$+$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>+</mo></mrow><annotation
+    encoding="application/x-tex">+</annotation></semantics></math>
+- - $$-$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2212;</mo></mrow><annotation
+    encoding="application/x-tex">-</annotation></semantics></math>
+- - $$($$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    stretchy="false">(</mo></mrow><annotation
+    encoding="application/x-tex">(</annotation></semantics></math>
+- - $$|$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo data-mjx-tex
+    stretchy="false">|</mo></mrow><annotation
+    encoding="application/x-tex">|</annotation></semantics></math>
+- - $$a|b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo data-mjx-tex
+    stretchy="false">|</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a|b</annotation></semantics></math>
+- - $$a|$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo data-mjx-tex
+    stretchy="false">|</mo></mrow><annotation
+    encoding="application/x-tex">a|</annotation></semantics></math>
+- - $$|b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo data-mjx-tex
+    stretchy="false">|</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">|b</annotation></semantics></math>
+- - $$< a >$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&lt;</mo><mi>a</mi><mo>&gt;</mo></mrow><annotation
+    encoding="application/x-tex">&lt; a &gt;</annotation></semantics></math>
+- - $$a b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a b</annotation></semantics></math>
+- - $$\left. ab \right)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo data-mjx-tex
+    fence="true" stretchy="true" symmetric="true"></mo><mi>a</mi><mi>b</mi><mo
+    data-mjx-tex>)</mo></mrow></mrow><annotation
+    encoding="application/x-tex">\left. ab
+    \right)</annotation></semantics></math>
+- - $$\left( ab \right.$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>(</mo><mi>a</mi><mi>b</mi><mo data-mjx-tex fence="true"
+    stretchy="true" symmetric="true"></mo></mrow></mrow><annotation
+    encoding="application/x-tex">\left( ab
+    \right.</annotation></semantics></math>
+- - $$\left< a \right>$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>&#x27E8;</mo><mi>a</mi><mo
+    data-mjx-tex>&#x27E9;</mo></mrow></mrow><annotation
+    encoding="application/x-tex">\left&lt; a
+    \right&gt;</annotation></semantics></math>
+- - $$\sum$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>∑</mo></mrow><annotation
+    encoding="application/x-tex">\sum</annotation></semantics></math>
+- - $$\int$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>∫</mo></mrow><annotation
+    encoding="application/x-tex">\int</annotation></semantics></math>
+- - $$\overline{a}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mover><mi>a</mi><mo
+    accent="true">&#x2015;</mo></mover></mrow><annotation
+    encoding="application/x-tex">\overline{a}</annotation></semantics></math>
+- - $$\overline{\sum}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mover><mo
+    movablelimits="false">&#x2211;</mo><mo
+    accent="true">&#x2015;</mo></mover></mrow><annotation
+    encoding="application/x-tex">\overline{\sum}</annotation></semantics></math>
+- - $$\bar{a}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mover><mi>a</mi><mo
+    stretchy="false">&#xAF;</mo></mover></mrow></mrow><annotation
+    encoding="application/x-tex">\bar{a}</annotation></semantics></math>
+- - $$    x    y    $$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>x</mi><mi>y</mi></mrow><annotation
+    encoding="application/x-tex"> x y </annotation></semantics></math>
+- - $${xy}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>x</mi><mi>y</mi></mrow><annotation
+    encoding="application/x-tex">{xy}</annotation></semantics></math>
+- - $$\left< \right>$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo fence="true">&lt;</mo><mo
+    fence="true">&gt;</mo></mrow><annotation
+    encoding="application/x-tex">\left&lt;
+    \right&gt;</annotation></semantics></math>
+- - $$\left( \right)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo fence="true">(</mo><mo
+    fence="true">)</mo></mrow><annotation encoding="application/x-tex">\left(
+    \right)</annotation></semantics></math>
+- - $$<$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&lt;</mo></mrow><annotation
+    encoding="application/x-tex">&lt;</annotation></semantics></math>
+- - $$>$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&gt;</mo></mrow><annotation
+    encoding="application/x-tex">&gt;</annotation></semantics></math>
+- - $$jk$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>j</mi><mi>k</mi></mrow><annotation
+    encoding="application/x-tex">jk</annotation></semantics></math>
+- - $$ab$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">ab</annotation></semantics></math>
+- - $$1aa2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>1</mn><mi>a</mi><mi>a</mi><mn>2</mn></mrow><annotation
+    encoding="application/x-tex">1aa2</annotation></semantics></math>
+- - $$12222$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>12222</mn></mrow><annotation
+    encoding="application/x-tex">12222</annotation></semantics></math>
+- - $$(xyz)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    stretchy="false">(</mo><mi>x</mi><mi>y</mi><mi>z</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">(xyz)</annotation></semantics></math>
+- - $$x+y$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><annotation
+    encoding="application/x-tex">x+y</annotation></semantics></math>
+- - $$y$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>y</mi></mrow><annotation
+    encoding="application/x-tex">y</annotation></semantics></math>
+- - $$()$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo stretchy="false">(</mo><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">()</annotation></semantics></math>
+- - $$(,)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo stretchy="false">(</mo><mo
+    separator="true">,</mo><mo stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">(,)</annotation></semantics></math>
+- - $$\begin{matrix}\end{matrix}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mtable rowspacing="0.16em"
+    columnspacing="1em"></mtable><annotation
+    encoding="application/x-tex">\begin{matrix}\end{matrix}</annotation></semantics></math>
+- - $$\begin{pmatrix}1&2\\3&4\end{pmatrix}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo fence="true">(</mo><mtable
+    rowspacing="0.16em" columnalign="center center"
+    columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mn>2</mn></mstyle></mtd></mtr><mtr><mtd><mstyle
+    scriptlevel="0" displaystyle="false"><mn>3</mn></mstyle></mtd><mtd><mstyle
+    scriptlevel="0"
+    displaystyle="false"><mn>4</mn></mstyle></mtd></mtr></mtable><mo
+    fence="true">)</mo></mrow><annotation
+    encoding="application/x-tex">\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}</annotation></semantics></math>
+- - $$\begin{matrix}a&b\\ [c]&d\end{matrix}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mtable rowspacing="0.16em" columnalign="center
+    center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mi>b</mi></mstyle></mtd></mtr><mtr><mtd><mstyle
+    scriptlevel="0" displaystyle="false"><mrow><mo
+    stretchy="false">[</mo><mi>c</mi><mo
+    stretchy="false">]</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mi>d</mi></mstyle></mtd></mtr></mtable><annotation
+    encoding="application/x-tex">\begin{matrix}a&amp;b\\
+    [c]&amp;d\end{matrix}</annotation></semantics></math>
+- - $$a\\ [b]$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mspace
+    linebreak="newline"></mspace><mo stretchy="false">[</mo><mi>b</mi><mo
+    stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">a\\
+    [b]</annotation></semantics></math>
+- - $$\begin{matrix}a&b\\ c&d \\ \end{matrix}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mtable rowspacing="0.16em" columnalign="center
+    center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mi>b</mi></mstyle></mtd></mtr><mtr><mtd><mstyle
+    scriptlevel="0" displaystyle="false"><mi>c</mi></mstyle></mtd><mtd><mstyle
+    scriptlevel="0"
+    displaystyle="false"><mi>d</mi></mstyle></mtd></mtr></mtable><annotation
+    encoding="application/x-tex">\begin{matrix}a&amp;b\\ c&amp;d \\
+    \end{matrix}</annotation></semantics></math>
+- - $${2}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>2</mn></mrow><annotation
+    encoding="application/x-tex">{2}</annotation></semantics></math>
+- - $$12$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>12</mn></mrow><annotation
+    encoding="application/x-tex">12</annotation></semantics></math>
+- - $$5$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>5</mn></mrow><annotation
+    encoding="application/x-tex">5</annotation></semantics></math>
+- - $$x + y$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><annotation
+    encoding="application/x-tex">x + y</annotation></semantics></math>
+- - $$+ x$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>+</mo><mi>x</mi></mrow><annotation
+    encoding="application/x-tex">+ x</annotation></semantics></math>
+- - $$x + + 2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>x</mi><mo>+</mo><mo>+</mo><mn>2</mn></mrow><annotation
+    encoding="application/x-tex">x + + 2</annotation></semantics></math>
+- - $$( + 2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    stretchy="false">(</mo><mo>+</mo><mn>2</mn></mrow><annotation
+    encoding="application/x-tex">( + 2</annotation></semantics></math>
+- - $$= + 2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>=</mo><mo>+</mo><mn>2</mn></mrow><annotation
+    encoding="application/x-tex">= + 2</annotation></semantics></math>
+- - $$, + 2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    separator="true">,</mo><mo>+</mo><mn>2</mn></mrow><annotation
+    encoding="application/x-tex">, + 2</annotation></semantics></math>
+- - $$\begin{array}r1\\20\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mtable rowspacing="0.16em" columnalign="right"
+    columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle
+    scriptlevel="0"
+    displaystyle="false"><mn>20</mn></mstyle></mtd></mtr></mtable><annotation
+    encoding="application/x-tex">\begin{array}r1\\20\end{array}</annotation></semantics></math>
+- - $$\begin{array}{|l||c:r::}\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="top bottom"><mtable
+    rowspacing="0.16em" columnalign="left center right" columnlines="solid
+    dashed dashed" columnspacing="1em"></mtable></menclose></mrow><annotation
+    encoding="application/x-tex">\begin{array}{|l||c:r::}\end{array}</annotation></semantics></math>
+- - $$yes$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>y</mi><mi>e</mi><mi>s</mi></mrow><annotation
+    encoding="application/x-tex">yes</annotation></semantics></math>
+- - $$yes!$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>y</mi><mi>e</mi><mi>s</mi><mo
+    stretchy="false">!</mo></mrow><annotation
+    encoding="application/x-tex">yes!</annotation></semantics></math>
+- - $$no?!$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>n</mi><mi>o</mi><mo
+    stretchy="false">?</mo><mo stretchy="false">!</mo></mrow><annotation
+    encoding="application/x-tex">no?!</annotation></semantics></math>
+- - $$yesxyesx$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>y</mi><mi>e</mi><mi>s</mi><mi>x</mi><mi>y</mi><mi>e</mi><mi>s</mi><mi>x</mi></mrow><annotation
+    encoding="application/x-tex">yesxyesx</annotation></semantics></math>
+- - $$math$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>m</mi><mi>a</mi><mi>t</mi><mi>h</mi></mrow><annotation
+    encoding="application/x-tex">math</annotation></semantics></math>
+- - $$x+math$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>x</mi><mo>+</mo><mi>m</mi><mi>a</mi><mi>t</mi><mi>h</mi></mrow><annotation
+    encoding="application/x-tex">x+math</annotation></semantics></math>
+- - $$(1,2)+(3,4)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo
+    separator="true">,</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mo
+    stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mn>4</mn><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">(1,2)+(3,4)</annotation></semantics></math>
+- - $$12+34$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>12</mn><mo>+</mo><mn>34</mn></mrow><annotation
+    encoding="application/x-tex">12+34</annotation></semantics></math>
+- - $$12{34}2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>12342</mn></mrow><annotation
+    encoding="application/x-tex">12{34}2</annotation></semantics></math>
+- - $$1122$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>1122</mn></mrow><annotation
+    encoding="application/x-tex">1122</annotation></semantics></math>
+- - $$\begin{matrix}1&2&1\end{matrix}1$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable rowspacing="0.16em"
+    columnalign="center center center" columnspacing="1em"><mtr><mtd><mstyle
+    scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle
+    scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd><mtd><mstyle
+    scriptlevel="0"
+    displaystyle="false"><mn>1</mn></mstyle></mtd></mtr></mtable><mn>1</mn></mrow><annotation
+    encoding="application/x-tex">\begin{matrix}1&amp;2&amp;1\end{matrix}1</annotation></semantics></math>
+- - $$\begin{matrix}2&1\end{matrix}1$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable rowspacing="0.16em"
+    columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle
+    scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd><mtd><mstyle
+    scriptlevel="0"
+    displaystyle="false"><mn>1</mn></mstyle></mtd></mtr></mtable><mn>1</mn></mrow><annotation
+    encoding="application/x-tex">\begin{matrix}2&amp;1\end{matrix}1</annotation></semantics></math>
+- - $$1$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>1</mn></mrow><annotation
+    encoding="application/x-tex">1</annotation></semantics></math>
+- - $$a=b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a=b</annotation></semantics></math>
+- - $$11$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>11</mn></mrow><annotation
+    encoding="application/x-tex">11</annotation></semantics></math>
+- - $$1{2}1$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mn>121</mn></mrow><annotation
+    encoding="application/x-tex">1{2}1</annotation></semantics></math>
+- - $$hello \\ world$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>h</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>o</mi><mspace
+    linebreak="newline"></mspace><mi>w</mi><mi>o</mi><mi>r</mi><mi>l</mi><mi>d</mi></mrow><annotation
+    encoding="application/x-tex">hello \\ world</annotation></semantics></math>
+- - $$M = \\ a + \\ b \\ c$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>M</mi><mo>=</mo><mspace
+    linebreak="newline"></mspace><mi>a</mi><mo>+</mo><mspace
+    linebreak="newline"></mspace><mi>b</mi><mspace
+    linebreak="newline"></mspace><mi>c</mi></mrow><annotation
+    encoding="application/x-tex">M = \\ a + \\ b \\
+    c</annotation></semantics></math>
+- - $$\begin{matrix} a & b \\ c & d \end{matrix}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{matrix} a &amp; b \\ c &amp; d
+    \end{matrix}</annotation></semantics></math>
+- - $$\begin{pmatrix} a & b \\ c & d \end{pmatrix}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>(</mo><mtable columnspacing="1em"
+    rowspacing="4pt"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo
+    data-mjx-tex>)</mo></mrow></mrow><annotation
+    encoding="application/x-tex">\begin{pmatrix} a &amp; b \\ c &amp; d
+    \end{pmatrix}</annotation></semantics></math>
+- - $$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>[</mo><mtable columnspacing="1em"
+    rowspacing="4pt"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo
+    data-mjx-tex>]</mo></mrow></mrow><annotation
+    encoding="application/x-tex">\begin{bmatrix} a &amp; b \\ c &amp; d
+    \end{bmatrix}</annotation></semantics></math>
+- - $$\begin{Vmatrix} a & b \\ c & d \end{Vmatrix}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>&#x2016;</mo><mtable columnspacing="1em"
+    rowspacing="4pt"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo
+    data-mjx-tex>&#x2016;</mo></mrow></mrow><annotation
+    encoding="application/x-tex">\begin{Vmatrix} a &amp; b \\ c &amp; d
+    \end{Vmatrix}</annotation></semantics></math>
+- - $$\begin{array}{cc} x & y \end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" columnalign="center center" data-frame-styles=""
+    framespacing=".5em
+    .125em"><mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{cc} x &amp; y
+    \end{array}</annotation></semantics></math>
+- - $$\matrix a$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable rowspacing="4pt"
+    columnspacing="1em" data-frame-styles="" framespacing=".2em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\matrix a</annotation></semantics></math>
+- - $$\matrix{a}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable rowspacing="4pt"
+    columnspacing="1em" data-frame-styles="" framespacing=".2em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\matrix{a}</annotation></semantics></math>
+- - $$\array{a&b}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable rowspacing="4pt"
+    columnspacing="1em" data-frame-styles="" framespacing=".2em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\array{a&amp;b}</annotation></semantics></math>
+- - $$\array{a&b\\ c&d}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable rowspacing="4pt"
+    columnspacing="1em" data-frame-styles="" framespacing=".2em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\array{a&amp;b\\
+    c&amp;d}</annotation></semantics></math>
+- - $$\pmatrix{a&b}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>(</mo><mtable rowspacing="4pt" columnspacing="1em"
+    data-frame-styles="" framespacing=".2em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr></mtable><mo
+    data-mjx-tex>)</mo></mrow></mrow><annotation
+    encoding="application/x-tex">\pmatrix{a&amp;b}</annotation></semantics></math>
+- - $$\cases{a}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>{</mo><mtable rowspacing=".2em" columnspacing="1em"
+    columnalign="left left" data-frame-styles="" framespacing=".2em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr></mtable><mo data-mjx-tex
+    fence="true" stretchy="true" symmetric="true"></mo></mrow></mrow><annotation
+    encoding="application/x-tex">\cases{a}</annotation></semantics></math>
+- - $$\cases{a & b}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>{</mo><mtable rowspacing=".2em" columnspacing="1em"
+    columnalign="left left" data-frame-styles="" framespacing=".2em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mstyle><mtext>b</mtext></mstyle></mtd></mtr></mtable><mo
+    data-mjx-tex fence="true" stretchy="true"
+    symmetric="true"></mo></mrow></mrow><annotation
+    encoding="application/x-tex">\cases{a &amp;
+    b}</annotation></semantics></math>
+- - $$\cases{a & b\\ c & d}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>{</mo><mtable rowspacing=".2em" columnspacing="1em"
+    columnalign="left left" data-frame-styles="" framespacing=".2em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mstyle><mtext>b</mtext></mstyle></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mstyle><mtext>d</mtext></mstyle></mtd></mtr></mtable><mo
+    data-mjx-tex fence="true" stretchy="true"
+    symmetric="true"></mo></mrow></mrow><annotation
+    encoding="application/x-tex">\cases{a &amp; b\\ c &amp;
+    d}</annotation></semantics></math>
+- - $$\begin{array}{c}a\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{c}a\end{array}</annotation></semantics></math>
+- - $$\begin{array}{|c|}a\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="left right"
+    data-padding="0"><mtable columnspacing="1em" rowspacing="4pt"
+    data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr></mtable></menclose></mrow><annotation
+    encoding="application/x-tex">\begin{array}{|c|}a\end{array}</annotation></semantics></math>
+- - $$\begin{array}{|c}a\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="left"
+    data-padding="0"><mtable columnspacing="1em" rowspacing="4pt"
+    data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr></mtable></menclose></mrow><annotation
+    encoding="application/x-tex">\begin{array}{|c}a\end{array}</annotation></semantics></math>
+- - $$\begin{array}{c|}a\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="right"
+    data-padding="0"><mtable columnspacing="1em" rowspacing="4pt"
+    data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr></mtable></menclose></mrow><annotation
+    encoding="application/x-tex">\begin{array}{c|}a\end{array}</annotation></semantics></math>
+- - $$\begin{array}{|c:} a\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" data-frame-styles="none dashed none solid"
+    framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{|c:}
+    a\end{array}</annotation></semantics></math>
+- - $$\begin{array}[b]{c}a\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" align="baseline -1" data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}[b]{c}a\end{array}</annotation></semantics></math>
+- - $$\begin{array}[x]{c}a\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" align="x" data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}[x]{c}a\end{array}</annotation></semantics></math>
+- - $$\begin{array}{rcl}a&=&b\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" columnalign="right center left" data-frame-styles=""
+    framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mo>=</mo></mtd><mtd><mi>b</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{rcl}a&amp;=&amp;b\end{array}</annotation></semantics></math>
+- - $$/ a \\$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>/</mo><mi>a</mi><mspace
+    linebreak="newline"></mspace></mrow><annotation
+    encoding="application/x-tex">/ a \\</annotation></semantics></math>
+- - $$a\\*b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mspace
+    linebreak="newline"></mspace><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a\\*b</annotation></semantics></math>
+- - $$a\\[2ex]b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mspace linebreak="newline"
+    data-lineleading="2ex"></mspace><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a\\[2ex]b</annotation></semantics></math>
+- - $$a\\[1,5cm]b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mspace linebreak="newline"
+    data-lineleading="1.5cm"></mspace><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a\\[1,5cm]b</annotation></semantics></math>
+- - $$\array{a\\[1cm] b}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable rowspacing="3.235em 0.4em"
+    columnspacing="1em" data-frame-styles="" framespacing=".2em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\array{a\\[1cm]
+    b}</annotation></semantics></math>
+- - $$\begin{array}{rcl}a & b &c\\ d & e & f\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" columnalign="right center left" data-frame-styles=""
+    framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi></mtd><mtd><mi>e</mi></mtd><mtd><mi>f</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{rcl}a &amp; b &amp;c\\ d &amp; e
+    &amp; f\end{array}</annotation></semantics></math>
+- - $$\begin{array}{r:c:l}a & b &c\\ d & e & f\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" columnalign="right center left" columnlines="dashed dashed"
+    data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi></mtd><mtd><mi>e</mi></mtd><mtd><mi>f</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{r:c:l}a &amp; b &amp;c\\ d &amp;
+    e &amp; f\end{array}</annotation></semantics></math>
+- - $$\begin{array}{rcl}a & b &c\\[2cm] d & e & f\\[2cm] \end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="6.069em 6.069em" columnalign="right center left"
+    data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi></mtd><mtd><mi>e</mi></mtd><mtd><mi>f</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{rcl}a &amp; b &amp;c\\[2cm] d
+    &amp; e &amp; f\\[2cm] \end{array}</annotation></semantics></math>
+- - $$\begin{array}{cc|c} X & Y & Z \end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" columnalign="center center center" columnlines="none solid"
+    data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>X</mi></mtd><mtd><mi>Y</mi></mtd><mtd><mi>Z</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{cc|c} X &amp; Y &amp; Z
+    \end{array}</annotation></semantics></math>
+- - $$\text{x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>x</mtext></mrow><annotation
+    encoding="application/x-tex">\text{x}</annotation></semantics></math>
+- - $$\text{a b}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>a b</mtext></mrow><annotation
+    encoding="application/x-tex">\text{a b}</annotation></semantics></math>
+- - $$\text x$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>x</mtext></mrow><annotation
+    encoding="application/x-tex">\text x</annotation></semantics></math>
+- - $$\text {moo}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>moo</mtext></mrow><annotation
+    encoding="application/x-tex">\text {moo}</annotation></semantics></math>
+- - $$\text{helloworld}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>helloworld</mtext></mrow><annotation
+    encoding="application/x-tex">\text{helloworld}</annotation></semantics></math>
+- - $$\text{hello world}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>hello
+    world</mtext></mrow><annotation encoding="application/x-tex">\text{hello
+    world}</annotation></semantics></math>
+- - $$\text{R}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>R</mtext></mrow><annotation
+    encoding="application/x-tex">\text{R}</annotation></semantics></math>
+- - $$\text{for }$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>for </mtext></mrow><annotation
+    encoding="application/x-tex">\text{for }</annotation></semantics></math>
+- - $$\text{ x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext> x</mtext></mrow><annotation
+    encoding="application/x-tex">\text{ x}</annotation></semantics></math>
+- - $$\text{}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow></mrow><annotation
+    encoding="application/x-tex">\text{}</annotation></semantics></math>
+- - $$\text{\\ }$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mspace
+    linebreak="newline"></mspace><mtext></mtext></mrow><annotation
+    encoding="application/x-tex">\text{\\ }</annotation></semantics></math>
+- - $$\text{ }$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext></mtext></mrow><annotation
+    encoding="application/x-tex">\text{ }</annotation></semantics></math>
+- - $$\text{x y}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>x y</mtext></mrow><annotation
+    encoding="application/x-tex">\text{x y}</annotation></semantics></math>
+- - $$\text{12end}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>12end</mtext></mrow><annotation
+    encoding="application/x-tex">\text{12end}</annotation></semantics></math>
+- - $$\text{( )}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>( )</mtext></mrow><annotation
+    encoding="application/x-tex">\text{( )}</annotation></semantics></math>
+- - $$\text{text}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>text</mtext></mrow><annotation
+    encoding="application/x-tex">\text{text}</annotation></semantics></math>
+- - $$\text{hello text}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>hello text</mtext></mrow><annotation
+    encoding="application/x-tex">\text{hello
+    text}</annotation></semantics></math>
+- - $$\text{text}math$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>text</mtext><mi>m</mi><mi>a</mi><mi>t</mi><mi>h</mi></mrow><annotation
+    encoding="application/x-tex">\text{text}math</annotation></semantics></math>
+- - $$\text t$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>t</mtext></mrow><annotation
+    encoding="application/x-tex">\text t</annotation></semantics></math>
+- - $$hi+\text{hi}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>h</mi><mi>i</mi><mo>+</mo><mtext>hi</mtext></mrow><annotation
+    encoding="application/x-tex">hi+\text{hi}</annotation></semantics></math>
+- - $$\text{ x y }$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext> x y </mtext></mrow><annotation
+    encoding="application/x-tex">\text{ x y }</annotation></semantics></math>
+- - $$a\quad b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mspace
+    width="1em"></mspace><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a\quad b</annotation></semantics></math>
+- - $$A\quad B$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>A</mi><mspace
+    width="1em"></mspace><mi>B</mi></mrow><annotation
+    encoding="application/x-tex">A\quad B</annotation></semantics></math>
+- - $$A\qquad B$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>A</mi><mspace
+    width="2em"></mspace><mi>B</mi></mrow><annotation
+    encoding="application/x-tex">A\qquad B</annotation></semantics></math>
+- - $$\text{abc}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtext>abc</mtext></mrow><annotation
+    encoding="application/x-tex">\text{abc}</annotation></semantics></math>
+- - $$\overline{x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mover accent="true"><mi>x</mi><mo
+    stretchy="true">‾</mo></mover></mrow><annotation
+    encoding="application/x-tex">\overline{x}</annotation></semantics></math>
+- - $$\csc(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>csc</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\csc(x)</annotation></semantics></math>
+- - $$\sec(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sec</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\sec(x)</annotation></semantics></math>
+- - $$\cot(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>cot</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\cot(x)</annotation></semantics></math>
+- - $$\coth(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>coth</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\coth(x)</annotation></semantics></math>
+- - $$\arg$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>arg</mi></mrow><annotation
+    encoding="application/x-tex">\arg</annotation></semantics></math>
+- - $$\cot$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>cot</mi></mrow><annotation
+    encoding="application/x-tex">\cot</annotation></semantics></math>
+- - $$\coth$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>coth</mi></mrow><annotation
+    encoding="application/x-tex">\coth</annotation></semantics></math>
+- - $$\csc$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>csc</mi></mrow><annotation
+    encoding="application/x-tex">\csc</annotation></semantics></math>
+- - $$\deg$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>deg</mi></mrow><annotation
+    encoding="application/x-tex">\deg</annotation></semantics></math>
+- - $$\lg$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>lg</mi></mrow><annotation
+    encoding="application/x-tex">\lg</annotation></semantics></math>
+- - $$\sec$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sec</mi></mrow><annotation
+    encoding="application/x-tex">\sec</annotation></semantics></math>
+- - $$\hbar$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi
+    data-mjx-alternate="1">&#x210F;</mi></mrow><annotation
+    encoding="application/x-tex">\hbar</annotation></semantics></math>
+- - $$\ell$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>&#x2113;</mi></mrow><annotation
+    encoding="application/x-tex">\ell</annotation></semantics></math>
+- - $$\neg$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi
+    mathvariant="normal">&#xAC;</mi></mrow><annotation
+    encoding="application/x-tex">\neg</annotation></semantics></math>
+- - $$\land$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2227;</mo></mrow><annotation
+    encoding="application/x-tex">\land</annotation></semantics></math>
+- - $$\lor$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2228;</mo></mrow><annotation
+    encoding="application/x-tex">\lor</annotation></semantics></math>
+- - $$\mp$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2213;</mo></mrow><annotation
+    encoding="application/x-tex">\mp</annotation></semantics></math>
+- - $$\parallel$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2225;</mo></mrow><annotation
+    encoding="application/x-tex">\parallel</annotation></semantics></math>
+- - $$\ni$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x220B;</mo></mrow><annotation
+    encoding="application/x-tex">\ni</annotation></semantics></math>
+- - $$\perp$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x27C2;</mo></mrow><annotation
+    encoding="application/x-tex">\perp</annotation></semantics></math>
+- - $$\equiv$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2261;</mo></mrow><annotation
+    encoding="application/x-tex">\equiv</annotation></semantics></math>
+- - $$\gets$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    stretchy="false">&#x2190;</mo></mrow><annotation
+    encoding="application/x-tex">\gets</annotation></semantics></math>
+- - $$\begin{matrix}a&b\\c&d\end{matrix}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mtable rowspacing="0.16em" columnalign="center
+    center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mi>b</mi></mstyle></mtd></mtr><mtr><mtd><mstyle
+    scriptlevel="0" displaystyle="false"><mi>c</mi></mstyle></mtd><mtd><mstyle
+    scriptlevel="0"
+    displaystyle="false"><mi>d</mi></mstyle></mtd></mtr></mtable><annotation
+    encoding="application/x-tex">\begin{matrix}a&amp;b\\c&amp;d\end{matrix}</annotation></semantics></math>
+- - $$\begin{array}{cc}a&b\\c&d\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mtable rowspacing="0.16em" columnalign="center
+    center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mi>b</mi></mstyle></mtd></mtr><mtr><mtd><mstyle
+    scriptlevel="0" displaystyle="false"><mi>c</mi></mstyle></mtd><mtd><mstyle
+    scriptlevel="0"
+    displaystyle="false"><mi>d</mi></mstyle></mtd></mtr></mtable><annotation
+    encoding="application/x-tex">\begin{array}{cc}a&amp;b\\c&amp;d\end{array}</annotation></semantics></math>
+- - >-
+    $$f(a,b)=\begin{cases}a+1&\text{if }b\text{ is odd}\\a&\text{if
+    }b=0\\a-1&\text{otherwise}\end{cases}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>f</mi><mo
+    stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo
+    stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable
+    rowspacing="0.36em" columnalign="left left"
+    columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mrow><mi>a</mi><mo>+</mo><mn>1</mn></mrow></mstyle></mtd><mtd><mstyle
+    scriptlevel="0" displaystyle="false"><mrow><mtext>if
+    </mtext><mi>b</mi><mtext> is
+    odd</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel="0"
+    displaystyle="false"><mrow><mtext>if
+    </mtext><mi>b</mi><mo>=</mo><mn>0</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle
+    scriptlevel="0"
+    displaystyle="false"><mrow><mi>a</mi><mo>−</mo><mn>1</mn></mrow></mstyle></mtd><mtd><mstyle
+    scriptlevel="0"
+    displaystyle="false"><mtext>otherwise</mtext></mstyle></mtd></mtr></mtable></mrow></mrow><annotation
+    encoding="application/x-tex">f(a,b)=\begin{cases}a+1&amp;\text{if }b\text{
+    is odd}\\a&amp;\text{if
+    }b=0\\a-1&amp;\text{otherwise}\end{cases}</annotation></semantics></math>
+- - $$\url{}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mstyle
+    mathcolor="#cc0000"><mtext>\url</mtext></mstyle></mrow><annotation
+    encoding="application/x-tex">\url{}</annotation></semantics></math>
+- - $$\\minuso$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mspace
+    linebreak="newline"></mspace><mi>m</mi><mi>i</mi><mi>n</mi><mi>u</mi><mi>s</mi><mi>o</mi></mrow><annotation
+    encoding="application/x-tex">\\minuso</annotation></semantics></math>
+- - $$x\\y$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>x</mi><mspace
+    linebreak="newline"></mspace><mi>y</mi></mrow><annotation
+    encoding="application/x-tex">x\\y</annotation></semantics></math>
+- - $$\begin{array}{c:c}a&c\\b&d\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" columnalign="center center" columnlines="dashed"
+    data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{c:c}a&amp;c\\b&amp;d\end{array}</annotation></semantics></math>
+- - $$\begin{array}{c|c}a&c\\b&d\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" columnalign="center center" columnlines="solid"
+    data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{c|c}a&amp;c\\b&amp;d\end{array}</annotation></semantics></math>
+- - $$\begin{array}{|c:c|}a&c\\b&d\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="left right"
+    data-padding="0"><mtable columnspacing="1em" rowspacing="4pt"
+    columnalign="center center" columnlines="dashed" data-frame-styles=""
+    framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable></menclose></mrow><annotation
+    encoding="application/x-tex">\begin{array}{|c:c|}a&amp;c\\b&amp;d\end{array}</annotation></semantics></math>
+- - $$\begin{array}{|c|c|}a&c\\b&d\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="left right"
+    data-padding="0"><mtable columnspacing="1em" rowspacing="4pt"
+    columnalign="center center" columnlines="solid" data-frame-styles=""
+    framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable></menclose></mrow><annotation
+    encoding="application/x-tex">\begin{array}{|c|c|}a&amp;c\\b&amp;d\end{array}</annotation></semantics></math>
+- - $$\begin{array}{c|cc}a&b&c\\d&e&f\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" columnalign="center center center" columnlines="solid none"
+    data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi></mtd><mtd><mi>e</mi></mtd><mtd><mi>f</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{c|cc}a&amp;b&amp;c\\d&amp;e&amp;f\end{array}</annotation></semantics></math>
+- - >-
+    $$\left( \begin{array}{ccc}a & b & c \\d & e & f \\g & h & i \end{array}
+    \right)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mrow data-mjx-tex><mo
+    data-mjx-tex>(</mo><mtable columnspacing="1em" rowspacing="4pt"
+    columnalign="center center center" data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi></mtd><mtd><mi>e</mi></mtd><mtd><mi>f</mi></mtd></mtr><mtr><mtd><mi>g</mi></mtd><mtd><mi>h</mi></mtd><mtd><mi>i</mi></mtd></mtr></mtable><mo
+    data-mjx-tex>)</mo></mrow></mrow><annotation
+    encoding="application/x-tex">\left( \begin{array}{ccc}a &amp; b &amp; c \\d
+    &amp; e &amp; f \\g &amp; h &amp; i \end{array}
+    \right)</annotation></semantics></math>
+- - $$\begin{array}{c}a\\b\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{c}a\\b\end{array}</annotation></semantics></math>
+- - $$\begin{array}{rcl}a&=&b\\c&=&d\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" columnalign="right center left" data-frame-styles=""
+    framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mo>=</mo></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mo>=</mo></mtd><mtd><mi>d</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{rcl}a&amp;=&amp;b\\c&amp;=&amp;d\end{array}</annotation></semantics></math>
+- - $$a\\b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mspace
+    linebreak="newline"></mspace><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a\\b</annotation></semantics></math>
+- - $$\begin{array}{r|c|l}a & b & c\\d & e & f\end{array}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mtable columnspacing="1em"
+    rowspacing="4pt" columnalign="right center left" columnlines="solid solid"
+    data-frame-styles="" framespacing=".5em
+    .125em"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi></mtd><mtd><mi>e</mi></mtd><mtd><mi>f</mi></mtd></mtr></mtable></mrow><annotation
+    encoding="application/x-tex">\begin{array}{r|c|l}a &amp; b &amp; c\\d &amp;
+    e &amp; f\end{array}</annotation></semantics></math>
+- - $$\phantom{x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mphantom><mi>x</mi></mphantom></mrow><annotation
+    encoding="application/x-tex">\phantom{x}</annotation></semantics></math>
+- - $$\int\limits$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>∫</mo></mrow><annotation
+    encoding="application/x-tex">\int\limits</annotation></semantics></math>
+- - $$\boxed{x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="box"><mstyle
+    scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="true"><mi>x</mi></mstyle></mstyle></mstyle></menclose></mrow><annotation
+    encoding="application/x-tex">\boxed{x}</annotation></semantics></math>
+- - $$\boxed x$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="box"><mstyle
+    scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="true"><mi>x</mi></mstyle></mstyle></mstyle></menclose></mrow><annotation
+    encoding="application/x-tex">\boxed x</annotation></semantics></math>
+- - $$\boxed +$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="box"><mstyle
+    scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0"
+    displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mo
+    lspace="0em"
+    rspace="0em">+</mo></mstyle></mstyle></mstyle></menclose></mrow><annotation
+    encoding="application/x-tex">\boxed +</annotation></semantics></math>
+- - $$\cancel{x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose
+    notation="updiagonalstrike"><mi>x</mi></menclose></mrow><annotation
+    encoding="application/x-tex">\cancel{x}</annotation></semantics></math>
+- - $$\cancel x$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose
+    notation="updiagonalstrike"><mi>x</mi></menclose></mrow><annotation
+    encoding="application/x-tex">\cancel x</annotation></semantics></math>
+- - $$\sout{x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose
+    notation="horizontalstrike"><mi>x</mi></menclose></mrow><annotation
+    encoding="application/x-tex">\sout{x}</annotation></semantics></math>
+- - $$\cancel +$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><menclose notation="updiagonalstrike"><mo
+    lspace="0em" rspace="0em">+</mo></menclose></mrow><annotation
+    encoding="application/x-tex">\cancel +</annotation></semantics></math>
+- - $$\phantom x$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mphantom><mi>x</mi></mphantom></mrow><annotation
+    encoding="application/x-tex">\phantom x</annotation></semantics></math>

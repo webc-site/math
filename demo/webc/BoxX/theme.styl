@@ -1,0 +1,46 @@
+dialog.Box>.aX
+  align-items center
+  backdrop-filter blur(16px)
+  background #ffffffd9
+  border none
+  border-radius 50%
+  bottom -64px
+  box-shadow 0 8px 20px #0000000f, 0 0 0 1px #0000000a
+  cursor pointer
+  display flex
+  height 32px
+  justify-content center
+  left 50%
+  margin-left -16px
+  position absolute
+  transition all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)
+  width 32px
+  z-index 1
+
+  &::before
+    background var(--boxXSvg) center / 18px no-repeat
+    content ''
+    inset 0
+    opacity 0.6
+    pointer-events none
+    position absolute
+    transition all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)
+
+  &:hover
+    backdrop-filter blur(16px)
+    background #fffffff2
+    box-shadow 0 12px 28px #0000001f, 0 0 0 1px #00000014
+    transform scale(1.08)
+
+    &::before
+      opacity 1
+      transform rotate(90deg)
+
+  &:active
+    background #ffffffa6
+    box-shadow 0 2px 4px #0000000f, 0 0 0 1px #0000000a, inset 0 2px 4px #0000000d
+    transform scale(0.92)
+    transition 0.1s
+
+    &::before
+      opacity 0.7

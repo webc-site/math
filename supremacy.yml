@@ -1,0 +1,13 @@
+stylusSupremacy.alwaysUseImport: true
+stylusSupremacy.alwaysUseZeroWithoutUnit: true
+stylusSupremacy.insertBraces: false
+stylusSupremacy.insertColons: false
+stylusSupremacy.insertNewLineAroundBlocks: true
+stylusSupremacy.insertNewLineAroundImports: true
+stylusSupremacy.insertNewLineAroundOthers: true
+stylusSupremacy.insertNewLineAroundProperties: true
+stylusSupremacy.insertSemicolons: false
+stylusSupremacy.preserveNewLinesBetweenPropertyValues: true
+stylusSupremacy.reduceMarginAndPaddingValues: true
+stylusSupremacy.sortProperties: "alphabetical"
+stylusSupremacy.tabStopChar: "  "

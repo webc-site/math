@@ -1,0 +1,11 @@
+node_modules/
+extract/KaTeX/
+extract/MathJax-src/
+demo/index.html
+lib/package.json
+demo/style.css
+demo/dist/
+.cursor/
+.codegraph/
+.DS_Store
+tmp/
