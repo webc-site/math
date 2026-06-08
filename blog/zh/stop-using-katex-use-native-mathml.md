@@ -1,6 +1,10 @@
 # 3.5KB 搞定公式渲染！是时候放弃 KaTeX / MathJax，拥抱原生 MathML 了
 
-<table border="0" cellpadding="0" cellspacing="0" frame="void" rules="none"><tr><td height="60" valign="middle"><a href="https://www.npmjs.com/package/@webc.site/math" target="_blank"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/zh/svg/badge.npm.svg" alt="npm" height="60" /></a></td><td height="60" valign="middle">&nbsp;&nbsp;</td><td height="60" valign="middle"><a href="https://github.com/webc-site/math" target="_blank"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/zh/svg/badge.github.svg" alt="github" height="60" /></a></td><td height="60" valign="middle">&nbsp;&nbsp;</td><td height="60" valign="middle"><a href="https://math.webc.site" target="_blank"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/zh/svg/badge.demo.svg" alt="demo" height="60" /></a></td></tr></table>
+<p>
+<a href="https://www.npmjs.com/package/@webc.site/math" target="_blank" style="margin-right: 16px;"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/zh/svg/badge.npm.svg" alt="npm" height="60"></a>
+<a href="https://github.com/webc-site/math" target="_blank" style="margin-right: 16px;"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/zh/svg/badge.github.svg" alt="github" height="60"></a>
+<a href="https://math.webc.site" target="_blank"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/zh/svg/badge.demo.svg" alt="demo" height="60"></a>
+</p>
 
 在开发技术博客、文档系统或支持 Markdown 的网页应用时，数学公式渲染一直是一块难以卸下的“巨石”。
 

@@ -1,6 +1,10 @@
 # Stop Using KaTeX/MathJax: Render Math in 3.5KB with Native MathML
 
-<table><tr><td><a href="https://www.npmjs.com/package/@webc.site/math" target="_blank"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/en/svg/badge.npm.svg" alt="npm" height="60" /></a></td><td><a href="https://github.com/webc-site/math" target="_blank"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/en/svg/badge.github.svg" alt="github" height="60" /></a></td><td><a href="https://math.webc.site" target="_blank"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/en/svg/badge.demo.svg" alt="demo" height="60" /></a></td></tr></table>
+<p>
+<a href="https://www.npmjs.com/package/@webc.site/math" target="_blank" style="margin-right: 16px;"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/en/svg/badge.npm.svg" alt="npm" height="60"></a>
+<a href="https://github.com/webc-site/math" target="_blank" style="margin-right: 16px;"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/en/svg/badge.github.svg" alt="github" height="60"></a>
+<a href="https://math.webc.site" target="_blank"><img src="https://raw.githubusercontent.com/webc-site/math/dev/readme/en/svg/badge.demo.svg" alt="demo" height="60"></a>
+</p>
 
 For technical blogs, documentation sites, or any web application supporting Markdown, math formula rendering has always been a heavy burden.
 
