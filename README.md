@@ -146,7 +146,18 @@ console.log(String(html));
 
 The compiler extracts TeX formulas from input Markdown text, tokenizes and parses them, and translates the AST to semantic MathML markup.
 
-![](https://fastly.jsdelivr.net/gh/webc-fs/-@KO/IZZ_fnFFaApQiIQ86yMw.svg)
+```mermaid
+graph TD
+    Input[Input Markdown] --> Scanner[Scanner: Locates Delimiters]
+    Scanner -->|Plain Text| Buffer[Output Buffer]
+    Scanner -->|TeX Formula| Lexer[Lexer: Tokenizes Input]
+    Lexer --> Parser[Parser: Builds AST]
+    Parser --> Codegen[Codegen: Translates to MathML Tags]
+    Codegen --> Wrapper[Semantic Wrapper]
+    Wrapper --> MathML[MathML Output]
+    Buffer --> Output[Final HTML]
+    MathML --> Output
+```
 
 ## 5. Tech Stack
 
@@ -327,7 +338,18 @@ console.log(String(html));
 
 编译器从输入的 Markdown 文本中提取 TeX 公式，依次通过扫描、词法分析、语法分析，最终生成对应的语义化 MathML 标记。
 
-![](https://fastly.jsdelivr.net/gh/webc-fs/-@GG/MT3SwQ2cp0w8_G8cxZsQ.svg)
+```mermaid
+graph TD
+    Input[输入 Markdown] --> Scanner[扫描器: 定界符定位]
+    Scanner -->|普通文本| Buffer[输出缓冲区]
+    Scanner -->|TeX 公式| Lexer[词法分析: 生成 Token]
+    Lexer --> Parser[语法分析: 生成 AST]
+    Parser --> Codegen[代码生成: 映射 MathML 标签]
+    Codegen --> Wrapper[语义包装]
+    Wrapper --> MathML[MathML 输出]
+    Buffer --> Output[最终 HTML]
+    MathML --> Output
+```
 
 ## 5. 技术栈
 

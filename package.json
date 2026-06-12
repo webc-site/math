@@ -1,6 +1,6 @@
 {
   "name": "@webc.site/math",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "description": "The world's smallest and fastest web Markdown formula renderer / 全球最小最快的网页Markdown公式渲染器",
   "keywords": [
     "markdown",
