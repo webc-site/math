@@ -6,19 +6,6 @@
 
 # @webc.site/math : The world's smallest and fastest web Markdown formula renderer
 
-- [@webc.site/math : The world's smallest and fastest web Markdown formula renderer](#webcsitemath-the-worlds-smallest-and-fastest-web-markdown-formula-renderer)
-  - [1. Features](#1-features)
-  - [2. Usage](#2-usage)
-    - [Compilation Examples](#compilation-examples)
-      - [Render TeX Formulas Directly](#render-tex-formulas-directly)
-      - [Replace Formulas in Markdown Text](#replace-formulas-in-markdown-text)
-    - [Font and CSS Configuration](#font-and-css-configuration)
-      - [CSS Font Styling](#css-font-styling)
-  - [3. Design](#3-design)
-  - [4. Tech Stack](#4-tech-stack)
-  - [5. Code Structure](#5-code-structure)
-  - [6. Historical Background](#6-historical-background)
-
 ## 1. Features
 
 This project compiles LaTeX math formulas into browser-native MathML Core markup. Through compile-time conversion, it bypasses client-side layout engines to achieve zero-overhead formula rendering.
@@ -65,7 +52,80 @@ math {
 }
 ```
 
-## 3. Design
+## 3. Plugins
+
+This project provides extension plugins for mainstream Markdown parsers to render TeX formulas directly to MathML markup during compilation/building.
+
+### 3.1 markdown-it
+
+Installation:
+
+```bash
+npm install @webc.site/math-markdown-it
+```
+
+Usage:
+
+```javascript
+import markdownit from "markdown-it";
+import mathMarkdownIt from "@webc.site/math-markdown-it";
+
+const md = markdownit().use(mathMarkdownIt);
+
+const html = md.render("Inline math: $E = mc^2$ and block math: \n$$\n\\frac{a}{b}\n$$");
+console.log(html);
+```
+
+### 3.2 marked
+
+Installation:
+
+```bash
+npm install @webc.site/math-marked
+```
+
+Usage:
+
+```javascript
+import { marked } from "marked";
+import mathMarked from "@webc.site/math-marked";
+
+marked.use(mathMarked());
+
+const html = marked.parse("Inline math: $E = mc^2$ and block math: \n$$\n\\frac{a}{b}\n$$");
+console.log(html);
+```
+
+### 3.3 remark
+
+Installation:
+
+```bash
+npm install @webc.site/math-remark
+```
+
+Usage:
+
+```javascript
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkMath from "remark-math";
+import mathRemark from "@webc.site/math-remark";
+import remarkHtml from "remark-html";
+
+const processor = unified()
+  .use(remarkParse)
+  .use(remarkMath)
+  .use(mathRemark)
+  .use(remarkHtml, { sanitize: false });
+
+const html = await processor.process(
+  "Inline math: $E = mc^2$ and block math: \n$$\n\\frac{a}{b}\n$$",
+);
+console.log(String(html));
+```
+
+## 4. Design
 
 The compiler extracts TeX formulas from input Markdown text, tokenizes and parses them, and translates the AST to semantic MathML markup.
 
@@ -82,13 +142,13 @@ graph TD
     MathML --> Output
 ```
 
-## 4. Tech Stack
+## 5. Tech Stack
 
 - **Build & Test Environment**: Bun, Node.js
 - **Linter & Formatter**: oxlint, oxfmt
 - **Build Tool**: Vite, Rolldown, Lightning CSS
 
-## 5. Code Structure
+## 6. Code Structure
 
 ```
 .
@@ -107,7 +167,7 @@ graph TD
 └── test.sh              # Quality verification and test runner
 ```
 
-## 6. Historical Background
+## 7. Historical Background
 
 The W3C published the MathML 1.0 specification in 1998 to standardize mathematical notation on the web. However, the complexity of the specification placed a maintenance burden on browser layout engines.
 
@@ -122,19 +182,6 @@ In January 2023, Chrome 109 reintroduced support for the MathML Core specificati
 <a id="zh"></a>
 
 # @webc.site/math : 全球最小最快的网页 Markdown 公式渲染器
-
-- [@webc.site/math : 全球最小最快的网页 Markdown 公式渲染器](#webcsitemath-全球最小最快的网页-markdown-公式渲染器)
-  - [1. 功能介绍](#1-功能介绍)
-  - [2. 使用演示](#2-使用演示)
-    - [编译示例](#编译示例)
-      - [直接渲染 TeX 公式](#直接渲染-tex-公式)
-      - [替换 Markdown 文本中的公式](#替换-markdown-文本中的公式)
-    - [字体与 CSS 配置](#字体与-css-配置)
-      - [CSS 样式配置](#css-样式配置)
-  - [3. 设计思路](#3-设计思路)
-  - [4. 技术栈](#4-技术栈)
-  - [5. 代码结构](#5-代码结构)
-  - [6. 历史故事](#6-历史故事)
 
 ## 1. 功能介绍
 
@@ -182,7 +229,78 @@ math {
 }
 ```
 
-## 3. 设计思路
+## 3. 插件使用
+
+本项目为主流 Markdown 解析器提供了扩展插件，在编译/构建时直接将 TeX 公式渲染为 MathML 标签。
+
+### 3.1 markdown-it
+
+安装：
+
+```bash
+npm install @webc.site/math-markdown-it
+```
+
+使用示例：
+
+```javascript
+import markdownit from "markdown-it";
+import mathMarkdownIt from "@webc.site/math-markdown-it";
+
+const md = markdownit().use(mathMarkdownIt);
+
+const html = md.render("行内公式: $E = mc^2$ 和 块级公式: \n$$\n\\frac{a}{b}\n$$");
+console.log(html);
+```
+
+### 3.2 marked
+
+安装：
+
+```bash
+npm install @webc.site/math-marked
+```
+
+使用示例：
+
+```javascript
+import { marked } from "marked";
+import mathMarked from "@webc.site/math-marked";
+
+marked.use(mathMarked());
+
+const html = marked.parse("行内公式: $E = mc^2$ 和 块级公式: \n$$\n\\frac{a}{b}\n$$");
+console.log(html);
+```
+
+### 3.3 remark
+
+安装：
+
+```bash
+npm install @webc.site/math-remark
+```
+
+使用示例：
+
+```javascript
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkMath from "remark-math";
+import mathRemark from "@webc.site/math-remark";
+import remarkHtml from "remark-html";
+
+const processor = unified()
+  .use(remarkParse)
+  .use(remarkMath)
+  .use(mathRemark)
+  .use(remarkHtml, { sanitize: false });
+
+const html = await processor.process("行内公式: $E = mc^2$ 和 块级公式: \n$$\n\\frac{a}{b}\n$$");
+console.log(String(html));
+```
+
+## 4. 设计思路
 
 编译器从输入的 Markdown 文本中提取 TeX 公式，依次通过扫描、词法分析、语法分析，最终生成对应的语义化 MathML 标记。
 
@@ -199,13 +317,13 @@ graph TD
     MathML --> Output
 ```
 
-## 4. 技术栈
+## 5. 技术栈
 
 - **运行环境**：Bun, Node.js
 - **语法检查与格式化**：oxlint, oxfmt
 - **构建工具**：Vite, Rolldown, Lightning CSS
 
-## 5. 代码结构
+## 6. 代码结构
 
 ```
 .
@@ -224,7 +342,7 @@ graph TD
 └── test.sh              # 代码规范与测试运行脚本
 ```
 
-## 6. 历史故事
+## 7. 历史故事
 
 1998 年，W3C 发布 MathML 1.0 规范，旨在提供万维网数学公式的标准排版方案。由于早期规范复杂，给浏览器排版引擎带来维护负担。
 
