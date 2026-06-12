@@ -34,9 +34,10 @@
   "scripts": {
     "prepare": "husky"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@1-/dist": "^0.1.18"
+  },
   "devDependencies": {
-    "@1-/dist": "file:../npm/dist",
     "@1-/findgit": "^0.1.2",
     "@1-/mdcheck": "^0.1.9",
     "@3-/log": "^0.1.9",
