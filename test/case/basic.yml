@@ -1270,3 +1270,8 @@
     <math xmlns="http://www.w3.org/1998/Math/MathML"
     display="block"><semantics><mrow><mphantom><mi>x</mi></mphantom></mrow><annotation
     encoding="application/x-tex">\phantom x</annotation></semantics></math>
+- - $$f^\prime$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup></mrow><annotation
+    encoding="application/x-tex">f^\prime</annotation></semantics></math>

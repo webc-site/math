@@ -3,6 +3,7 @@
 import { $ } from "@3-/zx";
 import read from "@3-/read";
 import write from "@3-/write";
+import ERR from "@3-/log/ERR.js";
 import { optimize } from "svgo";
 
 const minifySvgContent = (content) => {
@@ -12,7 +13,7 @@ const minifySvgContent = (content) => {
       plugins: ["preset-default", "removeViewBox"],
     }).data;
   } catch (e) {
-    console.error(e);
+    ERR(e);
     return content;
   }
 };
@@ -60,7 +61,7 @@ const args = process.argv.slice(2),
       try {
         await $(["git add -u"]);
       } catch (e) {
-        console.error("git add failed:", e);
+        ERR("git add failed:", e);
       }
     }
   };

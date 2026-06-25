@@ -16,6 +16,7 @@ export const SYM_MAP = {
   theta: [TYPE_IDENT, "θ"],
   pi: [TYPE_IDENT, "π"],
   infty: [TYPE_IDENT, "∞", ATTR_NORMAL],
+  prime: [TYPE_OP, "′"],
   le: LE,
   leq: LE,
   ge: GE,

@@ -2,6 +2,8 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import yaml from "js-yaml";
+import ERR from "@3-/log/ERR.js";
+import WARN from "@3-/log/WARN.js";
 import FORMULAS from "../../demo/const/formulas.js";
 import convert from "../../lib/mathml.js";
 import { ROOT, pkg, getOursSize, runOursSpeed, newTable } from "./util.js";
@@ -26,7 +28,7 @@ export const run = async (options = {}) => {
     try {
       history = yaml.load(readFileSync(HISTORY_PATH, "utf8")) || [];
     } catch (e) {
-      console.warn("⚠️ 解析 history.yml 失败，正在重置历史数据。", e.message);
+      WARN("⚠️ 解析 history.yml 失败，正在重置历史数据。", e.message);
     }
   }
 
@@ -91,17 +93,15 @@ export const run = async (options = {}) => {
 
   let failed = false;
   if (gz_diff > 0) {
-    console.error("\n❌ 回归警告：Gzip 体积增加了 " + gz_diff + " 字节！");
+    ERR("\n❌ 回归警告：Gzip 体积增加了 " + gz_diff + " 字节！");
     failed = true;
   }
   if (speed_diff < 0 && Math.abs(speed_diff / baseline.speed) > 0.15) {
-    console.warn(
-      "\n⚠️ 警告：生成速度下降了 " + Math.abs(speed_percent) + "%（可能存在性能回归）。",
-    );
+    WARN("\n⚠️ 警告：生成速度下降了 " + Math.abs(speed_percent) + "%（可能存在性能回归）。");
   }
 
   if (failed) {
-    console.error("\n若要使用当前数据更新基准，请运行: bun sh/bench/self.js --update\n");
+    ERR("\n若要使用当前数据更新基准，请运行: bun sh/bench/self.js --update\n");
     process.exit(1);
   }
 };

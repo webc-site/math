@@ -149,7 +149,7 @@ const I18N_DIR = join(ROOT, "demo", "i18n"),
 
     if (missing_files.length === 0 && invalid_files.length === 0) {
       if (warn_files.length > 0) {
-        console.warn("⚠️  " + warn_files.length + " 个语言文件与英文内容相同超过 5%");
+        WARN("⚠️  " + warn_files.length + " 个语言文件与英文内容相同超过 5%");
       } else {
         console.log("✅ 所有 " + LANG_CODES.length + " 个语言文件完整且长度正确。");
       }
