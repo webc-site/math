@@ -8,8 +8,6 @@ import {
   TOK_SUP,
   TOK_LBRACE,
   TOK_RBRACE,
-  TOK_LPAREN,
-  TOK_RPAREN,
 } from "./const/TOK.js";
 
 const CHAR_TOK = {
@@ -17,8 +15,6 @@ const CHAR_TOK = {
     "^": TOK_SUP,
     "{": TOK_LBRACE,
     "}": TOK_RBRACE,
-    "(": TOK_LPAREN,
-    ")": TOK_RPAREN,
   },
   isAlpha = (c) => ((c | 32) - 97) >>> 0 < 26,
   skip = (str, idx) => (str.charCodeAt(idx) <= 32 ? skip(str, idx + 1) : idx),

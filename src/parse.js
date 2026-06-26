@@ -31,8 +31,6 @@ import {
   TOK_SUP,
   TOK_LBRACE,
   TOK_RBRACE,
-  TOK_LPAREN,
-  TOK_RPAREN,
 } from "./const/TOK.js";
 const LIMITS_MAP = {
     "\\limits": 1,
@@ -238,8 +236,6 @@ const LIMITS_MAP = {
   TOK_MAP = {
     [TOK_IDENT]: (val) => [TYPE_IDENT, val],
     [TOK_OP]: (val) => CHAR_MAP[val] ?? [TYPE_OP, val],
-    [TOK_LPAREN]: () => CHAR_MAP["("],
-    [TOK_RPAREN]: () => CHAR_MAP[")"],
     [TOK_NUM]: (val) => [TYPE_NUM, val],
     [TOK_LBRACE]: (val, tokens, ref) => {
       const res = [TYPE_GROUP, parse(tokens, ref)];

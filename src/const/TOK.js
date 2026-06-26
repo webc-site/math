@@ -6,6 +6,4 @@ export const TOK_EOF = 0,
   TOK_SUB = 5,
   TOK_SUP = 6,
   TOK_LBRACE = 7,
-  TOK_RBRACE = 8,
-  TOK_LPAREN = 9,
-  TOK_RPAREN = 10;
+  TOK_RBRACE = 8;
