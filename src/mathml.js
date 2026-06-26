@@ -29,13 +29,10 @@ const MROW = "mrow",
   ALIGN_RL = ["right", LEFT],
   PAD_RL = [";padding-right:0", ";padding-left:0"],
   TAGS = [null, "mi", "mn", "mo"],
-  ESC_MAP = {
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-  },
-  esc = (str) => str.replace(/[&<>"]/g, (m) => ESC_MAP[m]),
+  esc = (str) =>
+    str.replace(/[&<>"]/g, (m) =>
+      m === "&" ? "&amp;" : m === "<" ? "&lt;" : m === ">" ? "&gt;" : "&quot;",
+    ),
   wrap = (tag_name, inner, attr) =>
     "<" + tag_name + (attr || "") + ">" + inner + "</" + tag_name + ">",
   tag = (name, val, attr) => wrap(name, esc(val), attr),
