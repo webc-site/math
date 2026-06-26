@@ -5,18 +5,11 @@ import {
   TOK_OP,
   TOK_CMD,
   TOK_SUB,
-  TOK_SUP,
   TOK_LBRACE,
   TOK_RBRACE,
 } from "./const/TOK.js";
 
-const CHAR_TOK = {
-    _: TOK_SUB,
-    "^": TOK_SUP,
-    "{": TOK_LBRACE,
-    "}": TOK_RBRACE,
-  },
-  skip = (str, idx) => (str.charCodeAt(idx) <= 32 ? skip(str, idx + 1) : idx),
+const skip = (str, idx) => (str.charCodeAt(idx) <= 32 ? skip(str, idx + 1) : idx),
   NUM_RE = /\d+(?:\.\d+)?|\.\d+/y,
   CMD_RE = /\\(?:[a-zA-Z]+|.)/y;
 
@@ -78,8 +71,9 @@ export default (str) => {
       ++idx;
       continue;
     }
-    const char = str[idx];
-    res.push(CHAR_TOK[char] ?? TOK_OP, char);
+    const char = str[idx],
+      pos = "_^{}".indexOf(char);
+    res.push(pos >= 0 ? pos + TOK_SUB : TOK_OP, char);
     ++idx;
   }
   res.push(TOK_EOF, "");
