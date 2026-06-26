@@ -139,7 +139,7 @@ const LIMITS_MAP = {
     if (tokens[ref[0]] === TOK_LBRACE) {
       ref[0] += 2;
       const res = rows(tokens, ref, 0, name);
-      if (tokens[ref[0]] === TOK_RBRACE) ref[0] += 2;
+      tokens[ref[0]] > 0 && (ref[0] += 2);
       return [TYPE_MATRIX, name, res];
     }
     const node = read(tokens, ref, 1);
@@ -245,7 +245,7 @@ const LIMITS_MAP = {
     [TOK_NUM]: (val) => [TYPE_NUM, val],
     [TOK_LBRACE]: (val, tokens, ref) => {
       const res = [TYPE_GROUP, parse(tokens, ref)];
-      tokens[ref[0]] === TOK_RBRACE && (ref[0] += 2);
+      tokens[ref[0]] > 0 && (ref[0] += 2);
       return res;
     },
     [TOK_CMD]: (val, tokens, ref) => {
