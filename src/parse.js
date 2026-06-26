@@ -92,7 +92,7 @@ const LIMITS_MAP = {
         str += tokens[idx + 1];
         idx += 2;
       }
-      tokens[idx] === TOK_RBRACE && (idx += 2);
+      tokens[idx] > 0 && (idx += 2);
       ref[0] = idx;
       return str;
     }
