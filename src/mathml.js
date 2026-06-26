@@ -43,8 +43,13 @@ const MROW = "mrow",
     ' columnalign="' + align + '" rowspacing=".2em" columnspacing="' + space + '"',
   cellStyle = (align, pad) => ' style="text-align:' + align + pad + '"',
   nest = (name, ...ns) => wrap(name, ns.map(row).join("")),
-  scr = (n, idx, display, inline) =>
-    nest(script(n[1], n[idx], display, inline), ...n.slice(1, idx)),
+  scr = (n, idx, display, inline, [, v] = n[1], limits = n[idx]) =>
+    nest(
+      limits === 1 || (!limits && (v === "∑" || /^(lim|max|min|sup|inf)$/.test(v)))
+        ? display
+        : inline,
+      ...n.slice(1, idx),
+    ),
   row = (n) => {
     if (!n) return wrap(MROW, "");
     const [type, val] = n;
@@ -54,10 +59,6 @@ const MROW = "mrow",
         ? wrap(MROW, show(n))
         : show(n);
   },
-  script = ([, v], limits, display, inline) =>
-    limits === 1 || (!limits && (v === "∑" || /^(lim|max|min|sup|inf)$/.test(v)))
-      ? display
-      : inline,
   SHOW_MAP = {
     [TYPE_FUNC]: ([, val]) => tag("mi", val) + wrap("mo", "\u2061"),
     [TYPE_GROUP]: ([, ns]) => ns.map(show).join(""),
