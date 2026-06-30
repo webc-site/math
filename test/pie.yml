@@ -1,0 +1,197 @@
+- - |-
+    pie title Quotes
+      "He said \"Hi\"" : 10
+      "She said 'ok'" : 5
+  - from: maid
+    valid: true
+- - |-
+    ---
+    config:
+      pie:
+        textPosition: 0.58
+      themeVariables:
+        pieOuterStrokeWidth: "3px"
+        pieSectionTextColor: "#333333"
+        pieTitleTextColor: "#111111"
+        pieSectionTextSize: "13px"
+        pieTitleTextSize: "18px"
+        pie1: "#00AAFF"
+        pie2: "#FFAA00"
+    ---
+    pie showData
+      title Themed Pets
+      "Dogs" : 30
+      "Cats" : 15
+      "Rats" : 5
+  - from: maid
+    valid: true
+- - |-
+    pie title Pets adopted by volunteers
+      "Dogs" : 386
+      "Cats" : 85
+      "Rats" : 15
+  - from: maid
+    valid: true
+- - |-
+    pie
+      title "Sales Q1"
+      "Apples" : 10
+      'Bananas' : 15
+      "Cherries" : 7
+      "He said 'Hi'" : 3
+      'She said "Yo"' : 4
+  - from: maid
+    valid: true
+- - |-
+    pie showData
+      title Key elements in Product X
+      "Calcium" : 42.96
+      "Potassium" : 50.05
+      "Magnesium" : 10.01
+      "Iron" : 5
+  - from: maid
+    valid: true
+- - |-
+    pie
+      title "Pets"
+      "Dogs" : 10
+      "Cats" : 5
+  - from: maid
+    valid: true
+- - |-
+    pie
+      :
+  - from: maid
+    valid: false
+    errors:
+      - PI-LABEL-REQUIRES-QUOTES
+- - |-
+    pie
+      "He said "Hi"" : 1
+  - from: maid
+    valid: false
+    errors:
+      - PI-LABEL-DOUBLE-IN-DOUBLE
+      - PI-MISSING-COLON
+- - |-
+    piee
+      "Dogs" : 10
+  - from: maid
+    valid: false
+    errors:
+      - GEN-HEADER-INVALID
+- - |-
+    pie
+      title "Pets"
+      "Dogs" 10
+  - from: maid
+    valid: false
+    errors:
+      - PI-MISSING-COLON
+- - |-
+    pie
+      : 10
+  - from: maid
+    valid: false
+    errors:
+      - PI-LABEL-REQUIRES-QUOTES
+- - |-
+    pie
+      "Dogs" :
+      "Cats" :
+  - from: maid
+    valid: false
+    errors:
+      - PI-MISSING-NUMBER
+- - |-
+    pie
+      "Dogs : 10
+  - from: maid
+    valid: false
+    errors:
+      - PI-QUOTE-UNCLOSED
+      - PI-QUOTE-UNCLOSED
+- - |-
+    pie
+       accTitle: My Pie Chart Accessibility Title
+       accDescr: My Pie Chart Accessibility Description
+
+     title Key elements in Product X
+     "Calcium" : 42.96
+     "Potassium" : 50.05
+     "Magnesium" : 10.01
+     "Iron" :  5
+  - from: mermaid
+    valid: true
+- - |-
+    pie title NETFLIX
+             "Time spent looking for movie" : 90
+             "Time spent watching it" : 10
+  - from: mermaid
+    valid: true
+- - |-
+    pie title What Voldemort doesn't have?
+             "FRIENDS" : 2
+             "FAMILY" : 3
+             "NOSE" : 45
+  - from: mermaid
+    valid: true
+- - |-
+    pie title Pets adopted by volunteers
+        "Dogs" : 386
+        "Cats" : 85
+        "Rats" : 15
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      pie:
+        textPosition: 0.5
+        donutHole: 0.2
+        highlightSlice: Potassium
+      themeVariables:
+        pieOuterStrokeWidth: "5px"
+    ---
+    pie showData
+        title Key elements in Product X
+        "Calcium" : 42.96
+        "Potassium" : 50.05
+        "Magnesium" : 10.01
+        "Iron" :  5
+  - from: mermaid
+    valid: true
+- - |-
+    pie title Default text position: Animal adoption
+      accTitle: simple pie char demo
+      accDescr: pie chart with 3 sections: dogs, cats, rats. Most are dogs.
+      "Dogs": 386
+      "Cats": 85
+      "Rats": 15
+  - from: mermaid
+    valid: true
+- - |-
+    %%{init: {"pie": {"textPosition": 0.9}, "themeVariables": {"pieOuterStrokeWidth": "5px"}}}%%
+    pie
+      title Offset labels close to border: Product X
+      accTitle: Key elements in Product X
+      accDescr: This is a pie chart showing the key elements in Product X.
+      "Calcium": 42.96
+      "Potassium": 50.05
+      "Magnesium": 10.01
+      "Iron": 5
+  - from: mermaid
+    valid: true
+- - |-
+    %%{init: {"pie": {"textPosition": 0.45}, "themeVariables": {"pieOuterStrokeWidth": "5px"}}}%%
+    pie
+      title Centralized labels: Languages
+      accTitle: Key elements in Product X
+      accDescr: This is a pie chart showing the key elements in Product X.
+      "JavaScript": 30
+      "Python": 25
+      "Java": 20
+      "C#": 15
+      "Others": 10
+  - from: mermaid
+    valid: true

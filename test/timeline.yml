@@ -1,0 +1,238 @@
+- - |-
+    timeline
+        title History of Social Media Platform
+        2002 : LinkedIn
+        2004 : Facebook
+             : Google
+        2005 : YouTube
+        2006 : Twitter
+  - from: mermaid
+    valid: true
+- - |-
+    timeline
+        title History of Social Media Platform
+        2002 : LinkedIn
+        2004 : Facebook : Google
+        2005 : YouTube
+        2006 : Twitter
+  - from: mermaid
+    valid: true
+- - |-
+    timeline
+        title Timeline of Industrial Revolution
+        section 17th-20th century
+            Industry 1.0 : Machinery, Water power, Steam <br>power
+            Industry 2.0 : Electricity, Internal combustion engine, Mass production
+            Industry 3.0 : Electronics, Computers, Automation
+        section 21st century
+            Industry 4.0 : Internet, Robotics, Internet of Things
+            Industry 5.0 : Artificial intelligence, Big data, 3D printing
+  - from: mermaid
+    valid: true
+- - |-
+    timeline
+            title England's History Timeline
+            section Stone Age
+              7600 BC : Britain's oldest known house was built in Orkney, Scotland
+              6000 BC : Sea levels rise and Britain becomes an island.<br> The people who live here are hunter-gatherers.
+            section Bronze Age
+              2300 BC : People arrive from Europe and settle in Britain. <br>They bring farming and metalworking.
+                      : New styles of pottery and ways of burying the dead appear.
+              2200 BC : The last major building works are completed at Stonehenge.<br> People now bury their dead in stone circles.
+                      : The first metal objects are made in Britain.Some other nice things happen. it is a good time to be alive.
+  - from: mermaid
+    valid: true
+- - |-
+    timeline
+            title MermaidChart 2023 Timeline
+            section 2023 Q1 <br> Release Personal Tier
+              Bullet 1 : sub-point 1a : sub-point 1b
+                   : sub-point 1c
+              Bullet 2 : sub-point 2a : sub-point 2b
+            section 2023 Q2 <br> Release XYZ Tier
+              Bullet 3 : sub-point <br> 3a : sub-point 3b
+                   : sub-point 3c
+              Bullet 4 : sub-point 4a : sub-point 4b
+  - from: mermaid
+    valid: true
+- - |-
+    timeline TD
+      title MermaidChart 2023 Timeline
+        section 2023 Q1 <br> Release Personal Tier
+          Bullet 1 : sub-point 1a : sub-point 1b
+          Bullet 2 : sub-point 2a : sub-point 2b
+        section 2023 Q2 <br> Release XYZ Tier
+          Bullet 3 : sub-point <br> 3a : sub-point 3b
+          Bullet 4 : sub-point 4a : sub-point 4b
+  - from: mermaid
+    valid: true
+- - |-
+    timeline
+        title History of Social Media Platform
+          2002 : LinkedIn
+          2004 : Facebook : Google
+          2005 : YouTube
+          2006 : Twitter
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'base'
+      timeline:
+        disableMulticolor: true
+    ---
+        timeline
+            title History of Social Media Platform
+              2002 : LinkedIn
+              2004 : Facebook : Google
+              2005 : YouTube
+              2006 : Twitter
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+      themeVariables:
+        cScale0: '#ff0000'
+        cScaleLabel0: '#ffffff'
+        cScale1: '#00ff00'
+        cScale2: '#0000ff'
+        cScaleLabel2: '#ffffff'
+    ---
+           timeline
+            title History of Social Media Platform
+              2002 : LinkedIn
+              2004 : Facebook : Google
+              2005 : YouTube
+              2006 : Twitter
+              2007 : Tumblr
+              2008 : Instagram
+              2010 : Pinterest
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'base'
+    ---
+        timeline
+            title History of Social Media Platform
+              2002 : LinkedIn
+              2004 : Facebook : Google
+              2005 : YouTube
+              2006 : Twitter
+              2007 : Tumblr
+              2008 : Instagram
+              2010 : Pinterest
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'forest'
+    ---
+        timeline
+            title History of Social Media Platform
+              2002 : LinkedIn
+              2004 : Facebook : Google
+              2005 : YouTube
+              2006 : Twitter
+              2007 : Tumblr
+              2008 : Instagram
+              2010 : Pinterest
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'dark'
+    ---
+        timeline
+            title History of Social Media Platform
+              2002 : LinkedIn
+              2004 : Facebook : Google
+              2005 : YouTube
+              2006 : Twitter
+              2007 : Tumblr
+              2008 : Instagram
+              2010 : Pinterest
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+    ---
+        timeline
+            title History of Social Media Platform
+              2002 : LinkedIn
+              2004 : Facebook : Google
+              2005 : YouTube
+              2006 : Twitter
+              2007 : Tumblr
+              2008 : Instagram
+              2010 : Pinterest
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'neutral'
+    ---
+        timeline
+            title History of Social Media Platform
+              2002 : LinkedIn
+              2004 : Facebook : Google
+              2005 : YouTube
+              2006 : Twitter
+              2007 : Tumblr
+              2008 : Instagram
+              2010 : Pinterest
+  - from: mermaid
+    valid: true
+- - |-
+    timeline
+    title My day
+    section Go to work
+      1930 : first step : second step
+           : third step
+      1940 : fourth step : fifth step
+  - from: mermaid
+    valid: true
+- - |-
+    timeline TD
+    title My day
+    section Wake up
+      0600 : step
+           : step
+    section Go to work
+      0800 : first step : second step
+           : third step very very very very very loooooong
+      1940 : fourth step : fifth step
+  - from: mermaid
+    valid: true
+- - |-
+    timeline
+    title Medical Device Lifecycle
+    section Planning
+      Quality Management System (4) : Regulatory Compliance (4.1) : Risk Management (4.1.3) : Management Review (5.6) : Infrastructure (6.3)
+      Management Responsibility (5) : Planning Activities (5.2) : Human Resources (6.2) : RnD Planning (7.3.2) : Purchasing Process (7.4.1) : Production Activities (7.5.1) : Installation Activities (7.5.3) : Servicing Activities (7.5.4)
+    section Realization
+      Research and Development (7.3) : Inputs (7.3.3) : Outputs (7.3.4) : Review (7.3.5) : Verification (7.3.6) : Validation (7.3.7)
+      Purchasing (7.4) : Purchasing Information (7.4.2) : Production Feedback (8.2.1)
+      Production (7.5) : Production Feedback (8.2.1)
+      Installation (7.5.3) : Installation Activities (7.5.3)
+      Servicing (7.5.4) : Servicing Activities (7.5.4)
+    section Post-Production
+      Post-Market Activities (8) : Feedback (8.2.1) : Complaints (8.2.2) : Adverse Events (8.2.3)
+  - from: mermaid
+    valid: true

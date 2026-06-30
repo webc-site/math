@@ -1,0 +1,192 @@
+- - |-
+    zenuml
+        title Demo
+        Alice->John: Hello John, how are you?
+        John->Alice: Great!
+        Alice->John: See you later!
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        title Declare participant (optional)
+        Bob
+        Alice
+        Alice->Bob: Hi Bob
+        Bob->Alice: Hi Alice
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        title Annotators
+        @Actor Alice
+        @Database Bob
+        Alice->Bob: Hi Bob
+        Bob->Alice: Hi Alice
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        title Aliases
+        A as Alice
+        J as John
+        A->J: Hello John, how are you?
+        J->A: Great!
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        title Sync message
+        A.SyncMessage
+        A.SyncMessage(with, parameters) {
+          B.nestedSyncMessage()
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        title Async message
+        Alice->Bob: How are you?
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        new A1
+        new A2(with, parameters)
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        // 1. assign a variable from a sync message.
+        a = A.SyncMessage()
+
+        // 1.1. optionally give the variable a type
+        SomeType a = A.SyncMessage()
+
+        // 2. use return keyword
+        A.SyncMessage() {
+        return result
+        }
+
+        // 3. use @return or @reply annotator on an async message
+        @return
+        A->B: result
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        title Reply message
+        Client->A.method() {
+          B.method() {
+            if(condition) {
+              return x1
+              // return early
+              @return
+              A->Client: x11
+            }
+          }
+          return x2
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        A.method() {
+          B.nested_sync_method()
+          B->C: nested async message
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        // a comment on a participant will not be rendered
+        BookService
+        // a comment on a message.
+        // **Markdown** is supported.
+        BookService.getBook()
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        Alice->John: Hello John, how are you?
+        while(true) {
+          John->Alice: Great!
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        Alice->Bob: Hello Bob, how are you?
+        if(is_sick) {
+          Bob->Alice: Not so good :(
+        } else {
+          Bob->Alice: Feeling fresh like a daisy
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        Alice->Bob: Hello Bob, how are you?
+        Bob->Alice: Not so good :(
+        opt {
+          Bob->Alice: Thanks for asking
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        par {
+            Alice->Bob: Hello guys!
+            Alice->John: Hello guys!
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+        try {
+          Consumer->API: Book something
+          API->BookingService: Start booking process
+        } catch {
+          API->Consumer: show failure
+        } finally {
+          API->BookingService: rollback status
+        }
+  - from: mermaid
+    valid: true
+- - |2-
+        zenuml
+    BookLibService.Borrow(id) {
+      User = Session.GetUser()
+      if(User.isActive) {
+        try {
+          BookRepository.Update(id, onLoan, User)
+          receipt = new Receipt(id, dueDate)
+        } catch (BookNotFoundException) {
+          ErrorService.onException(BookNotFoundException)
+        } finally {
+          Connection.close()
+        }
+      }
+      return receipt
+    }
+  - from: mermaid
+    valid: true
+- - |-
+    zenuml
+      title Async Messages (SPA Authentication)
+      // ```
+      // GET https://${account.namespace}/authorize/?
+      // response_type=token
+      // &client_id=${account.clientId}
+      // &redirect_url=YOUR_CALLBACK_URL
+      // &state=VALUE_THAT_SURVIVES_REDIRECTS
+      // &scope=openid
+      // ```
+      Browser->Auth0: 1. initiate the authentication
+      Auth0->"Identity Provider": 2. OAuth2 / SAML, etc
+      "Identity Provider"->"Identity Provider": 3. user gets authenticated
+      Auth0->Browser: 4. redirect to ${YOUR_CALLBACK_URL}/#id_token=e68...
+      Browser->Auth0: 5. validate id_token and get user profile
+      Browser->"Your API": 6. call API sending JWT in Authorization header
+      "Your API"->"Your API": 7. validate token
+  - from: mermaid
+    valid: true

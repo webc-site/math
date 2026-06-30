@@ -1,0 +1,284 @@
+/* 复用 math.webc.site 的设计 token；主题切换借鉴 beautiful-mermaid 的 bg/fg/accent 变量 */
+:root {
+  --bg: #f8fafc;
+  --fg: #0f172a;
+  --muted: #64748b;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --accent: #2563eb;
+  --accent-grad: linear-gradient(135deg, #3b82f6 0, #2563eb 100%);
+}
+/* beautiful-mermaid 风格暗色主题 */
+[data-theme="dark"] {
+  --bg: #18181b;
+  --fg: #fafafa;
+  --muted: #a1a1aa;
+  --card: #27272a;
+  --border: #3f3f46;
+  --accent: #38bdf8;
+  --accent-grad: linear-gradient(135deg, #38bdf8 0, #818cf8 100%);
+}
+[data-theme="paper"] {
+  --bg: #faf6ef;
+  --fg: #44403c;
+  --muted: #a8a29e;
+  --card: #fffdf8;
+  --border: #e7e0d4;
+  --accent: #c2630a;
+  --accent-grad: linear-gradient(135deg, #f59e0b 0, #c2630a 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background:
+    radial-gradient(60% 50% at 50% 0%, var(--accent-glow, #2563eb14) 0, transparent 70%), var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", sans-serif;
+  line-height: 1.6;
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+/* 参考 math.webc.site：居中 hero */
+.hero {
+  text-align: center;
+  padding: 12px 0 40px;
+}
+header {
+  position: fixed;
+  top: 18px;
+  right: 24px;
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+.icon-btn {
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 2px 8px #0f172a0a;
+  transition:
+    color 0.15s,
+    border-color 0.15s,
+    transform 0.15s;
+}
+.icon-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+/* 语言选择浮层（对齐 math.webc.site 的弹出式语言选择） */
+.lang-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a55;
+  backdrop-filter: blur(3px);
+}
+.lang-panel[hidden] {
+  display: none;
+}
+.lang-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 720px;
+  max-height: 80vh;
+  overflow: auto;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 20px 60px #0f172a40;
+}
+.lang-chip {
+  font: inherit;
+  font-size: 13px;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition:
+    color 0.12s,
+    border-color 0.12s;
+}
+.lang-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.lang-chip.on {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 64px 24px 48px;
+}
+h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+.subtitle {
+  margin: 8px 0 36px;
+  font-size: 18px;
+  color: var(--muted);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 4px 24px #0f172a0a;
+}
+.code {
+  margin: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12.5px;
+  line-height: 1.7;
+  overflow-x: auto;
+  white-space: pre;
+  color: var(--fg);
+}
+#chart svg,
+#speed svg {
+  width: 100%;
+  height: auto;
+}
+.card h2 {
+  margin: 0 0 4px;
+  font-size: 17px;
+}
+.tip {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: var(--muted);
+}
+textarea {
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 13px;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+}
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  margin-top: 14px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+.preview svg,
+.item svg {
+  max-width: 100%;
+  height: auto;
+}
+/* 让图中文字跟随主题前景色（内联 SVG 故 CSS 可控） */
+.preview svg text,
+.item svg text {
+  fill: var(--fg);
+}
+.preview .err {
+  color: #ef4444;
+  font-family: ui-monospace, monospace;
+  font-size: 13px;
+}
+#chart svg {
+  width: 100%;
+  height: auto;
+}
+.examples {
+  margin-top: 36px;
+}
+.examples h2 {
+  font-size: 22px;
+}
+.group-title {
+  margin: 28px 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 18px;
+}
+.item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  cursor: pointer;
+  transition:
+    transform 0.15s,
+    border-color 0.15s;
+}
+.item:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+.item h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+  display: flex;
+  gap: 16px;
+}
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}

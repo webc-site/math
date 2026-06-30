@@ -1,0 +1,700 @@
+- - |-
+    erDiagram
+      CUSTOMER ||--o{ ORDER : places
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      CUSTOMER {
+        int id PK
+        string name
+        string email UK
+        date created_at
+      }
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      ORDER {
+        int id PK
+        int customer_id FK
+        string invoice_number UK
+        decimal total
+        date order_date
+        string status
+      }
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      PERSON ||--|| PASSPORT : has
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      SUPERVISOR |o--|{ EMPLOYEE : manages
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      TEACHER }|--o{ COURSE : teaches
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      A ||--|| B : one-to-one
+      C ||--o{ D : one-to-many
+      E |o--|{ F : opt-to-many
+      G }|--o{ H : many-to-many
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      ORDER ||--|{ LINE_ITEM : contains
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      USER ||..o{ LOG_ENTRY : generates
+      USER ||..o{ SESSION : opens
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      ORDER ||--|{ LINE_ITEM : contains
+      ORDER ||..o{ SHIPMENT : ships-via
+      PRODUCT ||--o{ LINE_ITEM : includes
+      PRODUCT ||..o{ REVIEW : receives
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      CUSTOMER {
+        int id PK
+        string name
+        string email UK
+      }
+      ORDER {
+        int id PK
+        date created
+        int customer_id FK
+      }
+      PRODUCT {
+        int id PK
+        string name
+        float price
+      }
+      LINE_ITEM {
+        int id PK
+        int order_id FK
+        int product_id FK
+        int quantity
+      }
+      CUSTOMER ||--o{ ORDER : places
+      ORDER ||--|{ LINE_ITEM : contains
+      PRODUCT ||--o{ LINE_ITEM : includes
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      USER {
+        int id PK
+        string username UK
+        string email UK
+        date joined
+      }
+      POST {
+        int id PK
+        string title
+        text content
+        int author_id FK
+        date published
+      }
+      COMMENT {
+        int id PK
+        text body
+        int post_id FK
+        int user_id FK
+        date created
+      }
+      TAG {
+        int id PK
+        string name UK
+      }
+      USER ||--o{ POST : writes
+      USER ||--o{ COMMENT : authors
+      POST ||--o{ COMMENT : has
+      POST }|--o{ TAG : tagged-with
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+      STUDENT {
+        int id PK
+        string name
+        date dob
+        string grade
+      }
+      TEACHER {
+        int id PK
+        string name
+        string department
+      }
+      COURSE {
+        int id PK
+        string title
+        int teacher_id FK
+        int credits
+      }
+      ENROLLMENT {
+        int id PK
+        int student_id FK
+        int course_id FK
+        string semester
+        float grade
+      }
+      TEACHER ||--o{ COURSE : teaches
+      STUDENT ||--o{ ENROLLMENT : enrolled
+      COURSE ||--o{ ENROLLMENT : has
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    erDiagram
+       accTitle: My Entity Relationship Diagram
+       accDescr: My Entity Relationship Diagram Description
+
+     CUSTOMER ||--o{ ORDER : places
+     ORDER ||--|{ LINE-ITEM : contains
+     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        CUSTOMER ||--o{ ORDER : places
+        ORDER ||--|{ LINE-ITEM : contains
+        CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+              CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+              CUSTOMER ||--o{ ORDER : places
+              CUSTOMER ||--o{ INVOICE : "liable for"
+              DELIVERY-ADDRESS ||--o{ ORDER : receives
+              INVOICE ||--|{ ORDER : covers
+              ORDER ||--|{ ORDER-ITEM : includes
+              PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+              PRODUCT ||--o{ ORDER-ITEM : "ordered in"
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Order example
+    ---
+    erDiagram
+        CUSTOMER ||--o{ ORDER : places
+        ORDER ||--|{ LINE-ITEM : contains
+        CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        CUSTOMER ||--o{ ORDER : places
+        CUSTOMER {
+            string name
+            string custNumber
+            string sector
+        }
+        ORDER ||--|{ LINE-ITEM : contains
+        ORDER {
+            int orderNumber
+            string deliveryAddress
+        }
+        LINE-ITEM {
+            string productCode
+            int quantity
+            float pricePerUnit
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        "This ❤ Unicode"
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        "This **is** _Markdown_"
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        CAR ||--o{ NAMED-DRIVER : allows
+        PERSON }o..o{ NAMED-DRIVER : is
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        CAR 1 to zero or more NAMED-DRIVER : allows
+        PERSON many(0) optionally to 0+ NAMED-DRIVER : is
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        CAR ||--o{ NAMED-DRIVER : allows
+        CAR {
+            string registrationNumber
+            string make
+            string model
+        }
+        PERSON ||--o{ NAMED-DRIVER : is
+        PERSON {
+            string firstName
+            string lastName
+            int age
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        PERSON {
+            string firstName
+            string? middleName
+            string lastName
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        p[Person] {
+            string firstName
+            string lastName
+        }
+        a["Customer Account"] {
+            string email
+        }
+        p ||--o| a : has
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        CAR ||--o{ NAMED-DRIVER : allows
+        CAR {
+            string registrationNumber PK
+            string make
+            string model
+            string[] parts
+        }
+        PERSON ||--o{ NAMED-DRIVER : is
+        PERSON {
+            string driversLicense PK "The license #"
+            string(99) firstName "Only 99 characters are allowed"
+            string lastName
+            string phone UK
+            int age
+        }
+        NAMED-DRIVER {
+            string carRegistrationNumber PK, FK
+            string driverLicence PK, FK
+        }
+        MANUFACTURER only one to zero or more CAR : makes
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        direction TB
+        CUSTOMER ||--o{ ORDER : places
+        CUSTOMER {
+            string name
+            string custNumber
+            string sector
+        }
+        ORDER ||--|{ LINE-ITEM : contains
+        ORDER {
+            int orderNumber
+            string deliveryAddress
+        }
+        LINE-ITEM {
+            string productCode
+            int quantity
+            float pricePerUnit
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        direction LR
+        CUSTOMER ||--o{ ORDER : places
+        CUSTOMER {
+            string name
+            string custNumber
+            string sector
+        }
+        ORDER ||--|{ LINE-ITEM : contains
+        ORDER {
+            int orderNumber
+            string deliveryAddress
+        }
+        LINE-ITEM {
+            string productCode
+            int quantity
+            float pricePerUnit
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        subgraph title1
+            CUSTOMER
+            CUSTOMER {
+                string name
+                string custNumber
+                string sector
+            }
+        end
+        subgraph title2
+            CAR ||--o{ NAMED-DRIVER : allows
+            subgraph title3
+                PERSON
+                PERSON {
+                    string firstName
+                    string lastName
+                    int age
+                }
+            end
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        subgraph title1
+            CUSTOMER
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        subgraph "Customer Domain"
+            CUSTOMER
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        subgraph id1 [title 1]
+            CUSTOMER
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        subgraph title1
+            A1 ||--|| A2 : links
+        end
+
+        subgraph title2
+            B1 ||--|| B2 : links
+        end
+
+        subgraph title3
+            C1 ||--|| C2 : links
+        end
+
+        title1 ||--|| title2 : links
+        title2 ||--|| title3 : links
+        title2 ||--|| C2 : links
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        direction LR
+        subgraph TOP
+            direction TB
+            subgraph B1
+                direction RL
+                I1 ||--|| F1 : links
+            end
+            subgraph B2
+                direction BT
+                I2 ||--|| F2 : links
+            end
+        end
+        A ||--|| TOP : links
+        TOP ||--|| B : links
+        B1 ||--|| B2 : links
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        id1||--||id2 : label
+        style id1 fill:#f9f,stroke:#333,stroke-width:4px
+        style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        direction TB
+        CAR:::someclass {
+            string registrationNumber
+            string make
+            string model
+        }
+        PERSON:::someclass {
+            string firstName
+            string lastName
+            int age
+        }
+        HOUSE:::someclass
+
+        classDef someclass fill:#f96
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        CAR {
+            string registrationNumber
+            string make
+            string model
+        }
+        PERSON {
+            string firstName
+            string lastName
+            int age
+        }
+        PERSON:::foo ||--|| CAR : owns
+        PERSON o{--|| HOUSE:::bar : has
+
+        classDef foo stroke:#f00
+        classDef bar stroke:#0f0
+        classDef foobar stroke:#00f
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+        CAR {
+            string registrationNumber
+            string make
+            string model
+        }
+        PERSON {
+            string firstName
+            string lastName
+            int age
+        }
+        PERSON:::foo ||--|| CAR : owns
+        PERSON o{--|| HOUSE:::bar : has
+
+        classDef default fill:#f9f,stroke-width:4px
+        classDef foo stroke:#f00
+        classDef bar stroke:#0f0
+        classDef foobar stroke:#00f
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Order example
+    config:
+        layout: elk
+    ---
+    erDiagram
+        CUSTOMER ||--o{ ORDER : places
+        ORDER ||--|{ LINE-ITEM : contains
+        CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+    CAR ||--o{ NAMED-DRIVER : allows
+    CAR ::: Pine {
+        string registrationNumber PK "Primary Key<br><strong>Unique registration number</strong>"
+        string make "Car make<br><strong>e.g., Toyota</strong>"
+        string model "Model of the car<br><strong>e.g., Corolla</strong>"
+        string[] parts "List of parts<br><strong>Stored as array</strong>"
+    }
+    PERSON ||--o{ NAMED-DRIVER : is
+    PERSON ::: someclass {
+        string driversLicense PK "The license #<br><strong>Primary Key</strong>"
+        string(99) firstName "Only 99 characters <br>are allowed <br> <strong>e.g., Smith</strong>"
+        string lastName "Last name of person<br><strong>e.g., Smith</strong>"
+        string phone UK "Unique phone number<br><strong>Used for contact</strong>"
+        int age "Age of the person<br><strong>Must be numeric</strong>"
+    }
+    NAMED-DRIVER {
+        string carRegistrationNumber PK, FK, UK, PK "Foreign key to CAR<br><strong>Also part of PK</strong>"
+        string driverLicence PK, FK "Foreign key to PERSON<br><strong>Also part of PK</strong>"
+    }
+    MANUFACTURER only one to zero or more CAR : makesx
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+    _**testẽζ➕Ø😀㌕ぼ**_ {
+      *__List~List~int~~sdfds__* **driversLicense** PK "***The l😀icense #***"
+      string last*Name*
+      string __phone__ UK
+      *string(99)~T~~~~~~* firstName "Only __99__ <br>characters are a<br>llowed dsfsdfsdfsdfs"
+    int _age_
+    }
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: This is a title
+    config:
+      theme: forest
+    ---
+    erDiagram
+      %% title This is a title
+      %% accDescription Test a description
+
+      "Person . CUSTOMER"||--o{ ORDER : places
+
+      ORDER ||--|{ "€£LINE_ITEM ¥" : contains
+
+      "Person . CUSTOMER" }|..|{ "Address//StreetAddress::[DELIVERY ADDRESS]" : uses
+
+      "Address//StreetAddress::[DELIVERY ADDRESS]" {
+        int customerID FK
+        string line1 "this is the first address line comment"
+        string line2
+        string city
+        string region
+        string state
+        string(5) postal_code
+        string country
+      }
+
+      "a_~`!@#$^&*()-_=+[]{}|/;:'.?¡⁄™€£‹¢›∞ﬁ§‡•°ª·º‚≠±œŒ∑„®†ˇ¥Á¨ˆˆØπ∏“«»åÅßÍ∂ÎƒÏ©˙Ó∆Ô˚¬Ò…ÚæÆΩ¸≈π˛çÇ√◊∫ı˜µÂ≤¯≥˘÷¿" {
+        string name "this is an entity with an absurd name just to show characters that are now acceptable as long as the name is in double quotes"
+      }
+
+      "€£LINE_ITEM ¥" {
+        int orderID FK
+        int currencyId FK
+        number price
+        number quantity
+        number adjustment
+        number final_price
+      }
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+      "HOSPITAL" {
+        int id PK
+        int doctor_id FK
+        string address UK
+        string name
+        string phone_number
+        string fax_number
+      }
+  - from: mermaid
+    valid: true
+- - |2-
+      erDiagram
+        "HOSPITAL" {
+          int id PK
+          int doctor_id PK, FK
+          string address UK
+          string name
+          string phone_number
+          string fax_number
+        }
+      </pre
+    >
+    <hr />
+
+    <pre class="mermaid">
+      erDiagram
+        CAR ||--o{ NAMED-DRIVER : allows
+        CAR {
+          string registrationNumber PK
+          string make
+          string model
+          string[] parts
+        }
+        PERSON ||--o{ NAMED-DRIVER : is
+        PERSON {
+          string driversLicense PK "The license #"
+          string(99) firstName "Only 99 characters are allowed"
+          string lastName
+          string phone UK
+          int age
+        }
+        NAMED-DRIVER {
+          string carRegistrationNumber PK, FK
+          string driverLicence PK,FK
+        }
+        MANUFACTURER only one to zero or more CAR : makes
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+      p[Person] {
+          string firstName
+          string lastName
+      }
+      a["Customer Account"] {
+          string email
+      }
+      p ||--o| a : has
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+      p[Person] {
+          string firstName
+          string lastName
+      }
+      a["Customer Account"] {
+          string email
+      }
+
+      b["Customer Account Secondary"] {
+        string email
+      }
+
+      c["Customer Account Tertiary"] {
+        string email
+      }
+
+      d["Customer Account Nth"] {
+        string email
+      }
+
+      p ||--o| a : "has<br />one"
+      p ||--o| b : "has<br />one<br />two"
+      p ||--o| c : "has<br />one<br />two<br />three"
+      p ||--o| d : "has<br />one<br />two<br />three<br />...<br />Nth"
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+      _customer_order {
+          bigint id PK
+          bigint customer_id FK
+          text shipping_address
+          text delivery_method
+          timestamp_with_time_zone ordered_at
+          numeric total_tax_amount
+          numeric total_price
+          text payment_method
+      }
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+      ATLAS-ORGANIZATION ||--|{ ATLAS-PROJECTS : "has many"
+      ATLAS-PROJECTS ||--|{ MONGODB-CLUSTERS : "has many"
+      ATLAS-PROJECTS ||--|{ ATLAS-TEAMS : "has many"
+  - from: mermaid
+    valid: true
+- - |-
+    erDiagram
+      ATLAS-ORGANIZATION ||--|{ ATLAS-PROJECTS : "has many"
+      ATLAS-PROJECTS ||--|{ MONGODB-CLUSTERS : "has many"
+      ATLAS-PROJECTS ||--|{ ATLAS-TEAMS : "has many"
+      MONGODB-CLUSTERS ||..|{
+      ATLAS-TEAMS ||..|{
+  - from: mermaid
+    valid: true

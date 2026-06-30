@@ -1,0 +1,6 @@
+- - info
+  - from: mermaid
+    valid: true
+- - info showInfo
+  - from: mermaid
+    valid: true

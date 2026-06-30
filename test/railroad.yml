@@ -1,0 +1,208 @@
+- - |-
+    railroad-ebnf-beta
+    title "Digit Definition"
+
+    digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-ebnf-beta
+    letter = "a" | "b" | "c" ;
+    identifier = letter ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-ebnf-beta
+    greeting = "Hello" " " "World" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-ebnf-beta
+    sign = "+" | "-" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-ebnf-beta
+    title "Optional Sign"
+
+    sign = "+" | "-" ;
+    number = sign? digit+ ;
+    digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-ebnf-beta
+    title "Identifier with Repetition"
+
+    identifier = letter ( letter | digit | "_" )* ;
+    letter = "a" | "b" | "c" | "d" | "e" ;
+    digit = "0" | "1" | "2" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-ebnf-beta
+    expression = term ( ( "+" | "-" ) term )* ;
+    term = "number" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-ebnf-beta
+    title "Arithmetic Expression Grammar"
+
+    expression = term ( ( "+" | "-" ) term )* ;
+    term = factor ( ( "*" | "/" ) factor )* ;
+    factor = number | "(" expression ")" ;
+    number = digit+ ;
+    digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-ebnf-beta
+    title "JSON Grammar"
+
+    json = element ;
+    element = object | array | string | number | "true" | "false" | "null" ;
+    object = "{" [ member ( "," member )* ] "}" ;
+    array = "[" [ element ( "," element )* ] "]" ;
+    member = string ":" element ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-abnf-beta
+    title "Email Address"
+
+    address = local-part "@" domain ;
+    local-part = 1*( ALPHA / DIGIT / "." / "-" ) ;
+    domain = label *( "." label ) ;
+    label = 1*( ALPHA / DIGIT / "-" ) ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-abnf-beta
+    title "Phone Number"
+
+    phone = [ "+" country-code ] subscriber ;
+    country-code = 1*DIGIT ;
+    subscriber = 1*( DIGIT / "-" / " " ) ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-peg-beta
+    title "Calculator Grammar"
+
+    Expression <- Term (("+" / "-") Term)* ;
+    Term <- Factor (("*" / "/") Factor)* ;
+    Factor <- Number / "(" Expression ")" ;
+    Number <- Digit+ ;
+    Digit <- "0" / "1" / "2" / "3" / "4" / "5" / "6" / "7" / "8" / "9" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-peg-beta
+    title "Identifiers (keywords excluded)"
+
+    Identifier <- !Keyword Letter Letter* ;
+    Keyword <- "if" / "else" / "while" ;
+    Letter <- "a" / "b" / "c" / "_" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-beta
+    title Expression Grammar
+
+    expression = sequence(
+        nonterminal("term"),
+        zeroOrMore(sequence(
+            choice(terminal("+"), terminal("-")),
+            nonterminal("term")
+        ))
+    ) ;
+    term = sequence(
+        nonterminal("factor"),
+        zeroOrMore(sequence(
+            choice(terminal("*"), terminal("/")),
+            nonterminal("factor")
+        ))
+    ) ;
+    factor = choice(
+        nonterminal("number"),
+        sequence(terminal("("), nonterminal("expression"), terminal(")"))
+    ) ;
+    number = oneOrMore(nonterminal("digit")) ;
+    digit = choice(terminal("0"), terminal("1"), terminal("2"), terminal("3"), terminal("4"), terminal("5"), terminal("6"), terminal("7"), terminal("8"), terminal("9")) ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-beta
+    digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-beta
+    title "Identifier Grammar"
+
+    identifier = letter ( letter | digit | "_" )* ;
+    letter = "a" | "b" | "c" | "d" | "e" ;
+    digit = "0" | "1" | "2" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-beta
+    title "Optional Sign"
+
+    sign = "+" | "-" ;
+    number = sign? digit+ ;
+    digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-beta
+    title "Expression Grammar"
+
+    expression = term ( ( "+" | "-" ) term )* ;
+    term = factor ( ( "*" | "/" ) factor )* ;
+    factor = number | "(" expression ")" ;
+    number = digit+ ;
+    digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-beta
+    title "JSON Grammar"
+
+    json = element ;
+    element = object | array | string | number | "true" | "false" | "null" ;
+    object = "{" [ member ( "," member )* ] "}" ;
+    array = "[" [ element ( "," element )* ] "]" ;
+    member = string ":" element ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-beta
+    title "URL Grammar"
+
+    url = protocol "://" domain path? ;
+    protocol = "http" | "https" | "ftp" ;
+    domain = label ( "." label )* ;
+    label = letter ( letter | digit | "-" )* ;
+    path = "/" segment ( "/" segment )* ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-beta
+    title "ISO Style Notation"
+
+    list = "[" element { "," element } "]" ;
+    element = number | string ;
+    number = digit { digit } ;
+    digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+  - from: mermaid
+    valid: true
+- - |-
+    railroad-beta
+    title "BNF Style Definition"
+
+    rule ::= "A" | "B" ;
+    another ::= rule+ ;
+  - from: mermaid
+    valid: true

@@ -1,0 +1,1453 @@
+- - |-
+    sequenceDiagram
+      participant A
+      participant B
+      A->>+B: call activates B
+      B-->>-A: returns and deactivates A
+      activate A
+      deactivate A
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      actor Alice as A
+      participant "Bob Marley" as B
+      A->>B: Hi Bob
+      B-->>A: Hey Alice
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant Alice as "Eve
+      Alice->B: hi
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      alt
+        A->>B: Branch 1
+      else
+        A->>C: Branch 2
+      end
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      autonumber
+      participant A
+      participant B
+      A->>B: First
+      autonumber 10 10
+      A-->>B: Second
+      autonumber off
+      A->B: No numbering
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant Alice
+      participant Bob
+      Alice->>Bob: Hello Bob
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant A
+      participant B
+      A<<->>B: Duplex async
+      A<<-->>B: Duplex async dotted
+      A->>B: Async
+      A-->>B: Async dotted
+      A->B: Solid
+      A-->B: Dotted
+      A-x B: Cross
+      A--x B: Cross dotted
+      A-) B: Open
+      A--) B: Open dotted
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant Alice
+      participant Bob
+      alt Is morning?
+        Alice->>Bob: Good morning
+      else Is evening?
+        Alice->>Bob: Good evening
+      end
+
+      opt Optional check
+        Bob-->>Alice: OK
+      end
+
+      loop Until done
+        Alice->>Bob: Step
+      end
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      box LightBlue System A
+        participant A1
+        participant A2
+      end
+      box LightGreen System B
+        participant B1
+        participant B2
+      end
+      A1->>B1: Sync
+      A2-->>B2: Async
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+        box "API Layer"
+            participant Server
+            participant API
+        end
+        box "UI Layer"
+            participant UI
+            participant Component
+        end
+        Server->>API: Request
+        API->>UI: Data
+        UI->>Component: Render
+        Note over API,UI: Communication layer
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant DB
+      participant API
+      rect rgba(200, 200, 255, 0.3)
+        critical Transaction
+          API->>DB: BEGIN
+          option Retry
+            API-->>DB: COMMIT
+        end
+      end
+      break On failure
+        API-x DB: ROLLBACK
+      end
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant Bob
+      link Bob: Dashboard @ https://example.com/dashboard
+      links Bob: {"Docs": "https://example.com/docs", "Repo": "https://example.com/repo"}
+      participant Alice
+      Alice->>Bob: Check links
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+    A->>B: hi
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant Alice
+      participant Bob
+      Note right of Alice: Thinking...
+      Alice->>Bob: Hello
+      Note over Alice,Bob: A shared note
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant Frontend as FE
+      participant Backend as BE
+      par Fetch in parallel
+        FE->>BE: Get /user
+      and
+        FE->>BE: Get /settings
+      end
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      par
+        A->>B: First
+      and
+        A->>C: Second
+      end
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant A
+      participant B
+      participant C
+      par over A,B Parallel work
+        A->>B: one
+      and
+        B->>A: two
+      end
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant "Logger "debug"" as L
+      L->>L: hi
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant "Logger \"debug\"" as L
+      L->>L: hi
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant "Bob
+      A->B: hi
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant A
+      participant B
+      A->>+B: start
+      B-->>A: done
+      deactivate B
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant A
+      participant B
+      activate B
+      A->>+B: already active
+      B-->>-A: not active to deactivate
+  - from: maid
+    valid: true
+- - |-
+    sequenceDiagram
+      alt Branching
+        A->>B: hi
+        and Illegal inside alt
+      end
+  - from: maid
+    valid: false
+    errors:
+      - SE-BRANCH-IN-WRONG-BLOCK
+- - |-
+    sequenceDiagram
+      alt Something
+        A->B: one
+      and
+        A->C: two
+      end
+  - from: maid
+    valid: false
+    errors:
+      - SE-BRANCH-IN-WRONG-BLOCK
+- - |-
+    sequenceDiagram
+      participant A
+      and Also not allowed
+      A->B: hi
+  - from: maid
+    valid: false
+    errors:
+      - SE-AND-OUTSIDE-PAR
+- - |-
+    sequenceDiagram
+      autonumber 10 10 participant A
+      A->B: ok
+  - from: maid
+    valid: false
+    errors:
+      - SE-AUTONUMBER-EXTRANEOUS
+- - |-
+    sequenceDiagram
+      autonumber 10 ten
+      participant A
+      participant B
+      A->B: hi
+  - from: maid
+    valid: false
+    errors:
+      - SE-AUTONUMBER-NON-NUMERIC
+- - |-
+    sequenceDiagram
+        participant A
+        participant B
+        box "Empty Group"
+            A->>B: message
+            Note over A: note
+        end
+  - from: maid
+    valid: false
+    errors:
+      - SE-BOX-EMPTY
+- - |-
+    sequenceDiagram
+      box Aqua Group
+        participant A
+        participant B
+      A->B: hi
+  - from: maid
+    valid: false
+    errors:
+      - SE-BLOCK-MISSING-END
+- - |-
+    sequenceDiagram
+      participant Gateway
+      participant loadBundle
+      participant Filesystem
+      participant loadBundleManifest
+
+      box "New Flow (Fixed)"
+        Gateway->>+loadBundle: Load API with existing bundle
+        loadBundle->>loadBundleWithFs: (using afero.Fs)
+        loadBundleWithFs->>Filesystem: Check if bundle exists (bundleFs.Stat)
+        Filesystem-->>loadBundleWithFs: Exists
+        loadBundleWithFs->>+loadBundleManifest: Load manifest (skipVerification=false)
+        Note right of loadBundleManifest: Signature is ALWAYS checked!
+        alt Manifest is Invalid
+          loadBundleManifest-->>-loadBundleWithFs: Return verification error
+        else Manifest is Valid
+          loadBundleManifest-->>-loadBundleWithFs: Manifest loaded
+        end
+      end
+  - from: maid
+    valid: false
+    errors:
+      - SE-BOX-EMPTY
+- - |-
+    sequenceDiagram
+        participant A
+        participant B
+        box "Group"
+            participant C
+            A->>B: message inside box
+        end
+  - from: maid
+    valid: false
+    errors:
+      - SE-BOX-INVALID-CONTENT
+- - |-
+    sequenceDiagram
+        participant A
+        participant B
+        box "Group"
+            participant C
+            Note over A: note inside box
+        end
+  - from: maid
+    valid: false
+    errors:
+      - SE-BOX-INVALID-CONTENT
+- - |-
+    sequenceDiagram
+      participant A
+      participant B
+
+      Note over A: Preparing content
+      A->>B: Send header
+      %% The following bullet-like lines are invalid in Mermaid sequence diagrams
+      - PR context
+      - Tool outputs
+      A->>B: Continue processing
+  - from: maid
+    valid: false
+    errors:
+      - SE-BULLET-LINE-UNSUPPORTED
+- - |-
+    sequenceDiagram
+      create B
+      participant A
+      A->B: hi
+  - from: maid
+    valid: false
+    errors:
+      - SE-CREATE-MALFORMED
+- - |-
+    sequenceDiagram
+      create participant
+      A->B: hi
+  - from: maid
+    valid: false
+    errors:
+      - SE-CREATE-MISSING-NAME
+- - |-
+    sequenceDiagram
+      critical Do critical
+        A->B: try
+      else Should not use else in critical
+        A->B: nope
+      end
+  - from: maid
+    valid: false
+    errors:
+      - SE-ELSE-IN-CRITICAL
+- - |-
+    sequenceDiagram
+      destroy participant
+      participant A
+      participant B
+      A->B: hi
+  - from: maid
+    valid: false
+    errors:
+      - SE-DESTROY-MISSING-NAME
+- - |-
+    sequenceDiagram
+      title Order Flow
+      participant A
+      participant B
+      properties: retry=3, timeout=5s
+      details: This scenario covers failed payment retry.
+      A->>B: Pay
+  - from: maid
+    valid: false
+    errors:
+      - SE-META-UNSUPPORTED
+      - SE-PROPERTIES-UNSUPPORTED
+      - SE-DETAILS-UNSUPPORTED
+- - |-
+    sequenceDiagram
+      par Parallel
+        A->>B: hi
+        else Wrong here
+      end
+  - from: maid
+    valid: false
+    errors:
+      - SE-BRANCH-IN-WRONG-BLOCK
+- - |-
+    sequenceDiagram
+      participant A
+      else Not allowed here
+      A->B: hi
+  - from: maid
+    valid: false
+    errors:
+      - SE-ELSE-OUTSIDE-ALT
+- - |-
+    sequenceDiagram
+        participant UI
+
+        UI->>UI: Some text; with a semicolon
+  - from: maid
+    valid: false
+    errors:
+      - SE-MSG-SEMICOLON-UNESCAPED
+- - |-
+    sequenceDiagram
+      participant User
+      participant engineer as engineer.yaml
+      participant prepare as prepare-projects
+      participant setup as project-setup
+      participant merge as merge-projects
+      participant AI as engineer-task AI
+
+      User->>engineer: task + projects (pre-resolved)
+      engineer->>prepare: Check if projects provided
+      prepare->>merge: Return pre-resolved projects
+      merge->>AI: Execute with project paths
+      AI->>User: PR URLs, files changed
+
+      Note over engineer
+        OR: Standalone mode
+      end note
+
+      User->>engineer: task + project_definitions
+      engineer->>prepare: No pre-resolved projects
+      prepare->>setup: Run project-setup
+      setup->>merge: Return checkout_projects
+      merge->>AI: Execute with checked-out projects
+      AI->>User: PR URLs, files changed
+  - from: maid
+    valid: false
+    errors:
+      - SE-NOTE-MALFORMED
+- - |-
+    sequenceDiagram
+      participant A
+      participant B
+      A->>B Message text without colon
+  - from: maid
+    valid: false
+    errors:
+      - SE-MSG-COLON-MISSING
+- - |-
+    sequenceDiagram
+      participant A
+      Note right of A Missing colon
+      A->B: ok
+  - from: maid
+    valid: false
+    errors:
+      - SE-NOTE-MALFORMED
+- - |-
+    sequenceDiagram
+      participant A
+      participant B
+
+      Note right of A
+        Multi-line note without colon on header
+      end note
+
+      Note over A,B
+        Also missing colon on multi-line header
+      end note
+
+      A->>B: ok
+  - from: maid
+    valid: false
+    errors:
+      - SE-NOTE-MALFORMED
+- - |-
+    sequenceDiagram
+      par
+        option Retry
+        A->B: nope
+      end
+  - from: maid
+    valid: false
+    errors:
+      - SE-BRANCH-IN-WRONG-BLOCK
+- - |-
+    sequenceDiagram
+      option Retry
+      A->B: Should be inside critical
+  - from: maid
+    valid: false
+    errors:
+      - SE-BRANCH-OUTSIDE-BLOCK
+- - |-
+    sequenceDiagram
+      title Checkout Flow
+      accTitle Accessible Title
+      accDescr This diagram describes the checkout steps.
+      participant A as Alice
+      participant B as Bob
+      A->>B: Start
+  - from: maid
+    valid: false
+    errors:
+      - SE-META-UNSUPPORTED
+      - SE-META-UNSUPPORTED
+      - SE-META-UNSUPPORTED
+- - |-
+    sequenceDiagram
+      participant A
+      end
+      A->B: hi
+  - from: maid
+    valid: false
+    errors:
+      - SE-END-WITHOUT-BLOCK
+- - |-
+    sequenceDiagram
+      participant A
+      participant B
+      A==>>B: Unknown arrow
+  - from: maid
+    valid: false
+    errors:
+      - SE-ARROW-INVALID
+- - |-
+    sequenceDiagram
+      Alice->>Bob: Hello Bob!
+      Bob-->>Alice: Hi Alice!
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant A as Alice
+      participant B as Bob
+      participant C as Charlie
+      A->>B: Hello
+      B->>C: Forward
+      C-->>A: Reply
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      actor U as User
+      participant S as System
+      participant DB as Database
+      U->>S: Click button
+      S->>DB: Query
+      DB-->>S: Results
+      S-->>U: Display
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      A->>B: Solid arrow (sync)
+      B-->>A: Dashed arrow (return)
+      A-)B: Open arrow (async)
+      B--)A: Open dashed arrow
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant C as Client
+      participant S as Server
+      C->>+S: Request
+      S->>+S: Process
+      S->>-S: Done
+      S-->>-C: Response
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant S as Server
+      S->>S: Internal process
+      S->>S: Validate
+      S-->>S: Log
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant C as Client
+      participant S as Server
+      C->>S: Connect
+      loop Every 30s
+        C->>S: Heartbeat
+        S-->>C: Ack
+      end
+      C->>S: Disconnect
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant C as Client
+      participant S as Server
+      C->>S: Login
+      alt Valid credentials
+        S-->>C: 200 OK
+      else Invalid
+        S-->>C: 401 Unauthorized
+      else Account locked
+        S-->>C: 403 Forbidden
+      end
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant A as App
+      participant C as Cache
+      participant DB as Database
+      A->>C: Get data
+      C-->>A: Cache miss
+      opt Cache miss
+        A->>DB: Query
+        DB-->>A: Results
+        A->>C: Store in cache
+      end
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant C as Client
+      participant A as AuthService
+      participant U as UserService
+      participant O as OrderService
+      C->>A: Authenticate
+      par Fetch user data
+        A->>U: Get profile
+      and Fetch orders
+        A->>O: Get orders
+      end
+      A-->>C: Combined response
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant A as App
+      participant DB as Database
+      A->>DB: BEGIN
+      critical Transaction
+        A->>DB: UPDATE accounts
+        A->>DB: INSERT log
+      end
+      A->>DB: COMMIT
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant A as Alice
+      participant B as Bob
+      Note left of A: Alice prepares
+      A->>B: Hello
+      Note right of B: Bob thinks
+      B-->>A: Reply
+      Note over A,B: Conversation complete
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      actor U as User
+      participant App as Client App
+      participant Auth as Auth Server
+      participant API as Resource API
+      U->>App: Click Login
+      App->>Auth: Authorization request
+      Auth->>U: Login page
+      U->>Auth: Credentials
+      Auth-->>App: Authorization code
+      App->>Auth: Exchange code for token
+      Auth-->>App: Access token
+      App->>API: Request + token
+      API-->>App: Protected resource
+      App-->>U: Display data
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant C as Client
+      participant S as Server
+      participant DB as Database
+      C->>S: POST /transfer
+      S->>DB: BEGIN
+      S->>DB: Debit account A
+      alt Success
+        S->>DB: Credit account B
+        S->>DB: INSERT audit_log
+        S->>DB: COMMIT
+        S-->>C: 200 OK
+      else Insufficient funds
+        S->>DB: ROLLBACK
+        S-->>C: 400 Bad Request
+      end
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant G as Gateway
+      participant A as Auth
+      participant U as Users
+      participant O as Orders
+      participant N as Notify
+      G->>A: Validate token
+      A-->>G: Valid
+      par Fetch data
+        G->>U: Get user
+        U-->>G: User data
+      and
+        G->>O: Get orders
+        O-->>G: Order list
+      end
+      G->>N: Send notification
+      N-->>G: Queued
+      Note over G: Aggregate response
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant User
+      participant Main as Main Process
+      participant Renderer
+      participant Timer as 3s Fallback Timer
+      User->>Main: CMD+W
+      Main->>Main: event.preventDefault()
+      Main->>Renderer: WINDOW_CLOSE_REQUESTED
+      Main->>Timer: Start 3s timer
+      alt Multiple panels
+        Renderer->>Renderer: closePanel(focusedId)
+        Note over Renderer: Panel removed
+        Note over Renderer: No confirmCloseWindow!
+        Timer-->>Main: 3s elapsed → window.destroy()
+      else Single panel
+        Renderer->>Renderer: closePanel(lastId)
+        Note over Renderer: Stack becomes []
+        Renderer->>Renderer: Auto-select fires → new panel created!
+        Note over Renderer: Panel reopens
+        Timer-->>Main: 3s elapsed → window.destroy()
+      end
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+       accTitle: My Sequence Diagram
+       accDescr: My Sequence Diagram Description
+
+       Alice->>John: Hello John, how are you?
+       John-->>Alice: Great!
+       Alice-)John: See you later!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      Site->>mermaid: initialize
+      Site->>mermaid: content loaded
+      mermaid->>mermaidAPI: init
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+
+    Alice->Bob: Hello Bob, how are you?
+    Bob->Alice: Fine, how did your mother like the book I suggested? And did you catch the new book about alien invasion?
+    Alice->Bob: Good.
+    Bob->Alice: Cool
+  - from: mermaid
+    valid: true
+- - |-
+    %%{init: { "sequence": { "wrap": true, "width":300 } } }%%
+    sequenceDiagram
+    Alice->Bob: Hello Bob, how are you?
+    Bob->Alice: Fine, how did your mother like the book I suggested? And did you catch the new book about alien invasion?
+    Alice->Bob: Good.
+    Bob->Alice: Cool
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        autonumber
+        participant 1 as $$\alpha$$
+        participant 2 as $$\beta$$
+        1->>2: Solve: $$\sqrt{2+2}$$
+        2-->>1: Answer: $$2$$
+        Note right of 2: $$\sqrt{2+2}=\sqrt{4}=2$$
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice
+        participant Bob
+        Alice->>John: Hello John, how are you?
+        loop HealthCheck
+            John->>John: Fight against hypochondria
+        end
+        Note right of John: Rational thoughts <br/>prevail!
+        John-->>Alice: Great!
+        John->>Bob: How about you?
+        Bob-->>John: Jolly good!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice ->> Bob: Hello Bob, how are you?
+        Bob-->>John: How about you John?
+        Bob--x Alice: I am good thanks!
+        Bob-x John: I am good thanks!
+        Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+        Bob-->Alice: Checking with John...
+        Alice->John: Yes... John, how are you?
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        loop Daily query
+            Alice->>Bob: Hello Bob, how are you?
+            alt is sick
+                Bob->>Alice: Not so good :(
+            else is well
+                Bob->>Alice: Feeling fresh like a daisy
+            end
+
+            opt Extra response
+                Bob->>Alice: Thanks for asking
+            end
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice
+        participant Bob
+        Alice->>John: Hello John, how are you?
+        loop HealthCheck
+            John->>John: Fight against hypochondria
+        end
+        Note right of John: Rational thoughts<br/>prevail...
+        John-->>Alice: Great!
+        John->>Bob: How about you?
+        Bob-->>John: Jolly good!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant web as Web Browser
+        participant blog as Blog Service
+        participant account as Account Service
+        participant mail as Mail Service
+        participant db as Storage
+
+        Note over web,db: The user must be logged in to submit blog posts
+        web->>+account: Logs in using credentials
+        account->>db: Query stored accounts
+        db->>account: Respond with query result
+
+        alt Credentials not found
+            account->>web: Invalid credentials
+        else Credentials found
+            account->>-web: Successfully logged in
+
+            Note over web,db: When the user is authenticated, they can now submit new posts
+            web->>+blog: Submit new post
+            blog->>db: Store post data
+
+            par Notifications
+                blog--)mail: Send mail to blog subscribers
+                blog--)db: Store in-site notifications
+            and Response
+                blog-->>-web: Successfully posted
+            end
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice->>John: Hello John, how are you?
+        John-->>Alice: Great!
+        Alice-)John: See you later!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice
+        participant Bob
+        Bob->>Alice: Hi Alice
+        Alice->>Bob: Hi Bob
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        actor Alice
+        actor Bob
+        Alice->>Bob: Hi Bob
+        Bob->>Alice: Hi Alice
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice@{ "type" : "boundary" }
+        participant Bob
+        Alice->>Bob: Request from boundary
+        Bob->>Alice: Response to boundary
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice@{ "type" : "control" }
+        participant Bob
+        Alice->>Bob: Control request
+        Bob->>Alice: Control response
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice@{ "type" : "entity" }
+        participant Bob
+        Alice->>Bob: Entity request
+        Bob->>Alice: Entity response
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice@{ "type" : "database" }
+        participant Bob
+        Alice->>Bob: DB query
+        Bob->>Alice: DB result
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice@{ "type" : "collections" }
+        participant Bob
+        Alice->>Bob: Collections request
+        Bob->>Alice: Collections response
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice@{ "type" : "queue" }
+        participant Bob
+        Alice->>Bob: Queue message
+        Bob->>Alice: Queue response
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant A as Alice
+        participant J as John
+        A->>J: Hello John, how are you?
+        J->>A: Great!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant API@{ "type": "boundary" } as Public API
+        actor DB@{ "type": "database" } as User Database
+        participant Svc@{ "type": "control" } as Auth Service
+        API->>Svc: Authenticate
+        Svc->>DB: Query user
+        DB-->>Svc: User data
+        Svc-->>API: Token
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant API@{ "type": "boundary", "alias": "Public API" }
+        participant Auth@{ "type": "control", "alias": "Auth Service" }
+        participant DB@{ "type": "database", "alias": "User Database" }
+        API->>Auth: Login request
+        Auth->>DB: Query user
+        DB-->>Auth: User data
+        Auth-->>API: Access token
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant API@{ "type": "boundary", "alias": "Internal Name" } as External Name
+        participant DB@{ "type": "database", "alias": "Internal DB" } as External DB
+        API->>DB: Query
+        DB-->>API: Result
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice->>Bob: Hello Bob, how are you ?
+        Bob->>Alice: Fine, thank you. And you?
+        create participant Carl
+        Alice->>Carl: Hi Carl!
+        create actor D as Donald
+        Carl->>D: Hi!
+        destroy Carl
+        Alice-xCarl: We are too many
+        destroy Bob
+        Bob->>Alice: I agree
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+    box Purple Alice & John
+    participant A
+    participant J
+    end
+    box Another Group
+    participant B
+    participant C
+    end
+    A->>J: Hello John, how are you?
+    J->>A: Great!
+    A->>B: Hello Bob, how is Charley?
+    B->>C: Hello Charley, how are you?
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice
+        participant John
+        Alice->>()John: Hello John
+        Alice()->>John: How are you?
+        John()->>()Alice: Great!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice->>John: Hello John, how are you?
+        activate John
+        John-->>Alice: Great!
+        deactivate John
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice->>+John: Hello John, how are you?
+        John-->>-Alice: Great!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice->>+John: Hello John, how are you?
+        Alice->>+John: John, can you hear me?
+        John-->>-Alice: Hi Alice, I can hear you!
+        John-->>-Alice: I feel great!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant John
+        Note right of John: Text in note
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice->John: Hello John, how are you?
+        Note over Alice,John: A typical interaction
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice->John: Hello John,<br/>how are you?
+        Note over Alice,John: A typical interaction<br/>But now in two lines
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice as Alice<br/>Johnson
+        Alice->John: Hello John,<br/>how are you?
+        Note over Alice,John: A typical interaction<br/>But now in two lines
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice->John: Hello John, how are you?
+        loop Every minute
+            John-->Alice: Great!
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice->>Bob: Hello Bob, how are you?
+        alt is sick
+            Bob->>Alice: Not so good :(
+        else is well
+            Bob->>Alice: Feeling fresh like a daisy
+        end
+        opt Extra response
+            Bob->>Alice: Thanks for asking
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        par Alice to Bob
+            Alice->>Bob: Hello guys!
+        and Alice to John
+            Alice->>John: Hello guys!
+        end
+        Bob-->>Alice: Hi Alice!
+        John-->>Alice: Hi Alice!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        par Alice to Bob
+            Alice->>Bob: Go help John
+        and Alice to John
+            Alice->>John: I want this done today
+            par John to Charlie
+                John->>Charlie: Can we do this today?
+            and John to Diana
+                John->>Diana: Can you help us today?
+            end
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        critical Establish a connection to the DB
+            Service-->DB: connect
+        option Network timeout
+            Service-->Service: Log error
+        option Credentials rejected
+            Service-->Service: Log different error
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        critical Establish a connection to the DB
+            Service-->DB: connect
+        end
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Consumer-->API: Book something
+        API-->BookingService: Start booking process
+        break when the booking process fails
+            API-->Consumer: show failure
+        end
+        API-->BillingService: Start billing process
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice
+        participant John
+
+        rect rgb(191, 223, 255)
+        note right of Alice: Alice calls John.
+        Alice->>+John: Hello John, how are you?
+        rect rgb(200, 150, 255)
+        Alice->>+John: John, can you hear me?
+        John-->>-Alice: Hi Alice, I can hear you!
+        end
+        John-->>-Alice: I feel great!
+        end
+        Alice ->>+ John: Did you want to go to the game tonight?
+        John -->>- Alice: Yeah! See you there.
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        Alice->>John: Hello John, how are you?
+        %% this is a comment
+        John-->>Alice: Great!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        A->>B: I #9829; you!
+        B->>A: I #9829; you #infin; times more!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        autonumber
+        Alice->>John: Hello John, how are you?
+        loop HealthCheck
+            John->>John: Fight against hypochondria
+        end
+        Note right of John: Rational thoughts!
+        John-->>Alice: Great!
+        John->>Bob: How about you?
+        Bob-->>John: Jolly good!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice
+        participant John
+        link Alice: Dashboard @ https://dashboard.contoso.com/alice
+        link Alice: Wiki @ https://wiki.contoso.com/alice
+        link John: Dashboard @ https://dashboard.contoso.com/john
+        link John: Wiki @ https://wiki.contoso.com/john
+        Alice->>John: Hello John, how are you?
+        John-->>Alice: Great!
+        Alice-)John: See you later!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+        participant Alice
+        participant John
+        links Alice: {"Dashboard": "https://dashboard.contoso.com/alice", "Wiki": "https://wiki.contoso.com/alice"}
+        links John: {"Dashboard": "https://dashboard.contoso.com/john", "Wiki": "https://wiki.contoso.com/john"}
+        Alice->>John: Hello John, how are you?
+        John-->>Alice: Great!
+        Alice-)John: See you later!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      accTitle: test the accTitle
+      accDescr: Test a description
+
+      participant Alice
+      participant Bob
+      participant John as John<br />Second Line
+      link Alice: Dashboard @ https://dashboard.contoso.com/alice
+      link Alice: Wiki @ https://wiki.contoso.com/alice
+      link John: Dashboard @ https://dashboard.contoso.com/john
+      link John: Wiki @ https://wiki.contoso.com/john
+      autonumber 10 10
+      rect rgb(200, 220, 100)
+      rect rgb(200, 255, 200)
+
+      Alice ->> Bob: Hello Bob, how are you?
+      Bob-->>John: How about you John?
+      end
+
+      Bob--x Alice: I am good thanks!
+      Bob-x John: I am good thanks!
+      Note right of John: John thinks a long<br />long time, so long<br />that the text does<br />not fit on a row.
+
+      Bob-->Alice: Checking with John...
+      Note over John:wrap: John looks like he's still thinking, so Bob prods him a bit.
+      Bob-x John: Hey John - we're still waiting to know<br />how you're doing
+      Note over John:nowrap: John's trying hard not to break his train of thought.
+      Bob-x John:wrap: John! Are you still debating about how you're doing? How long does it take??
+      Note over John: After a few more moments, John<br />finally snaps out of it.
+      end
+
+      autonumber off
+      alt either this
+      Alice->>+John: Yes
+      John-->>-Alice: OK
+      else or this
+      autonumber
+      Alice->>John: No
+      else or this will happen
+      Alice->John: Maybe
+      end
+      autonumber 200
+      par this happens in parallel
+      Alice -->> Bob: Parallel message 1
+      and
+      Alice -->> John: Parallel message 2
+      end
+  - from: mermaid
+    valid: true
+- - |2-
+      ---
+      title: With forced menus
+      config:
+        sequence:
+          forceMenus: true
+      ---
+      sequenceDiagram
+        participant Alice
+        participant John
+        link Alice: Dashboard @ https://dashboard.contoso.com/alice
+        link Alice: Wiki @ https://wiki.contoso.com/alice
+        link John: Dashboard @ https://dashboard.contoso.com/john
+        link John: Wiki @ https://wiki.contoso.com/john
+        Alice->>John: Hello John, how are you?
+        John-->>Alice: Great!
+        Alice-)John: See you later!
+    </pre
+      >
+      <hr />
+      <pre class="mermaid">
+      sequenceDiagram
+        accTitle: Sequence diagram title is here
+        accDescr: Hello friends
+
+      participant Alice
+      participant Bob
+      participant John as John<br />Second Line
+      rect rgb(200, 220, 100)
+      rect rgb(200, 255, 200)
+      Alice ->> Bob: Hello Bob, how are you?
+      Bob-->>John: How about you John?
+      end
+      Bob--x Alice: I am good thanks!
+      Bob-x John: I am good thanks!
+      Note right of John: John thinks a long<br />long time, so long<br />that the text does<br />not fit on a row.
+      Bob-->Alice: Checking with John...
+      Note over John:wrap: John looks like he's still thinking, so Bob prods him a bit.
+      Bob-x John: Hey John - we're still waiting to know<br />how you're doing
+      Note over John:nowrap: John's trying hard not to break his train of thought.
+      Bob-x John:wrap: John! Are you still debating about how you're doing? How long does it take??
+      Note over John: After a few more moments, John<br />finally snaps out of it.
+      end
+      alt either this
+      Alice->>John: Yes
+      else or this
+      Alice->>John: No
+      else or this will happen
+      Alice->John: Maybe
+      end
+      par this happens in parallel
+      Alice -->> Bob: Parallel message 1
+      and
+      Alice -->> John: Parallel message 2
+      end
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+    participant 1 as multiline<br>using #lt;br#gt;
+    participant 2 as multiline<br />using #lt;br/#gt;
+    participant 3 as multiline<br />using #lt;br /#gt;
+    participant 4 as multiline<br />using #lt;br /#gt;
+    1->>2: multiline<br>using #lt;br#gt;
+    note right of 2: multiline<br>using #lt;br#gt;
+    2->>3: multiline<br />using #lt;br/#gt;
+    note right of 3: multiline<br />using #lt;br/#gt;
+    3->>4: multiline<br />using #lt;br /#gt;
+    note right of 4: multiline<br />using #lt;br /#gt;
+    4->>1: multiline<br />using #lt;br /#gt;
+    note right of 1: multiline<br />using #lt;br /#gt;
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+    autonumber
+    Alice->>John: Hello John,<br>how are you?
+    autonumber 50 10
+    Alice->>John: John,<br />can you hear me?
+    John-->>Alice: Hi Alice,<br />I can hear you!
+    autonumber off
+    John-->>Alice: I feel great!
+  - from: mermaid
+    valid: true
+- - |2-
+        sequenceDiagram
+        box lightgreen Alice & John
+        participant A
+        participant J
+        end
+        box Another Group very very long description not wrapped
+        participant B
+        end
+        A->>J: Hello John, how are you?
+        J->>A: Great!
+        A->>B: Hello Bob, how are you ?
+        </pre
+    >
+    <hr />
+
+    <pre class="mermaid">
+      sequenceDiagram
+      participant Alice
+      participant Bob
+      participant John
+      par_over Section title
+        Alice ->> Bob: Message 1<br>Second line
+        Bob ->> John: Message 2
+      end
+      par_over Two line<br>section title
+        Note over Alice: Alice note
+        Note over Bob: Bob note<br>Second line
+        Note over John: John note
+      end
+      par_over Mixed section
+        Alice ->> Bob: Message 1
+        Note left of Bob: Alice/Bob Note
+      end
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      actor Alice
+      actor John
+      Alice-xJohn: Hello John, how are you?
+      John--xAlice: Great!
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+    participant 1 as $$\frac{\lim_{x\rightarrow0}{\frac{1}{x}}}{\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$$
+    participant 2 as $$\beta$$
+    participant 3 as $$\delta$$
+    participant 4 as $$\frac{\frac{\lim_{x\rightarrow0}{\frac{1}{x}}}{\frac{-b\pm\sqrt{b^2-4ac}}{2a}}}{\frac{\text{d}}{\text{d}x}{x^2}}$$
+    1->>2: $$\sqrt{2}$$
+    note right of 2: $$\frac{1+\frac{1+\frac{1+\frac{1}{2}}{2}}{2}}{2}+\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+    2->>3: $$\frac{\lim_{x\rightarrow0}{\frac{1}{x}}}{\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$$
+    note right of 3: $$\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+    3->>4: $$\lim_{x\rightarrow0}{\frac{1}{x}}$$;
+    note right of 4: multiline
+    4->>1: multiline<br />using #lt;br /#gt;
+    note right of 1: multiline<br />$$\frac{1}{2}$$<br />3rd line
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+    autonumber
+    participant 1 as $$\alpha$$lex
+    participant 2 as $$\beta$$ob
+    participant 3 as $$\theta$$iffany
+    1->>2: Hello John, does&nbsp; $$\frac{1}{2}+1=2$$?
+    loop $$\frac{1}{2}+1=2$$
+        2->>2: $$\frac{1}{2}+1=\frac{3}{2}$$
+    end
+    Note right of 2: $$x = \begin{cases} 1 &\text{if } \frac{1}{2}+1=2 \\ 0 &\text{if } \frac{1}{2}+1\ne2 \end{cases}$$
+    2-->>1: $$\frac{1}{2}+1\ne2\implies 1$$
+    2->>3: $$\frac{\text{d}}{\text{d}x}{3x^2+2x+1}$$
+    3-->>2: $$6x+2$$
+  - from: mermaid
+    valid: true
+- - |-
+    sequenceDiagram
+      participant Alice
+      participant Bob
+      Alice<<->>Bob: Hello!
+      Alice<<->>Bob: Wow, we said that at the same time!
+      Bob<<-->>Alice: Bidirectional Arrows are so cool
+  - from: mermaid
+    valid: true

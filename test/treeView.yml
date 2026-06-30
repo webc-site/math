@@ -1,0 +1,319 @@
+- - |-
+    treeView-beta
+    ├── src/
+    │   ├── index.ts
+    │   └── utils.ts
+    ├── package.json
+    └── README.md
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+    ├── src/
+    │   ├── App.tsx :::highlight icon(logos:react) ## main component
+    │   └── index.ts ## entry point
+    ├── .env ## environment variables
+    ├── Dockerfile
+    └── package.json
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+    ├── packages/
+    │   ├── mermaid/
+    │   │   ├── src/
+    │   │   │   ├── parser.ts
+    │   │   │   └── renderer.ts
+    │   │   └── package.json
+    │   └── parser/
+    │       └── src/
+    └── README.md
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+        src/
+            App.tsx :::highlight
+            index.js
+        package.json
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+        src/
+            index.js ## app entry point
+            config.ts ## runtime configuration
+        package.json ## project manifest
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      treeView:
+        showIcons: true
+    ---
+    treeView-beta
+        src/
+            index.js
+        package.json
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      treeView:
+        showIcons: true
+        defaultIconPack: material-icon-theme
+        filenameIcons:
+          Dockerfile: docker
+        extensionIcons:
+          .ts: typescript
+          .tsx: react-ts
+          .txt: none
+    ---
+    treeView-beta
+        src/
+            App.tsx
+            utils.ts
+        Dockerfile
+        notes.txt
+        README.md
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+        src/
+            App.tsx icon(logos:react)
+            index.js
+        package.json
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      treeView:
+        showIcons: true
+    ---
+    treeView-beta
+        src/
+            index.js icon(none)
+        package.json
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+        my-project/
+            src/
+                App.tsx :::highlight icon(logos:react) ## main component
+                index.js ## entry point
+            .env ## environment variables
+            Dockerfile
+            package.json
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+        "packages"
+            "mermaid"
+                "src"
+            "parser"
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+        🚀 rocket-app/
+            📦 packages/
+                🎨 ui/
+                🛠️ utils/
+            🧪 tests/
+            📝 README.md
+            ⚙️ config.yaml
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+        treeView:
+            rowIndent: 80
+            lineThickness: 3
+        themeVariables:
+            treeView:
+                labelFontSize: '20px'
+                labelColor: '#FF0000'
+                lineColor: '#00FF00'
+    ---
+    treeView-beta
+        "packages"
+            "mermaid"
+                "src"
+            "parser"
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+    "docs"
+        "build"
+        "make.bat"
+        "Makefile"
+        "out"
+        "source"
+            "build"
+            "static"
+                "_templates"
+                "div. Files"
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      treeView:
+        showIcons: true
+    ---
+    treeView-beta
+    my-project/
+        src/
+            components/
+                Button.tsx
+                Header.tsx
+            App.tsx
+            index.js
+        .gitignore
+        package.json
+        README.md
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      treeView:
+        showIcons: true
+    ---
+    treeView-beta
+    my-project/
+        src/
+            App.tsx :::highlight icon(logos:react) ## main component
+            index.js ## entry point
+            styles.css icon(none)
+        data/
+            model.bin icon(logos:mysql)
+        .env ## environment variables
+        Dockerfile icon(logos:docker-icon)
+        package.json
+    </pre
+            >
+          </div>
+        </div>
+
+        <h2>File-Type Icons via Config Maps</h2>
+        <div class="demo">
+          <pre class="source">
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      treeView:
+        showIcons: true
+        defaultIconPack: material-icon-theme
+        filenameIcons:
+          Dockerfile: docker
+        extensionIcons:
+          .ts: typescript
+          .tsx: react-ts
+          .txt: none
+    ---
+    treeView-beta
+    my-project/
+        src/
+            App.tsx
+            utils.ts
+        Dockerfile
+        notes.txt
+        README.md
+    </pre
+            >
+          </div>
+        </div>
+
+        <h2>Folder Names with Spaces</h2>
+        <div class="demo">
+          <pre class="source">
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+    My Project/
+        Source Files/
+            App.tsx :::highlight ## main component
+            index.js ## entry point
+        My Documents/
+            meeting notes.md
+            project plan.md ## Q3 roadmap
+        .gitignore
+        README.md
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+    ├── src/
+    │   ├── components/
+    │   │   ├── Button.tsx
+    │   │   └── Modal.tsx
+    │   ├── utils/
+    │   │   └── helpers.ts
+    │   └── index.js
+    ├── docs/
+    │   └── README.md
+    ├── package.json
+    └── .gitignore
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+    ├── src/
+    │   ├── App.tsx :::highlight ## main component
+    │   ├── index.js ## entry point
+    │   └── config.ts
+    ├── docs/
+    │   └── guide.md ## user guide
+    └── package.json
+  - from: mermaid
+    valid: true
+- - |-
+    treeView-beta
+    🚀 rocket-app/
+        📦 packages/
+            🎨 ui/
+            🛠️ utils/
+        🧪 tests/
+        📝 README.md
+        ⚙️ config.yaml
+    </pre
+            >
+          </div>
+        </div>
+
+        <h2>Custom Config</h2>
+        <div class="demo">
+          <pre class="source">
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+        treeView:
+            rowIndent: 80
+            lineThickness: 3
+        themeVariables:
+            treeView:
+                labelFontSize: '20px'
+                labelColor: '#FF0000'
+                lineColor: '#00FF00'
+    ---
+    treeView-beta
+    "packages"
+        "mermaid"
+            "src"
+        "parser"
+  - from: mermaid
+    valid: true
