@@ -1,10 +1,16 @@
 node_modules/
 extract/KaTeX/
 extract/MathJax-src/
+extract/maid/
+extract/beautiful-mermaid/
+extract/mermaid/
 demo/index.html
 lib/package.json
 demo/style.css
 demo/dist/
+web/mermaid.js
+web/langs.json
+web/stats.json
 .cursor/
 .codegraph/
 .DS_Store

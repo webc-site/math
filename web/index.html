@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@webc.site/mermaid</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <button id="lang-btn" class="icon-btn" type="button" aria-label="Language" title="Language">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+      </button>
+      <button id="theme" class="icon-btn" type="button" aria-label="Theme" title="Theme">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+      </button>
+      <a class="icon-btn" href="https://github.com/webc-site/math" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+    </header>
+    <div id="lang-panel" class="lang-panel" hidden>
+      <div class="lang-grid" id="lang-grid"></div>
+    </div>
+
+    <main>
+      <div class="hero">
+        <h1 id="ui-title">@webc.site/mermaid</h1>
+        <p id="ui-subtitle" class="subtitle"></p>
+      </div>
+
+      <div class="grid">
+        <section class="card usage-card">
+          <h2 id="ui-usage-title"></h2>
+          <pre class="code"><code id="ui-usage-code"></code></pre>
+        </section>
+
+        <section class="card size-card">
+          <h2 id="ui-size-title"></h2>
+          <p id="ui-size-tip" class="tip"></p>
+          <div id="chart"></div>
+          <p id="ui-size-note" class="tip"></p>
+        </section>
+
+        <section class="card editor-card">
+          <h2 id="ui-editor-title"></h2>
+          <p id="ui-editor-tip" class="tip"></p>
+          <textarea id="src" spellcheck="false"></textarea>
+          <div id="preview" class="preview"></div>
+        </section>
+
+        <section class="card speed-card">
+          <h2 id="ui-speed-title"></h2>
+          <p id="ui-speed-tip" class="tip"></p>
+          <div id="speed"></div>
+        </section>
+      </div>
+
+      <section class="examples">
+        <h2 id="ui-examples-title"></h2>
+        <div id="gallery"></div>
+      </section>
+
+      <footer>
+        <a href="https://github.com/webc-site/math" target="_blank" rel="noopener">GitHub</a>
+        <span id="ui-foot"></span>
+      </footer>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

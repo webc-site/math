@@ -1,0 +1,405 @@
+- - |-
+    gantt
+       accTitle: My Gantt Chart Accessibility Title
+       accDescr: My Gantt Chart Accessibility Description
+
+     title A Gantt Diagram
+     dateFormat  YYYY-MM-DD
+     section Section
+     A task           :a1, 2014-01-01, 30d
+     Another task     :after a1  , 20d
+     section Another
+     Task in sec      :2014-01-12  , 12d
+     another task      : 24d
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+    dateFormat  YYYY-MM-DD
+    title Adding GANTT diagram to mermaid
+    excludes weekdays 2014-01-10
+
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2               :         des4, after des3, 5d
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Frontmatter Example
+    displayMode: compact
+    config:
+      theme: forest
+    gantt:
+        useWidth: 400
+        compact: true
+    ---
+    gantt
+        section Waffle
+            Iron  : 1982, 3y
+            House : 1986, 3y
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+        title A Gantt Diagram
+        dateFormat YYYY-MM-DD
+        section Section
+            A task          :a1, 2014-01-01, 30d
+            Another task    :after a1, 20d
+        section Another
+            Task in Another :2014-01-12, 12d
+            another task    :24d
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+        dateFormat  YYYY-MM-DD
+        title       Adding GANTT diagram functionality to mermaid
+        excludes    weekends
+        %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2              :         des4, after des3, 5d
+
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :until isadded
+        Functionality added                 :milestone, isadded, 2014-01-25, 0d
+
+        section Documentation
+        Describe gantt syntax               :active, a1, after des1, 3d
+        Add gantt diagram to demo page      :after a1  , 20h
+        Add another diagram to demo page    :doc1, after a1  , 48h
+
+        section Last section
+        Describe gantt syntax               :after doc1, 3d
+        Add gantt diagram to demo page      :20h
+        Add another diagram to demo page    :48h
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+        apple :a, 2017-07-20, 1w
+        banana :crit, b, 2017-07-23, 1d
+        cherry :active, c, after b a, 1d
+        kiwi   :d, 2017-07-20, until b c
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+        title A Gantt Diagram Excluding Fri - Sat weekends
+        dateFormat YYYY-MM-DD
+        excludes weekends
+        weekend friday
+        section Section
+            A task          :a1, 2024-01-01, 30d
+            Another task    :after a1, 20d
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+        dateFormat HH:mm
+        axisFormat %H:%M
+        Initial milestone : milestone, m1, 17:49, 2m
+        Task A : 10m
+        Task B : 5m
+        Final milestone : milestone, m2, 18:08, 4m
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+        dateFormat HH:mm
+        axisFormat %H:%M
+        Initial vert : vert, v1, 17:30, 2m
+        Task A : 3m
+        Task B : 8m
+        Final vert : vert, v2, 17:58, 4m
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+      tickInterval 1week
+      weekday monday
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    displayMode: compact
+    ---
+    gantt
+        title A Gantt Diagram
+        dateFormat  YYYY-MM-DD
+
+        section Section
+        A task           :a1, 2014-01-01, 30d
+        Another task     :a2, 2014-01-20, 25d
+        Another one      :a3, 2014-02-10, 20d
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+        title A Gantt Diagram
+        %% This is a comment
+        dateFormat YYYY-MM-DD
+        section Section
+            A task          :a1, 2014-01-01, 30d
+            Another task    :after a1, 20d
+        section Another
+            Task in Another :2014-01-12, 12d
+            another task    :24d
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+        title Git Issues - days since last update
+        dateFormat X
+        axisFormat %s
+        section Issue19062
+        71   : 0, 71
+        section Issue19401
+        36   : 0, 36
+        section Issue193
+        34   : 0, 34
+        section Issue7441
+        9    : 0, 9
+        section Issue1300
+        5    : 0, 5
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+        # Frontmatter config, YAML comments
+        title: Ignored if specified in chart
+        displayMode: compact     #gantt specific setting but works at this level too
+        config:
+    #        theme: forest
+    #        themeCSS: " #item36 { fill: CadetBlue } "
+            themeCSS: " // YAML supports multiline strings using a newline markers: \n
+                #item36 { fill: CadetBlue }       \n
+
+                // Custom marker workaround CSS from forum (below)    \n
+                rect[id^=workaround] { height: calc(100% - 50px) ; transform: translate(9px, 25px); y: 0; width: 1.5px; stroke: none; fill: red; }   \n
+                text[id^=workaround] { fill: red; y: 100%; font-size: 15px;}
+            "
+            gantt:
+                useWidth: 400
+                rightPadding: 0
+                topAxis: true  #false
+                numberSectionStyles: 2
+    ---
+    gantt
+        title Timeline - Gantt Sampler
+        dateFormat YYYY
+        axisFormat %y
+        %% this next line doesn't recognise 'decade' or 'year', but will silently ignore
+        tickInterval 1decade
+
+        section Issue19062
+        71   :            item71, 1900, 1930
+        section Issue19401
+        36   :            item36, 1913, 1935
+        section Issue1300
+        94   :            item94, 1910, 1915
+        5    :            item5,  1920, 1925
+        0    : milestone, item0,  1918, 1s
+        9    : vert,              1906, 1s   %% not yet official
+        64   : workaround,        1923, 1s   %% custom CSS object https://github.com/mermaid-js/mermaid/issues/3250
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+      title A Gantt Diagram
+      accTitle: A simple sample gantt diagram
+      accDescr: 2 sections with 2 tasks each, from 2014
+      dateFormat  YYYY-MM-DD
+      section Section
+      A task           :a1, 2014-01-01, 30d
+      Another task     :after a1  , 20d
+      section Another
+      Task in sec      :2014-01-12  , 12d
+      another task      : 24d
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+      title #; Gantt Diagrams Allow Semicolons and Hashtags #;!
+      accTitle: A simple sample gantt diagram
+      accDescr: 2 sections with 2 tasks each, from 2014
+      dateFormat  YYYY-MM-DD
+      section #;Section
+      #;A task           :a1, 2014-01-01, 30d
+      #;Another task     :after a1  , 20d
+      section #;Another
+      Task in sec      :2014-01-12  , 12d
+      another task      : 24d
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+      title Airworks roadmap
+      dateFormat YYYY-MM-DD
+      axisFormat %m-%d %a
+      excludes  weekends, 2021-10-01,2021-10-04,2021-10-05,2021-10-06,2021-10-07
+      includes 2021-10-09
+
+      section Airworks 3.4.1
+      开发  :b, 2021-10-07, 5d
+      测试  :after b, 4d
+      OK  :milestore
+      section Airworks 3.4.2
+      开发  :a, 2021-10-09, 4d
+      测试  :after a, 4d
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+    title Exclusive end dates (Manual date should end on 3d)
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    section Section1
+    2 Days: 1, 2019-01-01,2d
+    Manual Date: 2, 2019-01-01,2019-01-03
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+    title Inclusive end dates (Manual date should end on 4th)
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    inclusiveEndDates
+    section Section1
+    2 Days: 1, 2019-01-01,2d
+    Manual Date: 2, 2019-01-01,2019-01-03
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+    title Hide today marker (vertical line should not be visible)
+    dateFormat Z
+    axisFormat %d/%m
+    todayMarker off
+    section Section1
+    Today: 1, 08-08-09-01:00, 5min
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+    title Style today marker (vertical line should be 5px wide and half-transparent blue)
+    dateFormat Z
+    axisFormat %d/%m
+    todayMarker stroke-width:5px,stroke:#00f,opacity:0.5
+    section Section1
+    Today: 1, 08-08-09-01:00, 5min
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+    dateFormat YYYY-MM-DD
+    axisFormat %d/%m
+    title Adding GANTT diagram to mermaid
+    excludes weekdays 2014-01-10
+
+    section A section
+    Completed task :done, des1, 2014-01-06,2014-01-08
+    Active task :active, des2, 2014-01-09, 3d
+    Future task : des3, after des2, 5d
+    Future task2 : des4, after des3, 5d
+
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison :crit, done, after des1, 2d
+    Create tests for parser :crit, active, 3d
+    Future task in critical line :crit, 5d
+    Create tests for renderer :2d
+    Add to mermaid :1d
+
+    section Documentation
+    Describe gantt syntax :active, a1, after des1, 3d
+    Add gantt diagram to demo page :after a1 , 20h
+    Add another diagram to demo page :doc1, after a1 , 48h
+
+    section Clickable
+    Visit mermaidjs :active, cl1, 2014-01-07,2014-01-10
+    Calling a Callback (look at the console log) :cl2, after cl1, 3d
+
+    click cl1 href "https://mermaidjs.github.io/"
+    click cl2 call ganttTestClick("test", test, test)
+
+    section Last section
+    Describe gantt syntax :after doc1, 3d
+    Add gantt diagram to demo page : 20h
+    Add another diagram to demo page : 48h
+  - from: mermaid
+    valid: true
+- - |-
+    gantt
+    dateFormat YYYY-MM-DD
+    axisFormat %d/%m
+    title GANTT diagram with multiline section titles
+    excludes weekdays 2014-01-10
+
+    section A section<br>multiline
+    Completed task : done, des1, 2014-01-06,2014-01-08
+    Active task : active, des2, 2014-01-09, 3d
+    Future task : des3, after des2, 5d
+    Future task2 : des4, after des3, 5d
+
+    section Critical tasks<br />multiline
+    Completed task in the critical line : crit, done, 2014-01-06, 24h
+    Implement parser and jison : crit, done, after des1, 2d
+    Create tests for parser : crit, active, 3d
+    Future task in critical line : crit, 5d
+    Create tests for renderer : 2d
+    Add to mermaid : 1d
+
+    section Documentation<br />multiline
+    Describe gantt syntax : active, a1, after des1, 3d
+    Add gantt diagram to demo page : after a1, 20h
+    Add another diagram to demo page : doc1, after a1, 48h
+
+    section Last section<br />multiline
+    Describe gantt syntax : after doc1, 3d
+    Add gantt diagram to demo page : 20h
+    Add another diagram to demo page : 48h
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+      displayMode: compact
+    ---
+    gantt
+    title GANTT compact
+    dateFormat  HH:mm:ss
+    axisFormat  %Hh%M
+
+    section DB Clean
+    Clean: 12:00:00, 10m
+    Clean: 12:30:00, 12m
+    Clean: 13:00:00, 8m
+    Clean: 13:30:00, 9m
+    Clean: 14:00:00, 13m
+    Clean: 14:30:00, 10m
+    Clean: 15:00:00, 11m
+
+    section Sessions
+    A: 12:00:00, 63m
+    B: 12:30:00, 12m
+    C: 13:05:00, 12m
+    D: 13:06:00, 33m
+    E: 13:15:00, 55m
+    F: 13:20:00, 12m
+    G: 13:32:00, 18m
+    H: 13:50:00, 20m
+    I: 14:10:00, 10m
+  - from: mermaid
+    valid: true

@@ -1,0 +1,626 @@
+- - |-
+    stateDiagram-v2
+    state "Logged In" as S1
+    S1 : User authenticated
+    [*] --> S1 : login
+    S1 --> [*] : logout
+  - from: maid
+    valid: true
+- - |-
+    stateDiagram-v2
+    direction LR
+    state Auth {
+      [*] --> Login
+      Login --> Success : ok
+    }
+    [*] --> Auth
+    Auth --> [*]
+    Note right of Auth: Handles user authentication
+  - from: maid
+    valid: true
+- - |-
+    stateDiagram-v2
+      state Composite {
+        [*] --> S1
+        S1 --> [H]
+        [H*] --> S2
+      }
+      [*] --> Composite
+      Composite --> [*]
+  - from: maid
+    valid: true
+- - |-
+    stateDiagram-v2
+    state Split <<fork>>
+    [*] --> Split
+    Split --> A : path=/a
+    Split --> B : path=/b
+    state Join <<join>>
+    A --> Join
+    B --> Join
+    Join --> [*]
+  - from: maid
+    valid: true
+- - |-
+    stateDiagram-v2
+    direction LR
+    state Auth {
+      [*] --> Login
+      Login --> MFA : code
+      MFA --> Success
+    }
+    [*] --> Auth
+    Auth --> [*]
+    Note right of Auth: Handles user auth
+    Note right of MFA: One-time code
+  - from: maid
+    valid: true
+- - |-
+    stateDiagram-v2
+    [*] --> Idle
+    Idle --> Running : start
+    Running --> [*] : stop
+  - from: maid
+    valid: true
+- - |-
+    stateDiagram-v2
+      state S {
+        A --> B : ev1
+        ---
+        ---
+        C --> D : ev2
+      }
+  - from: maid
+    valid: false
+    errors:
+      - ST-CONCURRENCY-UNSUPPORTED
+      - ST-CONCURRENCY-UNSUPPORTED
+      - ST-CONCURRENCY-MISPLACED
+      - ST-CONCURRENCY-MISPLACED
+- - |-
+    stateDiagram-v2
+      state S {
+        A --> B : ev1
+        ---
+      }
+  - from: maid
+    valid: false
+    errors:
+      - ST-CONCURRENCY-UNSUPPORTED
+      - ST-CONCURRENCY-MISPLACED
+- - |-
+    stateDiagram-v2
+      state S {
+        ---
+        A --> B : ev1
+      }
+  - from: maid
+    valid: false
+    errors:
+      - ST-CONCURRENCY-UNSUPPORTED
+      - ST-CONCURRENCY-MISPLACED
+- - |-
+    stateDiagram-v2
+    [*] --> A
+    ---
+    A --> [*]
+  - from: maid
+    valid: false
+- - |-
+    stateDiagram-v2
+      state Outer {
+        [*] --> A
+        ---
+        [*] --> B
+      }
+  - from: maid
+    valid: false
+- - A --> B
+  - from: maid
+    valid: false
+    errors:
+      - GEN-HEADER-INVALID
+- - |-
+    stateDiagram-v2
+    Idle -> Running : start
+  - from: maid
+    valid: false
+    errors:
+      - ST-ARROW-INVALID
+- - |-
+    stateDiagram-v2
+    state Auth {
+      [*] --> Stage1
+      ---
+      Stage2 --> [*]
+    }
+  - from: maid
+    valid: false
+    errors:
+      - ST-CONCURRENCY-UNSUPPORTED
+- - |-
+    stateDiagram-v2
+    state Foo {
+      [*] --> A
+      A --> [*]
+  - from: maid
+    valid: false
+    errors:
+      - ST-BLOCK-MISSING-RBRACE
+- - |-
+    stateDiagram-v2
+    direction LR
+    [*] --> Auth
+    Auth --> [*]Note over Auth: Handles user auth
+  - from: maid
+    valid: false
+    errors:
+      - ST-NOTE-GLUED
+- - |-
+    stateDiagram-v2
+    Note right of A Missing colon
+    A --> B : ok
+  - from: maid
+    valid: false
+    errors:
+      - ST-NOTE-MALFORMED
+- - |-
+    stateDiagram-v2
+    Note over A,B Missing colon
+    A --> B
+  - from: maid
+    valid: false
+    errors:
+      - ST-NOTE-MALFORMED
+- - |-
+    stateDiagram-v2
+        direction LR
+        [*] --> Input
+        Input --> Parse: DSL
+        Parse --> Layout: AST
+        Layout --> SVG: Vector
+        Layout --> ASCII: Text
+        SVG --> Theme
+        ASCII --> Theme
+        Theme --> Output
+        Output --> [*]
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+      [*] --> Idle
+      Idle --> Active : start
+      Active --> Idle : cancel
+      Active --> Done : complete
+      Done --> [*]
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+      [*] --> Idle
+      Idle --> Processing : submit
+      state Processing {
+        parse --> validate
+        validate --> execute
+      }
+      Processing --> Complete : done
+      Processing --> Error : fail
+      Error --> Idle : retry
+      Complete --> [*]
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+      [*] --> Closed
+      Closed --> Connecting : connect
+      Connecting --> Connected : success
+      Connecting --> Closed : timeout
+      Connected --> Disconnecting : close
+      Connected --> Reconnecting : error
+      Reconnecting --> Connected : success
+      Reconnecting --> Closed : max_retries
+      Disconnecting --> Closed : done
+      Closed --> [*]
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+      [*] --> 空闲
+      空闲 --> 处理中 : 提交
+      处理中 --> 完成 : 成功
+      处理中 --> 错误 : 失败
+      错误 --> 空闲 : 重试
+      完成 --> [*]
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    stateDiagram
+       accTitle: My State Diagram
+       accDescr: My State Diagram Description
+
+        s1 --> s2
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Simple sample
+    ---
+    stateDiagram-v2
+        [*] --> Still
+        Still --> [*]
+
+        Still --> Moving
+        Moving --> Still
+        Moving --> Crash
+        Crash --> [*]
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram
+        [*] --> Still
+        Still --> [*]
+
+        Still --> Moving
+        Moving --> Still
+        Moving --> Crash
+        Crash --> [*]
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        stateId
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        state "This is a state description" as s2
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        s2 : This is a state description
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        s1 --> s2
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        s1 --> s2: A transition
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        [*] --> s1
+        s1 --> [*]
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        [*] --> First
+        state First {
+            [*] --> second
+            second --> [*]
+        }
+
+        [*] --> NamedComposite
+        NamedComposite: Another Composite
+        state NamedComposite {
+            [*] --> namedSimple
+            namedSimple --> [*]
+            namedSimple: Another simple
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        [*] --> First
+
+        state First {
+            [*] --> Second
+
+            state Second {
+                [*] --> second
+                second --> Third
+
+                state Third {
+                    [*] --> third
+                    third --> [*]
+                }
+            }
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        [*] --> First
+        First --> Second
+        First --> Third
+
+        state First {
+            [*] --> fir
+            fir --> [*]
+        }
+        state Second {
+            [*] --> sec
+            sec --> [*]
+        }
+        state Third {
+            [*] --> thi
+            thi --> [*]
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        state if_state <<choice>>
+        [*] --> IsPositive
+        IsPositive --> if_state
+        if_state --> False: if n < 0
+        if_state --> True : if n >= 0
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+     state fork_state <<fork>>
+       [*] --> fork_state
+       fork_state --> State2
+       fork_state --> State3
+
+       state join_state <<join>>
+       State2 --> join_state
+       State3 --> join_state
+       join_state --> State4
+       State4 --> [*]
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        State1: The state with a note
+        note right of State1
+            Important information! You can write
+            notes.
+        end note
+        State1 --> State2
+        note left of State2 : This is the note to the left.
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        [*] --> Active
+
+        state Active {
+            [*] --> NumLockOff
+            NumLockOff --> NumLockOn : EvNumLockPressed
+            NumLockOn --> NumLockOff : EvNumLockPressed
+            --
+            [*] --> CapsLockOff
+            CapsLockOff --> CapsLockOn : EvCapsLockPressed
+            CapsLockOn --> CapsLockOff : EvCapsLockPressed
+            --
+            [*] --> ScrollLockOff
+            ScrollLockOff --> ScrollLockOn : EvScrollLockPressed
+            ScrollLockOn --> ScrollLockOff : EvScrollLockPressed
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram
+        direction LR
+        [*] --> A
+        A --> B
+        B --> C
+        state B {
+          direction LR
+          a --> b
+        }
+        B --> D
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+        [*] --> Still
+        Still --> [*]
+    %% this is a comment
+        Still --> Moving
+        Moving --> Still %% another comment
+        Moving --> Crash
+        Crash --> [*]
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram
+    direction TB
+
+    accTitle: This is the accessible title
+    accDescr: This is an accessible description
+
+    classDef notMoving fill:white
+    classDef movement font-style:italic
+    classDef badBadEvent fill:#f00,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
+
+    [*]--> Still
+    Still --> [*]
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+
+    class Still notMoving
+    class Moving, Crash movement
+    class Crash badBadEvent
+    class end badBadEvent
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram
+       direction TB
+
+       accTitle: This is the accessible title
+       accDescr: This is an accessible description
+
+       classDef notMoving fill:white
+       classDef movement font-style:italic;
+       classDef badBadEvent fill:#f00,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
+
+       [*] --> Still:::notMoving
+       Still --> [*]
+       Still --> Moving:::movement
+       Moving --> Still
+       Moving --> Crash:::movement
+       Crash:::badBadEvent --> [*]
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram
+        classDef yourState font-style:italic,font-weight:bold,fill:white
+
+        yswsii: Your state with spaces in it
+        [*] --> yswsii:::yourState
+        [*] --> SomeOtherState
+        SomeOtherState --> YetAnotherState
+        yswsii --> YetAnotherState
+        YetAnotherState --> [*]
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Very simple diagram
+    ---
+    stateDiagram
+      accTitle: This is the accessible title
+      accDescr:This is an accessible description
+      State1 --> State2
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Very simple diagram
+    ---
+    stateDiagram
+      direction TB
+
+      accTitle: This is the accessible title
+      accDescr: This is an accessible description
+
+      classDef notMoving fill:white
+      classDef movement font-style:italic
+      classDef badBadEvent fill:#f00,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
+
+      [*]--> Still
+      Still --> [*]
+      Still --> Moving
+      Moving --> Still
+      Moving --> Crash
+      Crash --> [*]
+
+      class Still notMoving
+      class Moving, Crash movement
+      class Crash badBadEvent
+      class end badBadEvent
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram
+      direction TB
+
+      accTitle: This is the accessible title
+      accDescr: This is an accessible description
+
+      classDef notMoving fill:white
+      classDef movement font-style:italic
+      classDef badBadEvent fill:#f00,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
+
+      [*] --> Still:::notMoving
+      Still --> [*]
+      Still --> Moving:::movement
+      Moving --> Still
+      Moving --> Crash:::movement
+      Crash:::badBadEvent --> [*]
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+      accTitle: very very simple state
+      accDescr: This is a state diagram showing one state
+      State1
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram
+      classDef yourState font-style:italic,font-weight:bold,fill:white
+
+      yswsii: Your state with spaces in it
+      [*] --> yswsii:::yourState
+      [*] --> SomeOtherState
+      SomeOtherState --> YetAnotherState
+      yswsii --> YetAnotherState
+      YetAnotherState --> [*]
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+    [*] --> State1
+    State1 --> State2 : Transition 1
+    State1 --> State3 : Transition 2
+    State1 --> State4 : Transition 3
+    State1 --> [*]
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+    [*] --> First
+    First --> Second
+    First --> Third
+
+    state "the first composite" as First {
+        [*] --> 1st
+        state innerFirst {
+          state "1 in innerFirst" as 1st1st
+          1st2nd: 2 in innerFirst
+          [*] --> 1st1st
+          1st1st --> 1st2nd
+          %% 1st2nd --> 1st
+        }
+        1st --> innerFirst
+        innerFirst --> 2nd
+    }
+    state Second {
+        2nd --> [*]
+    }
+    state Third {
+        [*] --> 3rd
+        3rd --> [*]
+    }
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+          state Active {
+            Idle
+          }
+          Inactive --> Idle: ACT
+          Active --> Active: LOG
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+    [*] --> S1
+    S1 --> S2: This long line uses a br tag<br />to create multiple<br />lines.
+    S1 --> S3: This transition description uses \na newline character\nto create multiple\nlines.
+  - from: mermaid
+    valid: true
+- - |-
+    stateDiagram-v2
+      direction LR
+      State1: A state with a note
+      note right of State1
+        Important information!<br />You can write notes.<br />And\nthey\ncan\nbe\nmulti-\nline.
+      end note
+      State1 --> State2
+      note left of State2 : Notes can be to the left of a state\n(like this one).
+      note right of State2 : Notes can be to the right of a state\n(like this one).
+  - from: mermaid
+    valid: true

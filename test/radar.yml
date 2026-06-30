@@ -1,0 +1,169 @@
+- - |-
+    ---
+    title: "Grades"
+    ---
+    radar-beta
+      axis m["Math"], s["Science"], e["English"]
+      axis h["History"], g["Geography"], a["Art"]
+      curve a["Alice"]{85, 90, 80, 70, 75, 90}
+      curve b["Bob"]{70, 75, 85, 80, 90, 85}
+
+      max 100
+      min 0
+  - from: mermaid
+    valid: true
+- - |-
+    radar-beta
+      title Restaurant Comparison
+      axis food["Food Quality"], service["Service"], price["Price"]
+      axis ambiance["Ambiance"]
+
+      curve a["Restaurant A"]{4, 3, 2, 4}
+      curve b["Restaurant B"]{3, 4, 3, 3}
+      curve c["Restaurant C"]{2, 3, 4, 2}
+      curve d["Restaurant D"]{2, 2, 4, 3}
+
+      graticule polygon
+      max 5
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      radar:
+        axisScaleFactor: 0.25
+        curveTension: 0.1
+      theme: base
+      themeVariables:
+        cScale0: "#FF0000"
+        cScale1: "#00FF00"
+        cScale2: "#0000FF"
+        radar:
+          curveOpacity: 0
+    ---
+    radar-beta
+      axis A, B, C, D, E
+      curve c1{1,2,3,4,5}
+      curve c2{5,4,3,2,1}
+      curve c3{3,3,3,3,3}
+  - from: mermaid
+    valid: true
+- - |2-
+      radar-beta
+        title My favorite ninjas
+        axis Agility, Speed, Strength
+        axis Stam["Stamina"] , Intel["Intelligence"]
+
+        curve Ninja1["Naruto"]{
+            Agility 2, Speed 2,
+            Strength 3, Stam 5,
+            Intel 0
+        }
+        curve Ninja2["Sasuke"]{2, 3, 4, 1, 5}
+        curve Ninja3["Ninja"] {3, 2, 1, 5, 4}
+
+        showLegend true
+        ticks 3
+        max 8
+        min 0
+        graticule circle
+    </pre
+      >
+
+      <pre class="mermaid">
+      ---
+      config:
+        radar:
+          axisScaleFactor: 0.25
+          axisLabelFactor: 0.95
+      ---
+      radar-beta
+        title DevOps Radar
+        axis f["Feature Velocity"], s["Stability"]
+        axis r["Resilience"], e["Efficiency"]
+        axis c["Cost"], d["DevSecOps"]
+
+        curve app1["App1"]{
+          f 5, s 4.5, r 3.8, d 4.2, e 4.5, c 3.5
+        }
+        curve app2["App2"]{4, 3, 4, 3, 3, 4}, app3["App3"]{3, 2, 4, 3, 2, 3}
+        curve app4["App4"]{2, 1, 3.2, 2.5, 1, 2}
+
+        showLegend true
+        ticks 3
+        max 5
+        graticule polygon
+    </pre
+      >
+
+      <pre class="mermaid">
+      %%{init: {'theme': 'forest'} }%%
+      radar-beta
+        title Forest theme
+        axis Agility, Speed, Strength
+        axis Stam["Stamina"] , Intel["Intelligence"]
+
+        curve Ninja1["Naruto"]{
+            Agility 2, Speed 2,
+            Strength 3, Stam 5,
+            Intel 0
+        }
+        curve Ninja2["Sasuke"]{2, 3, 4, 1, 5}
+        curve Ninja3["Ninja"] {3, 2, 1, 5, 4}
+    </pre
+      >
+
+      <pre class="mermaid" style="background-color: black">
+      %%{init: {'theme': 'dark'} }%%
+      radar-beta
+        title Dark theme
+        axis Agility, Speed, Strength
+        axis Stam["Stamina"] , Intel["Intelligence"]
+
+        curve Ninja1["Naruto"]{
+            Agility 2, Speed 2,
+            Strength 3, Stam 5,
+            Intel 0
+        }
+        curve Ninja2["Sasuke"]{2, 3, 4, 1, 5}
+        curve Ninja3["Ninja"] {3, 2, 1, 5, 4}
+    </pre
+      >
+      <pre class="mermaid">
+      %%{init: {'theme': 'base', 'themeVariables': {'cScale0': '#ff0000', 'cScale1': '#00ff00', 'cScale2': '#0000ff'}} }%%
+      radar-beta
+        title Custom colors
+        axis Agility, Speed, Strength
+        axis Stam["Stamina"] , Intel["Intelligence"]
+
+        curve Ninja1["Naruto"]{
+            Agility 2, Speed 2,
+            Strength 3, Stam 5,
+            Intel 0
+        }
+        curve Ninja2["Sasuke"]{2, 3, 4, 1, 5}
+        curve Ninja3["Ninja"] {3, 2, 1, 5, 4}
+    </pre
+      >
+      <pre class="mermaid">
+      ---
+      config:
+        radar:
+          axisScaleFactor: 0.25
+          curveTension: 0.1
+        theme: base
+        themeVariables:
+          cScale0: "#FF0000"
+          cScale1: "#00FF00"
+          cScale2: "#0000FF"
+          radar:
+            curveOpacity: 0
+      ---
+      radar-beta
+        title Custom colors, axisScaleFactor, curveTension, opacity
+        axis A, B, C, D, E
+        curve c1{1,2,3,4,5}
+        curve c2{5,4,3,2,1}
+        curve c3{3,3,3,3,3}
+  - from: mermaid
+    valid: true

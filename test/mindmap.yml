@@ -1,0 +1,171 @@
+- - |-
+    mindmap
+      root)Contributing(
+        Development
+          Solving issues
+          Adding new diagrams
+          Handling pull requests
+          Updating tooling
+        Testing
+          Verification of fixed issues
+          Regression testing in connection with releases
+          Testing pull requests
+        Management
+          Coordinating the work
+          Classification and monitoring of incoming issues
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      layout: tidy-tree
+    ---
+    mindmap
+    root((mindmap is a long thing))
+      A
+      B
+      C
+      D
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      layout: tidy-tree
+    ---
+    mindmap
+    root((mindmap))
+        Origins
+          Long history
+          ::icon(fa fa-book)
+          Popularisation
+            British popular psychology author Tony Buzan
+        Research
+          On effectiveness<br/>and features
+          On Automatic creation
+            Uses
+                Creative techniques
+                Strategic planning
+                Argument mapping
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+      root((mindmap))
+        Origins
+          Long history
+          ::icon(fa fa-book)
+          Popularisation
+            British popular psychology author Tony Buzan
+        Research
+          On effectiveness<br/>and features
+          On Automatic creation
+            Uses
+                Creative techniques
+                Strategic planning
+                Argument mapping
+        Tools
+          Pen and paper
+          Mermaid
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+    Root
+        A
+          B
+          C
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        id[I am a square]
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        id(I am a rounded square)
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        id((I am a circle))
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        id))I am a bang((
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        id)I am a cloud(
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        id{{I am a hexagon}}
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        I am the default shape
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        Root
+            A
+            ::icon(fa fa-book)
+            B(B)
+            ::icon(mdi mdi-skull-outline)
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        Root
+            A[A]
+            :::urgent large
+            B(B)
+            C
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+    Root
+        A
+            B
+          C
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        id1["`**Root** with
+    a second line
+    Unicode works too: 🤓`"]
+          id2["`The dog in **the** hog... a *very long text* that wraps to a new line`"]
+          id3[Regular labels still works]
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+    root
+        child1((Circle))
+            grandchild 1
+            grandchild 2
+        child2(Round rectangle)
+            grandchild 3
+            grandchild 4
+        child3[Square]
+            grandchild 5
+            ::icon(mdi mdi-fire)
+            gc6((grand<br/>child 6))
+            ::icon(mdi mdi-fire)
+            gc7((grand<br/>grand<br/>child 8))
+  - from: mermaid
+    valid: true
+- - |-
+    mindmap
+        root[A root with a long text that wraps to keep the node size in check]
+  - from: mermaid
+    valid: true

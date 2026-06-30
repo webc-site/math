@@ -1,0 +1,344 @@
+- - |-
+    block
+    columns 1
+      db(("DB"))
+      blockArrowId6<["&nbsp;&nbsp;&nbsp;"]>(down)
+      block:ID
+        A
+        B["A wide one in the middle"]
+        C
+      end
+      space
+      D
+      ID --> D
+      C --> D
+      style B fill:#969,stroke:#333,stroke-width:4px
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      a b c
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      columns 3
+      a b c d
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      columns 3
+      a["A label"] b:2 c:2 d
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        block
+          D
+        end
+        A["A: I am a wide one"]
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      columns 3
+      a:3
+      block:group1:2
+        columns 2
+        h i j k
+      end
+      g
+      block:group2:3
+        %% columns auto (default)
+        l m n o p q r
+      end
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      block
+        columns 1
+        a["A label"] b c d
+      end
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        id1("This is the text in the box")
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        id1(["This is the text in the box"])
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        id1[["This is the text in the box"]]
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        id1[("Database")]
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        id1(("This is the text in the circle"))
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      id1>"This is the text in the box"]
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        id1{"This is the text in the box"}
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        id1{{"This is the text in the box"}}
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      id1[/"This is the text in the box"/]
+      id2[\"This is the text in the box"\]
+      A[/"Christmas"\]
+      B[\"Go shopping"/]
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        id1((("This is the text in the circle")))
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      blockArrowId<["Label"]>(right)
+      blockArrowId2<["Label"]>(left)
+      blockArrowId3<["Label"]>(up)
+      blockArrowId4<["Label"]>(down)
+      blockArrowId5<["Label"]>(x)
+      blockArrowId6<["Label"]>(y)
+      blockArrowId7<["Label"]>(x, down)
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      columns 3
+      a space b
+      c   d   e
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      ida space:3 idb idc
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      A space B
+      A-->B
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      A space:2 B
+      A-- "X" -->B
+  - from: mermaid
+    valid: true
+- - |-
+    block
+    columns 1
+      db(("DB"))
+      blockArrowId6<["&nbsp;&nbsp;&nbsp;"]>(down)
+      block:ID
+        A
+        B["A wide one in the middle"]
+        C
+      end
+      space
+      D
+      ID --> D
+      C --> D
+      style B fill:#939,stroke:#333,stroke-width:4px
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      id1 space id2
+      id1("Start")-->id2("Stop")
+      style id1 fill:#636,stroke:#333,stroke-width:4px
+      style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      A space B
+      A-->B
+      classDef blue fill:#6e6ce6,stroke:#333,stroke-width:4px;
+      class A blue
+      style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      columns 3
+      Frontend blockArrowId6<[" "]>(right) Backend
+      space:2 down<[" "]>(down)
+      Disk left<[" "]>(left) Database[("Database")]
+
+      classDef front fill:#696,stroke:#333;
+      classDef back fill:#969,stroke:#333;
+      class Frontend front
+      class Backend,Database back
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      columns 3
+      Start(("Start")) space:2
+      down<[" "]>(down) space:2
+      Decision{{"Make Decision"}} right<["Yes"]>(right) Process1["Process A"]
+      downAgain<["No"]>(down) space r3<["Done"]>(down)
+      Process2["Process B"] r2<["Done"]>(right) End(("End"))
+
+      style Start fill:#969;
+      style End fill:#696;
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      A space B
+      A --> B
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      A
+      style A fill#969;
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      A
+      style A fill:#969,stroke:#333;
+  - from: mermaid
+    valid: true
+- - |-
+    block
+    columns 1
+      db(("DB"))
+      blockArrowId6<["&nbsp;&nbsp;&nbsp;"]>(down)
+      block:ID
+        A
+        B["A wide one in the middle"]
+        C
+      end
+      space
+      D
+      ID --> D
+      C --> D
+      style B fill:#f9F,stroke:#333,stroke-width:4px
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        A1["square"]
+        B1("rounded")
+        C1(("circle"))
+        A2>"rect_left_inv_arrow"]
+        B2{"diamond"}
+        C2{{"hexagon"}}
+  - from: mermaid
+    valid: true
+- - |-
+    block
+        A1(["stadium"])
+        A2[["subroutine"]]
+        B1[("cylinder")]
+        C1>"surprise"]
+        A3[/"lean right"/]
+        B2[\"lean left"\]
+        C2[/"trapezoid"\]
+        D2[\"trapezoid"/]
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      block:e:4
+        columns 2
+          f
+          g
+      end
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      block:e:4
+        columns 2
+          f
+          g
+          h
+      end
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      columns 3
+      a:3
+      block:e:3
+          f
+          g
+      end
+      h
+      i
+      j
+  - from: mermaid
+    valid: true
+- - |-
+    block
+      columns 4
+      a b c d
+      block:e:4
+        columns 2
+          f
+          g
+          h
+      end
+      i:4
+  - from: mermaid
+    valid: true
+- - |-
+    block
+    columns 5
+       A space B
+       A --x B
+  - from: mermaid
+    valid: true
+- - |-
+    block
+    columns 3
+      a["A wide one"] b:2 c:2 d
+  - from: mermaid
+    valid: true
+- - |-
+    block
+    columns 3
+      a b c
+      e:3
+      f g h
+  - from: mermaid
+    valid: true
+- - |-
+    block
+
+      A1:3
+      A2:1
+      A3
+  - from: mermaid
+    valid: true

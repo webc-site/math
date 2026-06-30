@@ -1,0 +1,10 @@
+# Cloudflare Pages 部署配置
+# 用法（二选一）：
+#   A. 本地构建后直传（推荐，无需 CF 端装依赖）：
+#        node web/build.js          # 生成 mermaid.js / langs.json / stats.json
+#        npx wrangler pages deploy web --project-name webc-mermaid
+#   B. 连 GitHub 仓库：CF Pages → Connect to Git
+#        构建命令: node web/build.js     输出目录: web
+name = "webc-mermaid"
+pages_build_output_dir = "web"
+compatibility_date = "2025-01-01"

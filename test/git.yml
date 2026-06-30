@@ -1,0 +1,1494 @@
+- - |-
+    ---
+    config:
+      gitGraph:
+        mainBranchName: develop
+    ---
+    gitGraph LR:
+      commit
+      commit
+      branch "docs/2910_update-guidelines" order: 1
+      commit
+      commit
+      commit
+      checkout develop
+      merge "docs/2910_update-guidelines"
+      commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph
+        accTitle: My GitGraph Accessibility Title
+        accDescr: My GitGraph Accessibility Description
+
+       commit
+       commit
+       branch develop
+       checkout develop
+       commit
+       commit
+       checkout main
+       merge develop
+       commit
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph:
+        commit "Ashish"
+        branch newbranch
+        checkout newbranch
+        commit id:"1111"
+        commit tag:"test"
+        checkout main
+        commit type: HIGHLIGHT
+        commit
+        merge newbranch
+        commit
+        branch b2
+        commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Example Git diagram
+    ---
+    gitGraph
+       commit
+       commit
+       branch develop
+       checkout develop
+       commit
+       commit
+       checkout main
+       merge develop
+       commit
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph
+       commit
+       commit
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph
+       commit id: "Alpha"
+       commit id: "Beta"
+       commit id: "Gamma"
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph
+       commit id: "Normal"
+       commit
+       commit id: "Reverse" type: REVERSE
+       commit
+       commit id: "Highlight" type: HIGHLIGHT
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph
+       commit
+       commit id: "Normal" tag: "v1.0.0"
+       commit
+       commit id: "Reverse" type: REVERSE tag: "RC_1"
+       commit
+       commit id: "Highlight" type: HIGHLIGHT tag: "8.8.4"
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+       merge develop
+       commit
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph
+       commit id: "1"
+       commit id: "2"
+       branch nice_feature
+       checkout nice_feature
+       commit id: "3"
+       checkout main
+       commit id: "4"
+       checkout nice_feature
+       branch very_nice_feature
+       checkout very_nice_feature
+       commit id: "5"
+       checkout main
+       commit id: "6"
+       checkout nice_feature
+       commit id: "7"
+       checkout main
+       merge nice_feature id: "customID" tag: "customTag" type: REVERSE
+       checkout very_nice_feature
+       commit id: "8"
+       checkout main
+       commit id: "9"
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph
+        commit id: "ZERO"
+        branch develop
+        branch release
+        commit id:"A"
+        checkout main
+        commit id:"ONE"
+        checkout develop
+        commit id:"B"
+        checkout main
+        merge develop id:"MERGE"
+        commit id:"TWO"
+        checkout release
+        cherry-pick id:"MERGE" parent:"B"
+        commit id:"THREE"
+        checkout develop
+        commit id:"C"
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'base'
+      gitGraph:
+        showBranches: false
+    ---
+          gitGraph
+            commit
+            branch hotfix
+            checkout hotfix
+            commit
+            branch develop
+            checkout develop
+            commit id:"ash" tag:"abc"
+            branch featureB
+            checkout featureB
+            commit type:HIGHLIGHT
+            checkout main
+            checkout hotfix
+            commit type:NORMAL
+            checkout develop
+            commit type:REVERSE
+            checkout featureB
+            commit
+            checkout main
+            merge hotfix
+            checkout featureB
+            commit
+            checkout develop
+            branch featureA
+            commit
+            checkout develop
+            merge hotfix
+            checkout featureA
+            commit
+            checkout featureB
+            commit
+            checkout develop
+            merge featureA
+            branch release
+            checkout release
+            commit
+            checkout main
+            commit
+            checkout release
+            merge main
+            checkout develop
+            merge release
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'base'
+      gitGraph:
+        rotateCommitLabel: true
+    ---
+    gitGraph
+      commit id: "feat(api): ..."
+      commit id: "a"
+      commit id: "b"
+      commit id: "fix(client): .extra long label.."
+      branch c2
+      commit id: "feat(modules): ..."
+      commit id: "test(client): ..."
+      checkout main
+      commit id: "fix(api): ..."
+      commit id: "ci: ..."
+      branch b1
+      commit
+      branch b2
+      commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'base'
+      gitGraph:
+        rotateCommitLabel: false
+    ---
+    gitGraph
+      commit id: "feat(api): ..."
+      commit id: "a"
+      commit id: "b"
+      commit id: "fix(client): .extra long label.."
+      branch c2
+      commit id: "feat(modules): ..."
+      commit id: "test(client): ..."
+      checkout main
+      commit id: "fix(api): ..."
+      commit id: "ci: ..."
+      branch b1
+      commit
+      branch b2
+      commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'base'
+      gitGraph:
+        showBranches: false
+        showCommitLabel: false
+    ---
+          gitGraph
+            commit
+            branch hotfix
+            checkout hotfix
+            commit
+            branch develop
+            checkout develop
+            commit id:"ash"
+            branch featureB
+            checkout featureB
+            commit type:HIGHLIGHT
+            checkout main
+            checkout hotfix
+            commit type:NORMAL
+            checkout develop
+            commit type:REVERSE
+            checkout featureB
+            commit
+            checkout main
+            merge hotfix
+            checkout featureB
+            commit
+            checkout develop
+            branch featureA
+            commit
+            checkout develop
+            merge hotfix
+            checkout featureA
+            commit
+            checkout featureB
+            commit
+            checkout develop
+            merge featureA
+            branch release
+            checkout release
+            commit
+            checkout main
+            commit
+            checkout release
+            merge main
+            checkout develop
+            merge release
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'base'
+      gitGraph:
+        showBranches: true
+        showCommitLabel: true
+        mainBranchName: 'MetroLine1'
+    ---
+          gitGraph
+            commit id:"NewYork"
+            commit id:"Dallas"
+            branch MetroLine2
+            commit id:"LosAngeles"
+            commit id:"Chicago"
+            commit id:"Houston"
+            branch MetroLine3
+            commit id:"Phoenix"
+            commit type: HIGHLIGHT id:"Denver"
+            commit id:"Boston"
+            checkout MetroLine1
+            commit id:"Atlanta"
+            merge MetroLine3
+            commit id:"Miami"
+            commit id:"Washington"
+            merge MetroLine2 tag:"MY JUNCTION"
+            commit id:"Boston"
+            commit id:"Detroit"
+            commit type:REVERSE id:"SanFrancisco"
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'base'
+      gitGraph:
+        showBranches: true
+        showCommitLabel: true
+    ---
+          gitGraph
+          commit
+          branch test1 order: 3
+          branch test2 order: 2
+          branch test3 order: 1
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'base'
+      gitGraph:
+        showBranches: true
+        showCommitLabel: true
+        mainBranchOrder: 2
+    ---
+          gitGraph
+          commit
+          branch test1 order: 3
+          branch test2
+          branch test3
+          branch test4 order: 1
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph LR:
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       checkout main
+       commit
+       commit
+       merge develop
+       commit
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph TB:
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       checkout main
+       commit
+       commit
+       merge develop
+       commit
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    gitGraph BT:
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       checkout main
+       commit
+       commit
+       merge develop
+       commit
+       commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      gitGraph:
+        parallelCommits: false
+    ---
+    gitGraph:
+      commit
+      branch develop
+      commit
+      commit
+      checkout main
+      commit
+      commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      gitGraph:
+        parallelCommits: true
+    ---
+    gitGraph:
+      commit
+      branch develop
+      commit
+      commit
+      checkout main
+      commit
+      commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'base'
+    ---
+          gitGraph
+            commit
+            branch hotfix
+            checkout hotfix
+            commit
+            branch develop
+            checkout develop
+            commit id:"ash" tag:"abc"
+            branch featureB
+            checkout featureB
+            commit type:HIGHLIGHT
+            checkout main
+            checkout hotfix
+            commit type:NORMAL
+            checkout develop
+            commit type:REVERSE
+            checkout featureB
+            commit
+            checkout main
+            merge hotfix
+            checkout featureB
+            commit
+            checkout develop
+            branch featureA
+            commit
+            checkout develop
+            merge hotfix
+            checkout featureA
+            commit
+            checkout featureB
+            commit
+            checkout develop
+            merge featureA
+            branch release
+            checkout release
+            commit
+            checkout main
+            commit
+            checkout release
+            merge main
+            checkout develop
+            merge release
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'forest'
+    ---
+          gitGraph
+            commit
+            branch hotfix
+            checkout hotfix
+            commit
+            branch develop
+            checkout develop
+            commit id:"ash" tag:"abc"
+            branch featureB
+            checkout featureB
+            commit type:HIGHLIGHT
+            checkout main
+            checkout hotfix
+            commit type:NORMAL
+            checkout develop
+            commit type:REVERSE
+            checkout featureB
+            commit
+            checkout main
+            merge hotfix
+            checkout featureB
+            commit
+            checkout develop
+            branch featureA
+            commit
+            checkout develop
+            merge hotfix
+            checkout featureA
+            commit
+            checkout featureB
+            commit
+            checkout develop
+            merge featureA
+            branch release
+            checkout release
+            commit
+            checkout main
+            commit
+            checkout release
+            merge main
+            checkout develop
+            merge release
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+    ---
+          gitGraph
+            commit type:HIGHLIGHT
+            branch hotfix
+            checkout hotfix
+            commit
+            branch develop
+            checkout develop
+            commit id:"ash" tag:"abc"
+            branch featureB
+            checkout featureB
+            commit type:HIGHLIGHT
+            checkout main
+            checkout hotfix
+            commit type:NORMAL
+            checkout develop
+            commit type:REVERSE
+            checkout featureB
+            commit
+            checkout main
+            merge hotfix
+            checkout featureB
+            commit
+            checkout develop
+            branch featureA
+            commit
+            checkout develop
+            merge hotfix
+            checkout featureA
+            commit
+            checkout featureB
+            commit
+            checkout develop
+            merge featureA
+            branch release
+            checkout release
+            commit
+            checkout main
+            commit
+            checkout release
+            merge main
+            checkout develop
+            merge release
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'dark'
+    ---
+          gitGraph
+            commit
+            branch hotfix
+            checkout hotfix
+            commit
+            branch develop
+            checkout develop
+            commit id:"ash" tag:"abc"
+            branch featureB
+            checkout featureB
+            commit type:HIGHLIGHT
+            checkout main
+            checkout hotfix
+            commit type:NORMAL
+            checkout develop
+            commit type:REVERSE
+            checkout featureB
+            commit
+            checkout main
+            merge hotfix
+            checkout featureB
+            commit
+            checkout develop
+            branch featureA
+            commit
+            checkout develop
+            merge hotfix
+            checkout featureA
+            commit
+            checkout featureB
+            commit
+            checkout develop
+            merge featureA
+            branch release
+            checkout release
+            commit
+            checkout main
+            commit
+            checkout release
+            merge main
+            checkout develop
+            merge release
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'neutral'
+    ---
+          gitGraph
+            commit
+            branch hotfix
+            checkout hotfix
+            commit
+            branch develop
+            checkout develop
+            commit id:"ash" tag:"abc"
+            branch featureB
+            checkout featureB
+            commit type:HIGHLIGHT
+            checkout main
+            checkout hotfix
+            commit type:NORMAL
+            checkout develop
+            commit type:REVERSE
+            checkout featureB
+            commit
+            checkout main
+            merge hotfix
+            checkout featureB
+            commit
+            checkout develop
+            branch featureA
+            commit
+            checkout develop
+            merge hotfix
+            checkout featureA
+            commit
+            checkout featureB
+            commit
+            checkout develop
+            merge featureA
+            branch release
+            checkout release
+            commit
+            checkout main
+            commit
+            checkout release
+            merge main
+            checkout develop
+            merge release
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+    ---
+           gitGraph
+           commit
+           branch develop
+           commit tag:"v1.0.0"
+           commit
+           checkout main
+           commit type: HIGHLIGHT
+           commit
+           merge develop
+           commit
+           branch featureA
+           commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+      themeVariables:
+          'git0': '#ff0000'
+          'git1': '#00ff00'
+          'git2': '#0000ff'
+          'git3': '#ff00ff'
+          'git4': '#00ffff'
+          'git5': '#ffff00'
+          'git6': '#ff00ff'
+          'git7': '#00ffff'
+    ---
+           gitGraph
+           commit
+           branch develop
+           commit tag:"v1.0.0"
+           commit
+           checkout main
+           commit type: HIGHLIGHT
+           commit
+           merge develop
+           commit
+           branch featureA
+           commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+      themeVariables:
+        'gitBranchLabel0': '#ffffff'
+        'gitBranchLabel1': '#ffffff'
+        'gitBranchLabel2': '#ffffff'
+        'gitBranchLabel3': '#ffffff'
+        'gitBranchLabel4': '#ffffff'
+        'gitBranchLabel5': '#ffffff'
+        'gitBranchLabel6': '#ffffff'
+        'gitBranchLabel7': '#ffffff'
+        'gitBranchLabel8': '#ffffff'
+        'gitBranchLabel9': '#ffffff'
+    ---
+      gitGraph
+        checkout main
+        branch branch1
+        branch branch2
+        branch branch3
+        branch branch4
+        branch branch5
+        branch branch6
+        branch branch7
+        branch branch8
+        branch branch9
+        checkout branch1
+        commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+      themeVariables:
+        commitLabelColor: '#ff0000'
+        commitLabelBackground: '#00ff00'
+    ---
+           gitGraph
+           commit
+           branch develop
+           commit tag:"v1.0.0"
+           commit
+           checkout main
+           commit type: HIGHLIGHT
+           commit
+           merge develop
+           commit
+           branch featureA
+           commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+      themeVariables:
+        commitLabelColor: '#ff0000'
+        commitLabelBackground: '#00ff00'
+        commitLabelFontSize: '16px'
+    ---
+           gitGraph
+           commit
+           branch develop
+           commit tag:"v1.0.0"
+           commit
+           checkout main
+           commit type: HIGHLIGHT
+           commit
+           merge develop
+           commit
+           branch featureA
+           commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+      themeVariables:
+        commitLabelColor: '#ff0000'
+        commitLabelBackground: '#00ff00'
+        tagLabelFontSize: '16px'
+    ---
+           gitGraph
+           commit
+           branch develop
+           commit tag:"v1.0.0"
+           commit
+           checkout main
+           commit type: HIGHLIGHT
+           commit
+           merge develop
+           commit
+           branch featureA
+           commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+      themeVariables:
+        tagLabelColor: '#ff0000'
+        tagLabelBackground: '#00ff00'
+        tagLabelBorder: '#0000ff'
+    ---
+           gitGraph
+           commit
+           branch develop
+           commit tag:"v1.0.0"
+           commit
+           checkout main
+           commit type: HIGHLIGHT
+           commit
+           merge develop
+           commit
+           branch featureA
+           commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      logLevel: 'debug'
+      theme: 'default'
+      themeVariables:
+        'gitInv0': '#ff0000'
+    ---
+           gitGraph
+           commit
+           branch develop
+           commit tag:"v1.0.0"
+           commit
+           checkout main
+           commit type: HIGHLIGHT
+           commit
+           merge develop
+           commit
+           branch featureA
+           commit
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Simple "branch and merge" (left-to-right)
+    ---
+    gitGraph LR:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit
+    checkout main
+    merge newbranch
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Simple "branch and merge" (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit
+    checkout main
+    merge newbranch
+  - from: mermaid
+    valid: true
+- - |2-
+      ---
+      title: Simple "branch and merge" (bottom-to-top)
+      ---
+      gitGraph BT:
+      commit
+      branch newbranch
+      checkout newbranch
+      commit
+      checkout main
+      merge newbranch
+      </pre
+    >
+    <h2>Continuous development graph</h2>
+    <pre class="mermaid">
+    ---
+    title: Continuous development (left-to-right)
+    ---
+    gitGraph LR:
+    commit
+    branch develop
+    checkout develop
+    commit
+    checkout main
+    merge develop
+    checkout develop
+    commit
+    checkout main
+    merge develop
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Continuous development (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit
+    branch develop
+    checkout develop
+    commit
+    checkout main
+    merge develop
+    checkout develop
+    commit
+    checkout main
+    merge develop
+  - from: mermaid
+    valid: true
+- - |2-
+      ---
+      title: Continuous development (bottom-to-top)
+      ---
+      gitGraph BT:
+      commit
+      branch develop
+      checkout develop
+      commit
+      checkout main
+      merge develop
+      checkout develop
+      commit
+      checkout main
+      merge develop
+      </pre
+    >
+    <h2>Merge feature to advanced main graph</h2>
+    <pre class="mermaid">
+    ---
+    title: Merge feature to advanced main (left-to-right)
+    ---
+    gitGraph LR:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit
+    checkout main
+    commit
+    merge newbranch
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Merge feature to advanced main (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit
+    checkout main
+    commit
+    merge newbranch
+  - from: mermaid
+    valid: true
+- - |2-
+      ---
+      title: Merge feature to advanced main (bottom-to-top)
+      ---
+      gitGraph BT:
+      commit
+      branch newbranch
+      checkout newbranch
+      commit
+      checkout main
+      commit
+      merge newbranch
+      </pre
+    >
+    <h2>Two-way merges</h2>
+    <pre class="mermaid">
+    ---
+    title: Two-way merges (left-to-right)
+    ---
+    gitGraph LR:
+    commit
+    branch develop
+    checkout develop
+    commit
+    checkout main
+    merge develop
+    commit
+    checkout develop
+    merge main
+    commit
+    checkout main
+    merge develop
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Two-way merges (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit
+    branch develop
+    checkout develop
+    commit
+    checkout main
+    merge develop
+    commit
+    checkout develop
+    merge main
+    commit
+    checkout main
+    merge develop
+  - from: mermaid
+    valid: true
+- - |2-
+      ---
+      title: Two-way merges (bottom-to-top)
+      ---
+      gitGraph BT:
+      commit
+      branch develop
+      checkout develop
+      commit
+      checkout main
+      merge develop
+      commit
+      checkout develop
+      merge main
+      commit
+      checkout main
+      merge develop
+      </pre
+    >
+    <h2>Cherry-pick from branch graph</h2>
+    <pre class="mermaid">
+    ---
+    title: Cherry-pick from branch (left-to-right)
+    ---
+    gitGraph LR:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit id: "Pick me"
+    checkout main
+    commit
+    checkout newbranch
+    commit
+    checkout main
+    cherry-pick id: "Pick me"
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Cherry-pick from branch (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit id: "Pick me"
+    checkout main
+    commit
+    checkout newbranch
+    commit
+    checkout main
+    cherry-pick id: "Pick me"
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Cherry-pick from branch (bottom-to-top)
+    ---
+    gitGraph BT:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit id: "Pick me"
+    checkout main
+    commit
+    checkout newbranch
+    commit
+    checkout main
+    cherry-pick id: "Pick me"
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Cherry-pick from main (left-to-right)
+    ---
+    gitGraph LR:
+    commit
+    branch develop
+    commit
+    checkout main
+    commit id:"A"
+    checkout develop
+    commit
+    cherry-pick id: "A"
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Cherry-pick from main (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit
+    branch develop
+    commit
+    checkout main
+    commit id:"A"
+    checkout develop
+    commit
+    cherry-pick id: "A"
+  - from: mermaid
+    valid: true
+- - |2-
+      ---
+      title: Cherry-pick from main (bottom-to-top)
+      ---
+      gitGraph BT:
+      commit
+      branch develop
+      commit
+      checkout main
+      commit id:"A"
+      checkout develop
+      commit
+      cherry-pick id: "A"
+      </pre
+    >
+    <h2>Cherry-pick then merge graph</h2>
+    <pre class="mermaid">
+    ---
+    title: Cherry-pick then merge (left-to-right)
+    ---
+    gitGraph LR:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit id: "Pick me"
+    checkout main
+    commit
+    checkout newbranch
+    commit
+    checkout main
+    cherry-pick id: "Pick me"
+    merge newbranch
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Cherry-pick then merge (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit id: "Pick me"
+    checkout main
+    commit
+    checkout newbranch
+    commit
+    checkout main
+    cherry-pick id: "Pick me"
+    merge newbranch
+  - from: mermaid
+    valid: true
+- - |2-
+      ---
+      title: Cherry-pick then merge (bottom-to-top)
+      ---
+      gitGraph BT:
+      commit
+      branch newbranch
+      checkout newbranch
+      commit id: "Pick me"
+      checkout main
+      commit
+      checkout newbranch
+      commit
+      checkout main
+      cherry-pick id: "Pick me"
+      merge newbranch
+      </pre
+    >
+    <h2>Merge from main onto undeveloped branch graph</h2>
+    <pre class="mermaid">
+    ---
+    title: Merge from main onto undeveloped branch (left-to-right)
+    ---
+    gitGraph LR:
+    commit
+    branch develop
+    commit
+    checkout main
+    commit
+    checkout develop
+    merge main
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Merge from main onto undeveloped branch (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit
+    branch develop
+    commit
+    checkout main
+    commit
+    checkout develop
+    merge main
+  - from: mermaid
+    valid: true
+- - |2-
+      ---
+      title: Merge from main onto undeveloped branch (bottom-to-top)
+      ---
+      gitGraph BT:
+      commit
+      branch develop
+      commit
+      checkout main
+      commit
+      checkout develop
+      merge main
+      </pre
+    >
+    <h2>Merge from main onto developed branch graph</h2>
+    <pre class="mermaid">
+    ---
+    title: Merge from main onto developed branch (left-to-right)
+    ---
+    gitGraph LR:
+    commit
+    branch develop
+    commit
+    checkout main
+    commit
+    checkout develop
+    commit
+    merge main
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Merge from main onto developed branch (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit
+    branch develop
+    commit
+    checkout main
+    commit
+    checkout develop
+    commit
+    merge main
+  - from: mermaid
+    valid: true
+- - |2-
+      ---
+      title: Merge from main onto developed branch (bottom-to-top)
+      ---
+      gitGraph BT:
+      commit
+      branch develop
+      commit
+      checkout main
+      commit
+      checkout develop
+      commit
+      merge main
+      </pre
+    >
+    <h2>Two branches from same commit graph</h2>
+    <pre class="mermaid">
+    ---
+    title: Two branches from same commit (left-to-right)
+    ---
+    gitGraph LR:
+    commit
+    commit
+    branch feature-001
+    commit
+    commit
+    checkout main
+    branch feature-002
+    commit
+    checkout feature-001
+    merge feature-002
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Two branches from same commit (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit
+    commit
+    branch feature-001
+    commit
+    commit
+    checkout main
+    branch feature-002
+    commit
+    checkout feature-001
+    merge feature-002
+  - from: mermaid
+    valid: true
+- - |2-
+      ---
+      title: Two branches from same commit (bottom-to-top)
+      ---
+      gitGraph BT:
+      commit
+      commit
+      branch feature-001
+      commit
+      commit
+      checkout main
+      branch feature-002
+      commit
+      checkout feature-001
+      merge feature-002
+      </pre
+    >
+    <h2>Three branches and a cherry-pick from each graph</h2>
+    <pre class="mermaid">
+    ---
+    title: Three branches and a cherry-pick from each (left-to-right)
+    ---
+    gitGraph LR:
+    commit id: "ZERO"
+    branch develop
+    commit id:"A"
+    checkout main
+    commit id:"ONE"
+    checkout develop
+    commit id:"B"
+    branch featureA
+    commit id:"FIX"
+    commit id: "FIX-2"
+    checkout main
+    commit id:"TWO"
+    cherry-pick id:"A"
+    commit id:"THREE"
+    cherry-pick id:"FIX"
+    checkout develop
+    commit id:"C"
+    merge featureA
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Three branches and a cherry-pick from each (top-to-bottom)
+    ---
+    gitGraph TB:
+    commit id: "ZERO"
+    branch develop
+    commit id:"A"
+    checkout main
+    commit id:"ONE"
+    checkout develop
+    commit id:"B"
+    branch featureA
+    commit id:"FIX"
+    commit id: "FIX-2"
+    checkout main
+    commit id:"TWO"
+    cherry-pick id:"A"
+    commit id:"THREE"
+    cherry-pick id:"FIX"
+    checkout develop
+    commit id:"C"
+    merge featureA
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Three branches and a cherry-pick from each (bottom-to-top)
+    ---
+    gitGraph BT:
+    commit id: "ZERO"
+    branch develop
+    commit id:"A"
+    checkout main
+    commit id:"ONE"
+    checkout develop
+    commit id:"B"
+    branch featureA
+    commit id:"FIX"
+    commit id: "FIX-2"
+    checkout main
+    commit id:"TWO"
+    cherry-pick id:"A"
+    commit id:"THREE"
+    cherry-pick id:"FIX"
+    checkout develop
+    commit id:"C"
+    merge featureA
+  - from: mermaid
+    valid: true

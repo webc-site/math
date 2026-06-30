@@ -1,0 +1,1363 @@
+- - |-
+    classDiagram
+    class IService {
+      <<Interface>>
+    }
+    class Service
+    IService ..|> Service : implements
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+    class User {
+      +login(username: string, password: string): bool
+      -id: int
+      -name: string
+    }
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+    class Foo {
+      + () : void
+    }
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+    class User {
+      +login(username: string, password: string): bool
+      -id: int
+    }
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+        title ProbeAgent Architecture with Pluggable Components
+
+        namespace ProbeAgentCore {
+            class ProbeAgent
+        }
+
+        namespace PluggableModules {
+            class StorageAdapter {
+                +loadHistory()
+                +saveMessage()
+                +clearHistory()
+            }
+            class HookManager {
+                +on()
+                +emit()
+            }
+        }
+
+        namespace DefaultImplementations {
+            class InMemoryStorageAdapter
+        }
+
+        namespace CustomImplementationsExamples {
+            class PostgresStorageAdapter
+            class CustomLogger
+        }
+
+        InMemoryStorageAdapter --|> StorageAdapter : implements
+        PostgresStorageAdapter --|> StorageAdapter : implements
+        CustomLogger -- HookManager : "subscribes to"
+        ProbeAgent ..> StorageAdapter : uses
+        ProbeAgent ..> HookManager : uses
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+        namespace CoreClasses {
+            class Engine
+            class Wheel
+        }
+
+        namespace Components {
+            class Sensor
+            class Display
+        }
+
+        Engine -- Wheel
+        Sensor ..> Display
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+    class Order
+    note for Order "Domain aggregate"
+    class Customer
+    note for Customer "Preferred"
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+    class A
+    class B
+    class C
+    class D
+    class Client
+    class IService
+    class Impl
+
+    A *--o B
+    A o--* C
+    A o--o D
+    A *--* C
+    Client --() IService
+    IService ()-- Impl
+
+    A "1" -- "many" B
+    A "0..1" ..> "1" C
+
+    %% dotted realization both ways (via ..|>)
+    Client ..|> IService
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+    direction LR
+    class A
+    class B
+    class C
+    class D
+    A <|-- B : extends
+    A *-- C : has
+    A o-- D : owns
+    A ..> B : uses
+    A ..|> B : realizes
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+      class User {
+        +id: string
+        +email: string
+      }
+      class Order {
+        +id: string
+      }
+      User "1" -- "*" Order : places
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+      class A
+      class B
+      A "1..*" -- "0..1" B : uses
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+    class A
+    class B
+    class C
+    class D
+    A <|-- B
+    B --|> C
+    A <.. D
+    D ..> A
+    Client ..|> IService
+    IService <|.. Impl
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+    class Foo {
+      +bar()
+      -count: int
+    }
+    Foo <|-- Bar : inherits
+    class Bar
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+    direction LR
+    class IService as ServiceInterface
+    class ServiceInterface {
+      <<Interface>>
+    }
+    class Service {
+      +doWork(task: string): void
+    }
+    ServiceInterface ..|> Service : implements
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+        class Animal {
+            +name: string
+            +makeSound()
+        }
+        class Dog {
+            +breed: string
+            +bark()
+        }
+        class Cat {
+            +color: string
+            +meow()
+        }
+
+        Animal <|-- Dog
+        Animal <|-- Cat
+
+        style Animal fill:#1565c0,stroke:#42a5f5,color:#fff
+        style Dog fill:#2e7d32,stroke:#66bb6a,color:#fff
+        style Cat fill:#2e7d32,stroke:#66bb6a,color:#fff
+
+        classDef abstract fill:#e8f4fd,stroke:#2196f3
+        cssClass "Animal" abstract
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+        title Simple Class Diagram
+
+        class Animal {
+            +String name
+            +int age
+            +makeSound()
+        }
+  - from: maid
+    valid: true
+- - |-
+    classDiagram
+    class Map
+    class Pair
+    Map <|-- Pair
+    class Service
+    class Client
+    Client ..> Service : uses
+    %% Generics in class names / member types (Mermaid CLI may not support these)
+    class Repo
+    Repo : get(): Result<string,int>
+    Repo : put(item: Pair<string,int>): void
+    class Node
+    Node <|-- Tree
+    Tree : root: Node<string>
+  - from: maid
+    valid: false
+- - |-
+    classDiagram
+        interface Animal {
+            +String name
+            +makeSound()
+        }
+
+        class Dog {
+            +bark()
+        }
+
+        class Cat {
+            +meow()
+        }
+
+        Dog --|> Animal
+        Cat --|> Animal
+  - from: maid
+    valid: false
+- - |-
+    classDiagram
+    Foo -> Bar : wrong arrow
+  - from: maid
+    valid: false
+    errors:
+      - CL-REL-INVALID
+- - |-
+    classDiagram
+    class Foo {
+      +bar()
+  - from: maid
+    valid: false
+    errors:
+      - CL-BLOCK-MISSING-RBRACE
+- - |-
+    classDiagram
+        namespace "Core Classes" {
+            class Engine
+            class Wheel
+
+        class Display
+  - from: maid
+    valid: false
+- - |-
+    classDiagram
+        title ProbeAgent Architecture
+
+        namespace "ProbeAgent Core" {
+            class ProbeAgent
+        }
+
+        namespace "Pluggable Modules" {
+            interface StorageAdapter {
+                +loadHistory()
+                +saveMessage()
+            }
+        }
+
+        ProbeAgent ..> StorageAdapter : uses
+  - from: maid
+    valid: false
+- - |-
+    classDiagram
+    class "Logger "core"" as L
+  - from: maid
+    valid: false
+    errors:
+      - CL-NAME-DOUBLE-QUOTED
+- - |-
+    classDiagram
+    Foo <|-- : extends
+  - from: maid
+    valid: false
+    errors:
+      - CL-REL-MALFORMED
+- - |-
+    classDiagram
+      class Animal {
+        +String name
+        +int age
+        +eat() void
+        +sleep() void
+      }
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class User {
+        +String name
+        -String password
+        #int internalId
+        ~String packageField
+        +login() bool
+        -hashPassword() String
+        #validate() void
+        ~notify() void
+      }
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Serializable {
+        <<interface>>
+        +serialize() String
+        +deserialize(data) void
+      }
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Shape {
+        <<abstract>>
+        +String color
+        +area() double
+        +draw() void
+      }
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Status {
+        <<enumeration>>
+        ACTIVE
+        INACTIVE
+        PENDING
+        DELETED
+      }
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Animal {
+        +String name
+        +eat() void
+      }
+      class Dog {
+        +String breed
+        +bark() void
+      }
+      class Cat {
+        +bool isIndoor
+        +meow() void
+      }
+      Animal <|-- Dog
+      Animal <|-- Cat
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Car {
+        +String model
+        +start() void
+      }
+      class Engine {
+        +int horsepower
+        +rev() void
+      }
+      Car *-- Engine
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class University {
+        +String name
+      }
+      class Department {
+        +String faculty
+      }
+      University o-- Department
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Customer {
+        +String name
+      }
+      class Order {
+        +int orderId
+      }
+      Customer --> Order
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Service {
+        +process() void
+      }
+      class Repository {
+        +find() Object
+      }
+      Service ..> Repository
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Flyable {
+        <<interface>>
+        +fly() void
+      }
+      class Bird {
+        +fly() void
+        +sing() void
+      }
+      Bird ..|> Flyable
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      A <|-- B : inheritance
+      C *-- D : composition
+      E o-- F : aggregation
+      G --> H : association
+      I ..> J : dependency
+      K ..|> L : realization
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Teacher {
+        +String name
+      }
+      class Student {
+        +String name
+      }
+      class Course {
+        +String title
+      }
+      Teacher --> Course : teaches
+      Student --> Course : enrolled in
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Subject {
+        <<interface>>
+        +attach(Observer) void
+        +detach(Observer) void
+        +notify() void
+      }
+      class Observer {
+        <<interface>>
+        +update() void
+      }
+      class EventEmitter {
+        -List~Observer~ observers
+        +attach(Observer) void
+        +detach(Observer) void
+        +notify() void
+      }
+      class Logger {
+        +update() void
+      }
+      class Alerter {
+        +update() void
+      }
+      Subject <|.. EventEmitter
+      Observer <|.. Logger
+      Observer <|.. Alerter
+      EventEmitter --> Observer
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Model {
+        -data Map
+        +getData() Map
+        +setData(key, val) void
+        +notify() void
+      }
+      class View {
+        -model Model
+        +render() void
+        +update() void
+      }
+      class Controller {
+        -model Model
+        -view View
+        +handleInput(event) void
+        +updateModel(data) void
+      }
+      Controller --> Model : updates
+      Controller --> View : refreshes
+      View --> Model : reads
+      Model ..> View : notifies
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Animal {
+        <<abstract>>
+        +String name
+        +int age
+        +eat() void
+        +sleep() void
+      }
+      class Mammal {
+        +bool warmBlooded
+        +nurse() void
+      }
+      class Bird {
+        +bool canFly
+        +layEggs() void
+      }
+      class Dog {
+        +String breed
+        +bark() void
+      }
+      class Cat {
+        +bool isIndoor
+        +purr() void
+      }
+      class Parrot {
+        +String vocabulary
+        +speak() void
+      }
+      Animal <|-- Mammal
+      Animal <|-- Bird
+      Mammal <|-- Dog
+      Mammal <|-- Cat
+      Bird <|-- Parrot
+  - from: beautiful-mermaid
+    valid: true
+- - |-
+    classDiagram
+       accTitle: My Class Diagram
+       accDescr: My Class Diagram Description
+
+       Vehicle <|-- Car
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    Class01 <|-- AveryLongClass : Cool
+    Class03 *-- Class04
+    Class05 o-- Class06
+    Class07 .. Class08
+    Class09 --> C2 : Where am i?
+    Class09 --* C3
+    Class09 --|> Class07
+    Class07 : equals()
+    Class07 : Object[] elementData
+    Class01 : size()
+    Class01 : int chimp
+    Class01 : int gorilla
+    Class08 <--> C2: Cool label
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Animal example
+    ---
+    classDiagram
+        note "From Duck till Zebra"
+        Animal <|-- Duck
+        note for Duck "can fly<br>can swim<br>can dive<br>can help in debugging"
+        Animal <|-- Fish
+        Animal <|-- Zebra
+        Animal : +int age
+        Animal : +String gender
+        Animal: +isMammal()
+        Animal: +mate()
+        class Duck{
+            +String beakColor
+            +swim()
+            +quack()
+        }
+        class Fish{
+            -int sizeInFeet
+            -canEat()
+        }
+        class Zebra{
+            +bool is_wild
+            +run()
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Bank example
+    ---
+    classDiagram
+        class BankAccount
+        BankAccount : +String owner
+        BankAccount : +Bigdecimal balance
+        BankAccount : +deposit(amount)
+        BankAccount : +withdrawal(amount)
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        class Animal
+        Vehicle <|-- Car
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        class Animal["Animal with a label"]
+        class Car["Car with *! symbols"]
+        Animal --> Car
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        class `Animal Class!`
+        class `Car Class`
+        `Animal Class!` --> `Car Class`
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    class BankAccount
+    BankAccount : +String owner
+    BankAccount : +BigDecimal balance
+    BankAccount : +deposit(amount)
+    BankAccount : +withdrawal(amount)
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    class BankAccount{
+        +String owner
+        +BigDecimal balance
+        +deposit(amount)
+        +withdrawal(amount)
+    }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    class BankAccount{
+        +String owner
+        +BigDecimal balance
+        +deposit(amount) bool
+        +withdrawal(amount) int
+    }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    class Square~Shape~{
+        int id
+        List~int~ position
+        setPoints(List~int~ points)
+        getPoints() List~int~
+    }
+
+    Square : -List~string~ messages
+    Square : +setMessages(List~string~ messages)
+    Square : +getMessages() List~string~
+    Square : +getDistanceMatrix() List~List~int~~
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    classA <|-- classB
+    classC *-- classD
+    classE o-- classF
+    classG <-- classH
+    classI -- classJ
+    classK <.. classL
+    classM <|.. classN
+    classO .. classP
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    classA --|> classB : Inheritance
+    classC --* classD : Composition
+    classE --o classF : Aggregation
+    classG --> classH : Association
+    classI -- classJ : Link(Solid)
+    classK ..> classL : Dependency
+    classM ..|> classN : Realization
+    classO .. classP : Link(Dashed)
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    classA <|-- classB : implements
+    classC *-- classD : composition
+    classE o-- classF : aggregation
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        Animal <|--|> Zebra
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      bar ()-- foo
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Class01 {
+        int amount
+        draw()
+      }
+      Class01 --() bar
+      Class02 --() bar
+
+      foo ()-- Class01
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    namespace BaseShapes {
+        class Triangle
+        class Rectangle {
+          double width
+          double height
+        }
+    }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        namespace Auth["Authentication Service"] {
+            class UserService {
+                +login()
+                +logout()
+            }
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        namespace Company.Engineering.Backend {
+            class Developer {
+                +writeCode()
+            }
+        }
+        namespace Company.Engineering.Frontend {
+            class Designer {
+                +createMockup()
+            }
+        }
+        namespace Company.Engineering {
+            class TechLead {
+                +planSprint()
+            }
+        }
+        TechLead --> Developer : leads
+        TechLead --> Designer : leads
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        namespace Platform {
+            namespace Auth {
+                class UserService {
+                    +login()
+                    +logout()
+                }
+            }
+            namespace Data {
+                class Repository {
+                    +find()
+                    +save()
+                }
+            }
+            class Gateway {
+                +route()
+            }
+        }
+        Gateway --> UserService : delegates
+        Gateway --> Repository : delegates
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      class:
+        hierarchicalNamespaces: false
+    ---
+    classDiagram
+        namespace Company.Engineering.Backend {
+            class Developer {
+                +writeCode()
+            }
+        }
+        namespace Company.Engineering.Frontend {
+            class Designer {
+                +createMockup()
+            }
+        }
+        namespace Company {
+            class CEO {
+                +makeDecisions()
+            }
+        }
+        CEO --> Developer : oversees
+        CEO --> Designer : oversees
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        Customer "1" --> "*" Ticket
+        Student "1" --> "1..*" Course
+        Galaxy --> "many" Star : Contains
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Shape <<interface>>
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    class Shape
+    <<interface>> Shape
+    Shape : noOfVertices
+    Shape : draw()
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    class Shape{
+        <<interface>>
+        noOfVertices
+        draw()
+    }
+    class Color{
+        <<enumeration>>
+        RED
+        BLUE
+        GREEN
+        WHITE
+        BLACK
+    }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    %% This whole line is a comment classDiagram class Shape <<interface>>
+    class Shape{
+        <<interface>>
+        noOfVertices
+        draw()
+    }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      direction RL
+      class Student {
+        -idCard : IdCard
+      }
+      class IdCard{
+        -id : int
+        -name : string
+      }
+      class Bike{
+        -id : int
+        -name : string
+      }
+      Student "1" --o "1" IdCard : carries
+      Student "1" --o "1" Bike : rides
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        note "This is a general note"
+        note for MyClass "This is a note for a class"
+        class MyClass{
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    class Shape
+    link Shape "https://www.github.com" "This is a tooltip for a link"
+    class Shape2
+    click Shape2 href "https://www.github.com" "This is a tooltip for a link"
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    class Shape
+    callback Shape "callbackFunction" "This is a tooltip for a callback"
+    class Shape2
+    click Shape2 call callbackFunction() "This is a tooltip for a callback"
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        class Class01
+        class Class02
+        callback Class01 "callbackFunction" "Callback tooltip"
+        link Class02 "https://www.github.com" "This is a link"
+        class Class03
+        class Class04
+        click Class03 call callbackFunction() "Callback tooltip"
+        click Class04 href "https://www.github.com" "This is a link"
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Animal
+      class Mineral
+      style Animal fill:#f9f,stroke:#333,stroke-width:4px
+      style Mineral fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        class Animal:::someclass
+        classDef someclass fill:#f96
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        class Animal:::someclass {
+            -int sizeInFeet
+            -canEat()
+        }
+        classDef someclass fill:#f96
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Animal:::pink
+      class Mineral
+
+      classDef default fill:#f96,color:red
+      classDef pink color:#f9f
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+        class Animal:::styleClass
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+      config:
+        class:
+          hideEmptyMembersBox: true
+    ---
+    classDiagram
+      class Duck
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    title: Demo Class Diagram
+    ---
+    classDiagram
+      accTitle: Demo Class Diagram
+      accDescr: This class diagram show the abstract Animal class, and 3 classes that inherit from it: Duck, Fish, and Zebra.
+
+      Animal <|-- Duck
+      Animal <|-- Fish
+      Animal <|-- Zebra
+      Animal : +int age
+      Animal : +String gender
+      Animal: +isMammal()
+      Animal: +mate()
+
+      class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+      }
+      class Fish{
+        -Listint sizeInFeet
+        -canEat()
+      }
+      class Zebra{
+        +bool is_wild
+        +run(List~T~, List~OT~)
+        %% +run-composite(List~T, K~)
+        +run-nested(List~List~OT~~)
+      }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    Class01 <|-- AveryLongClass : Cool
+
+    <<interface>> Class01
+    Class03 "0" *-- "0..n" Class04
+    Class05 "1" o-- "many" Class06
+    Class07 .. Class08
+    Class09 "many" --> "1" C2 : Where am i?
+    Class09 "0" --* "1..n" C3
+    Class09 --|> Class07
+    Class07 : equals()
+    Class07 : Object[] elementData
+    Class01 : #size()
+    Class01 : -int chimp
+    Class01 : +int gorilla
+    Class08 <--> C2: Cool label
+      class Class10 {
+      <<service>>
+      int id
+      size()
+      }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    class Class01~T~
+    Class01 : #size()
+    Class01 : -int chimp
+    Class01 : +int gorilla
+    Class01 : +abstractAttribute string*
+    class Class10~T~ {
+    <<service>>
+    int id
+    size()
+    }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    Class01~T~ <|-- AveryLongClass : Cool
+    <<interface>> Class01
+    Class03~T~ "0" *-- "0..n" Class04
+    Class05 "1" o-- "many" Class06
+    Class07~T~ .. Class08
+    Class09 "many" --> "1" C2 : Where am i?
+      Class09 "0" --* "1..n" C3
+      Class09 --|> Class07
+      Class07 : equals()
+      Class07 : Object[] elementData
+      Class01 : #size()
+      Class01 : -int chimp
+      Class01 : +int gorilla
+      Class08 <--> C2: Cool label
+        class Class10 {
+        <<service>>
+        int id
+        size()
+        }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    Interface1 ()-- Interface1Impl
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    direction LR
+    Animal ()-- Dog
+    Animal ()-- Cat
+    note for Cat "should have no members area"
+    Dog : bark()
+    Dog : species()
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+    direction RL
+    Fruit ()-- Apple
+    Apple : color()
+    Apple : -int leafCount()
+    Fruit ()-- Pineapple
+    Pineapple : color()
+    Pineapple : -int leafCount()
+    Pineapple : -int spikeCount()
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      class Person {
+        +ID : Guid
+        +FirstName : string
+        +LastName : string
+        -privateProperty : string
+        #ProtectedProperty : string
+        ~InternalProperty : string
+        ~AnotherInternalProperty : List~List~string~~
+      }
+      class People List~List~Person~~
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      namespace Company.Project.Module {
+        class GenericClass~T~ {
+          +addItem(item: T)
+          +getItem() T
+        }
+      }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      namespace Company.Project.Module.SubModule {
+        class Report {
+          +generatePDF(data: List)
+          +generateCSV(data: List)
+        }
+      }
+      namespace Company.Project.Module {
+        class Admin {
+          +generateReport()
+        }
+      }
+      Admin --> Report : generates
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      namespace Company.Project.Module {
+        class User {
+          +login(username: String, password: String)
+          +logout()
+        }
+        class Admin {
+          +addUser(user: User)
+          +removeUser(user: User)
+          +generateReport()
+        }
+        class Report {
+          +generatePDF(reportData: List)
+          +generateCSV(reportData: List)
+        }
+      }
+      Admin --> User : manages
+      Admin --> Report : generates
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      namespace Shapes {
+        class Shape {
+          +calculateArea() double
+        }
+        class Circle {
+          +double radius
+        }
+        class Square {
+          +double side
+        }
+      }
+
+      Shape <|-- Circle
+      Shape <|-- Square
+
+      namespace Vehicles {
+        class Vehicle {
+          +String brand
+        }
+        class Car {
+          +int horsepower
+        }
+        class Bike {
+          +boolean hasGears
+        }
+      }
+
+      Vehicle <|-- Car
+      Vehicle <|-- Bike
+      Car --> Circle : "Logo Shape"
+      Bike --> Square : "Logo Shape"
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      note "This is a outer note"
+      note for Class1 "This is a outer note for Class1"
+      namespace ns {
+        note "This is a inner note"
+        note for Class1 "This is a inner note for Class1"
+        class Class1
+        class Class2
+      }
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      namespace Company.Engineering.Backend {
+        class Developer {
+          +writeCode()
+          +reviewPR()
+        }
+      }
+      namespace Company.Engineering.Frontend {
+        class Designer {
+          +createMockup()
+          +buildUI()
+        }
+      }
+      namespace Company.Engineering {
+        class TechLead {
+          +planSprint()
+        }
+      }
+      namespace Company {
+        class CEO {
+          +makeDecisions()
+        }
+      }
+      CEO --> TechLead : oversees
+      TechLead --> Developer : leads
+      TechLead --> Designer : leads
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      namespace Platform {
+        namespace Auth {
+          class UserService {
+            +login()
+            +logout()
+          }
+          class TokenManager {
+            +generateToken()
+            +validateToken()
+          }
+        }
+        namespace Data {
+          class Repository {
+            +find()
+            +save()
+          }
+        }
+        class Gateway {
+          +route()
+        }
+      }
+      UserService --> TokenManager : uses
+      Gateway --> UserService : delegates
+      Gateway --> Repository : delegates
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      namespace App.Services {
+        namespace Billing {
+          class Invoice {
+            +calculate()
+          }
+        }
+        class Logger {
+          +log()
+        }
+      }
+      namespace App.Models {
+        class User {
+          +String name
+        }
+      }
+      Invoice --> Logger : logs to
+      Invoice --> User : bills
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      class:
+        hierarchicalNamespaces: false
+    ---
+    classDiagram
+      namespace Company.Engineering.Backend {
+        class Developer {
+          +writeCode()
+          +reviewPR()
+        }
+      }
+      namespace Company.Engineering.Frontend {
+        class Designer {
+          +createMockup()
+          +buildUI()
+        }
+      }
+      namespace Company {
+        class CEO {
+          +makeDecisions()
+        }
+      }
+      CEO --> Developer : oversees
+      CEO --> Designer : oversees
+  - from: mermaid
+    valid: true
+- - |-
+    ---
+    config:
+      class:
+        hierarchicalNamespaces: false
+    ---
+    classDiagram
+      namespace Platform {
+        namespace Auth {
+          class UserService {
+            +login()
+          }
+        }
+        namespace Data {
+          class Repository {
+            +find()
+          }
+        }
+      }
+      UserService --> Repository : reads
+  - from: mermaid
+    valid: true
+- - |-
+    classDiagram
+      namespace Auth["Authentication Service"] {
+        class UserService {
+          +login()
+          +logout()
+        }
+        class TokenManager {
+          +generate()
+        }
+      }
+      namespace Store["Data Store"] {
+        class Repository {
+          +find()
+          +save()
+        }
+      }
+      UserService --> TokenManager : uses
+      UserService --> Repository : reads from
+  - from: mermaid
+    valid: true
