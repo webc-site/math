@@ -1,0 +1,392 @@
+@import './webc/I18n/_.styl'
+@import './webc/Lg/_.styl'
+@import './webc/Scroll/_.styl'
+
+:root
+  --accent-color #2563eb
+  --accent-glow #2563eb14
+  --accent-gradient linear-gradient(135deg, #3b82f6 0, #2563eb 100%)
+  --accent-hover #1d4ed8
+  --bg-color #f8fafc
+  --border-color #e2e8f0
+  --card-bg #ffffff
+  --success-color #10b981
+  --text-color #0f172a
+  --text-muted #64748b
+
+body, input, select, button, textarea
+  font-family t, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif
+
+html, body
+  height 100%
+  overflow hidden
+
+body
+  background #ffffff url('./svg/bg.svg') no-repeat center / cover
+  background-attachment fixed
+  box-sizing border-box
+  color var(--text-color)
+  display flex
+  flex-direction column
+  margin 0
+  padding 0
+
+header
+  position fixed
+  right 24px
+  top 24px
+  z-index 100
+
+.header-controls
+  align-items center
+  display flex
+  gap 16px
+
+c-i18n
+  display flex
+
+.header-controls .BtnC
+  align-items center
+  display flex
+  justify-content center
+
+  .Ico
+    align-items center
+    display flex
+    justify-content center
+    position relative
+
+  svg
+    color var(--text-muted)
+    fill currentColor
+    height 20px
+    transition color 0.2s
+    width 20px
+
+  &:hover svg
+    color var(--text-color)
+
+.header-main
+  align-items center
+  display flex
+  flex-direction column
+  gap 12px
+  margin 31px auto 56px
+  max-width 800px
+  text-align center
+
+  h1
+    font-size 44px
+    font-variation-settings 'wght' 250
+    font-weight 250
+    letter-spacing -1.2px
+    margin 0
+
+    a
+      color var(--text-color)
+      text-decoration none
+      transition opacity 0.2s
+
+      &:hover
+        opacity 0.85
+
+  .subtitle
+    color var(--text-muted)
+    font-size 18px
+    font-weight 400
+    line-height 1.5
+    margin 0
+    text-align center
+
+.subtitle a
+  color var(--accent-color)
+  font-weight 600
+  text-decoration none
+  transition color 0.2s
+
+  &:hover
+    color var(--accent-hover)
+    text-decoration underline
+
+main
+  display flex
+  flex 1
+  justify-content center
+  padding 24px
+
+.container
+  display flex
+  flex-direction column
+  gap 40px
+  max-width 1200px
+  width 100%
+
+.card
+  border-radius 24px
+  box-shadow 0 4px 6px -1px #0000000d, 0 2px 4px -1px #00000008
+  flex-direction column
+  padding 32px
+  position relative
+  z-index 1
+
+  h2
+    color var(--text-color)
+    font-size 22px
+    font-weight 700
+    margin-bottom 8px
+    margin-top 0
+
+.card-header
+  align-items center
+  display flex
+  justify-content space-between
+  margin-bottom 12px
+
+  h2
+    margin 0
+
+  .Btn
+    font-size 13px
+    font-weight 600
+    --btnBg linear-gradient(180deg, #f5f5f580, #f5f5f5b3)
+    --btnPadding 6px 16px
+
+.tag
+  align-items center
+  background-color var(--accent-glow)
+  border 1px solid #2563eb26
+  border-radius 9999px
+  box-shadow 0 1px 2px #00000005
+  color var(--accent-color)
+  display inline-flex
+  font-size 13px
+  font-weight 600
+  padding 6px 14px
+  text-decoration none
+  transition all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+
+  &:hover
+    background-color var(--accent-color)
+    border-color var(--accent-color)
+    box-shadow 0 4px 6px -1px #2563eb26
+    color #ffffff
+    transform translateY(-1px)
+
+.editor-card
+  display flex
+  flex-direction column
+  gap 20px
+
+.editor-header
+  display flex
+  flex-direction column
+
+  h2
+    margin-bottom 4px
+
+.tip
+  color var(--text-muted)
+  font-size 15px
+  font-weight 300
+  margin 0
+
+#formula-input
+  background-color #f8fafc
+  border 1px solid var(--border-color)
+  border-radius 10px
+  box-sizing border-box
+  color var(--text-color)
+  field-sizing content
+  font-family c, monospace
+  font-size 18px
+  height auto
+  line-height 1.6
+  min-height 80px
+  outline none
+  padding 20px
+  resize none
+  transition border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease
+  width 100%
+
+  &:focus
+    background-color #ffffff
+    border-color var(--accent-color)
+    box-shadow 0 0 0 3px var(--accent-glow)
+
+.math-display
+  align-items center
+  border-radius 16px
+  display flex
+  justify-content center
+  min-height 100px
+  overflow-x auto
+  padding 32px 0
+
+math
+  color var(--text-color)
+  font-family m, t, math, sans-serif
+  font-size 30px
+
+.formulas-section
+  display flex
+  flex-direction column
+  gap 24px
+
+  h2
+    color var(--text-color)
+    font-size 24px
+    font-weight 700
+    margin 0
+
+.formulas-grid
+  position relative
+  transition height 0.3s ease
+  width 100%
+
+  .formula-card
+    border-radius 16px
+    box-shadow 0 4px 6px -1px #0000000d, 0 2px 4px -1px #00000008
+    box-sizing border-box
+    cursor pointer
+    display flex
+    flex-direction column
+    gap 12px
+    padding 24px
+    position absolute
+    transition transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s
+
+    &:hover
+      box-shadow 0 12px 20px -3px #00000014, 0 4px 6px -2px #00000008
+      transform translateY(-4px)
+
+      &::before
+        background linear-gradient(180deg, #f5f5f580, #f5f5f5b3)
+
+      &::after
+        background-image linear-gradient(180deg, var(--accent-color), #2563eb4d)
+
+    h3
+      color var(--text-color)
+      font-size 18px
+      font-weight 600
+      margin 0
+
+    .tex-code
+      background-color var(--bg-color)
+      border 1px solid var(--border-color)
+      border-radius 8px
+      color var(--text-muted)
+      font-family c, monospace
+      font-size 14px
+      overflow-x auto
+      padding 12px 16px
+      white-space nowrap
+
+    .rendered-math
+      align-items center
+      background-color #f8fafc
+      border 1px solid var(--border-color)
+      border-radius 10px
+      display flex
+      justify-content center
+      min-height 100px
+      overflow hidden
+      padding 24px
+
+      math
+        display inline-block
+
+.code-block
+  background-color #f8fafc
+  border 1px solid var(--border-color)
+  border-radius 10px
+  margin 0
+  padding 24px
+  white-space pre-wrap
+  word-wrap break-word
+
+  code
+    color #1e293b
+    font-family c, monospace
+    font-size 14px
+    font-weight 300
+    line-height 1.6
+
+.main-grid
+  display grid
+  gap 40px
+  grid-template-columns 1fr 360px
+  width 100%
+
+.benchmark-card
+  display flex
+  flex-direction column
+
+.benchmark-img-container
+  align-items center
+  display flex
+  flex 1
+  flex-direction column
+  justify-content center
+  padding 16px 0
+
+  img
+    height auto
+    max-width 100%
+    width 100%
+
+.benchmark-header
+  align-items baseline
+  display flex
+  flex-wrap wrap
+  gap 8px
+  justify-content space-between
+  margin-bottom 12px
+
+.benchmark-card
+  h2
+    color var(--text-color)
+    font-size 22px
+    font-weight 700
+    margin 0
+
+  .tip
+    color var(--text-muted)
+    font-size 14px
+
+@media (max-width 768px)
+  header
+    right 16px
+    top 16px
+
+  .header-main
+    margin 46px auto 0
+
+    h1
+      font-size 32px
+
+  .header-content
+    align-items center
+    flex-direction column
+    gap 6px
+    text-align center
+
+  .subtitle
+    border-left none
+    padding-left 0
+
+  .main-grid
+    display flex
+    flex-direction column
+
+  .usage-card
+    order 1
+
+  .size-card
+    order 2
+
+  .speed-card
+    order 3
+
+  .editor-card
+    order 4

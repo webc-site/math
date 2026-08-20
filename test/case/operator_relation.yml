@@ -1,0 +1,212 @@
+- - $$\div$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#xF7;</mo></mrow><annotation
+    encoding="application/x-tex">\div</annotation></semantics></math>
+- - $$\cdot$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x22C5;</mo></mrow><annotation
+    encoding="application/x-tex">\cdot</annotation></semantics></math>
+- - $$\times$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#xD7;</mo></mrow><annotation
+    encoding="application/x-tex">\times</annotation></semantics></math>
+- - $$\le$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2264;</mo></mrow><annotation
+    encoding="application/x-tex">\le</annotation></semantics></math>
+- - $$\geq$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2265;</mo></mrow><annotation
+    encoding="application/x-tex">\geq</annotation></semantics></math>
+- - $$\ge$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2265;</mo></mrow><annotation
+    encoding="application/x-tex">\ge</annotation></semantics></math>
+- - $$\ne$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2260;</mo></mrow><annotation
+    encoding="application/x-tex">\ne</annotation></semantics></math>
+- - $$\neq$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2260;</mo></mrow><annotation
+    encoding="application/x-tex">\neq</annotation></semantics></math>
+- - $$+-*\cdot\pm\div$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>+</mo><mo>−</mo><mo>∗</mo><mo>⋅</mo><mo>±</mo><mo>÷</mo></mrow><annotation
+    encoding="application/x-tex">+-*\cdot\pm\div</annotation></semantics></math>
+- - $$M\neq N$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>M</mi><mo
+    mathvariant="normal">≠</mo><mi>N</mi></mrow><annotation
+    encoding="application/x-tex">M\neq N</annotation></semantics></math>
+- - $$a\rightarrow=b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo data-mjx-tex
+    stretchy="false">&#x2192;=</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a\rightarrow=b</annotation></semantics></math>
+- - $$a \sim b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo>&#x223C;</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a \sim b</annotation></semantics></math>
+- - $$a =\sim b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo
+    data-mjx-tex>=&#x223C;</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a =\sim b</annotation></semantics></math>
+- - $$a \sim\cong b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo
+    data-mjx-tex>&#x223C;&#x2245;</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a \sim\cong b</annotation></semantics></math>
+- - $$a=\rightarrow b$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>a</mi><mo data-mjx-tex
+    stretchy="false">=&#x2192;</mo><mi>b</mi></mrow><annotation
+    encoding="application/x-tex">a=\rightarrow b</annotation></semantics></math>
+- - $$\emptyset$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi
+    mathvariant="normal">&#x2205;</mi></mrow><annotation
+    encoding="application/x-tex">\emptyset</annotation></semantics></math>
+- - $$\forall$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi
+    mathvariant="normal">&#x2200;</mi></mrow><annotation
+    encoding="application/x-tex">\forall</annotation></semantics></math>
+- - $$\exists$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi
+    mathvariant="normal">&#x2203;</mi></mrow><annotation
+    encoding="application/x-tex">\exists</annotation></semantics></math>
+- - $$\Rightarrow$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    stretchy="false">&#x21D2;</mo></mrow><annotation
+    encoding="application/x-tex">\Rightarrow</annotation></semantics></math>
+- - $$\cap$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2229;</mo></mrow><annotation
+    encoding="application/x-tex">\cap</annotation></semantics></math>
+- - $$\cup$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x222A;</mo></mrow><annotation
+    encoding="application/x-tex">\cup</annotation></semantics></math>
+- - $$\propto$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x221D;</mo></mrow><annotation
+    encoding="application/x-tex">\propto</annotation></semantics></math>
+- - $$\approx$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2248;</mo></mrow><annotation
+    encoding="application/x-tex">\approx</annotation></semantics></math>
+- - $$\supset$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2283;</mo></mrow><annotation
+    encoding="application/x-tex">\supset</annotation></semantics></math>
+- - $$\subset$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2282;</mo></mrow><annotation
+    encoding="application/x-tex">\subset</annotation></semantics></math>
+- - $$\supseteq$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2287;</mo></mrow><annotation
+    encoding="application/x-tex">\supseteq</annotation></semantics></math>
+- - $$\subseteq$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2286;</mo></mrow><annotation
+    encoding="application/x-tex">\subseteq</annotation></semantics></math>
+- - $$\in$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation
+    encoding="application/x-tex">\in</annotation></semantics></math>
+- - $$\notin$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2209;</mo></mrow><annotation
+    encoding="application/x-tex">\notin</annotation></semantics></math>
+- - $$\Leftrightarrow$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    stretchy="false">&#x21D4;</mo></mrow><annotation
+    encoding="application/x-tex">\Leftrightarrow</annotation></semantics></math>
+- - $$\Leftarrow$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    stretchy="false">&#x21D0;</mo></mrow><annotation
+    encoding="application/x-tex">\Leftarrow</annotation></semantics></math>
+- - $$\leftrightarrow$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    stretchy="false">&#x2194;</mo></mrow><annotation
+    encoding="application/x-tex">\leftrightarrow</annotation></semantics></math>
+- - $$\leftarrow$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo
+    stretchy="false">&#x2190;</mo></mrow><annotation
+    encoding="application/x-tex">\leftarrow</annotation></semantics></math>
+- - $$\to$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo accent="false"
+    stretchy="false">&#x2192;</mo></mrow><annotation
+    encoding="application/x-tex">\to</annotation></semantics></math>
+- - $$A\dots B$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>A</mi><mo>&#x2026;</mo><mi>B</mi></mrow><annotation
+    encoding="application/x-tex">A\dots B</annotation></semantics></math>
+- - $$+\dots+$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>+</mo><mo>&#x22EF;</mo><mo>+</mo></mrow><annotation
+    encoding="application/x-tex">+\dots+</annotation></semantics></math>
+- - $$\dots\left( A\right)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2026;</mo><mrow data-mjx-tex><mo
+    data-mjx-tex>(</mo><mi>A</mi><mo
+    data-mjx-tex>)</mo></mrow></mrow><annotation
+    encoding="application/x-tex">\dots\left(
+    A\right)</annotation></semantics></math>
+- - $$\ldots$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x2026;</mo></mrow><annotation
+    encoding="application/x-tex">\ldots</annotation></semantics></math>
+- - $$\cdots$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo>&#x22EF;</mo></mrow><annotation
+    encoding="application/x-tex">\cdots</annotation></semantics></math>

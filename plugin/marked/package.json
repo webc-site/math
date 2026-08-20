@@ -1,0 +1,33 @@
+{
+  "name": "@webc.site/math-marked",
+  "version": "0.1.1",
+  "description": "Marked extension for @webc.site/math / @webc.site/math 的 Marked 插件",
+  "keywords": [
+    "markdown",
+    "marked",
+    "marked-extension",
+    "math",
+    "mathml",
+    "render",
+    "tex"
+  ],
+  "homepage": "https://math.webc.site",
+  "license": "MulanPSL-2.0",
+  "author": "i18n.site@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webc-site/math.git",
+    "directory": "plugin/marked"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "peerDependencies": {
+    "@webc.site/math": ">=0.1.5",
+    "marked": ">=18.0.5"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "@webc.site/math-marked",
+      "peerDependencies": {
+        "@webc.site/math": ">=0.1.5",
+        "marked": ">=18.0.5",
+      },
+    },
+  },
+  "packages": {
+    "@webc.site/math": ["@webc.site/math@0.1.5", "", {}, "sha512-SjKbaTxKY8jW7N1gBCNKfcLql983qJ0xwtPcDyCjUBT/CE6KW1fpIBjHoZv+Z5kZKifjMZ7JaGsr8GKqZHbEBQ=="],
+
+    "marked": ["marked@18.0.5", "", { "bin": { "marked": "bin/marked.js" } }, "sha512-S6GcvALHg6K4ohtu4E7x0a1AqhAjp6cV8KhLSyN9qVapnzJkusVBxZRcIU9AeYsbe6P1hKDusSbEOzGyyuce6w=="],
+  }
+}

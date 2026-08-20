@@ -1,0 +1,285 @@
+doctype html
+html(lang="zh-CN")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title @webc.site/math-marked 调试面板
+    style.
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap");
+
+      :root {
+        --bg: #090a0f;
+        --panel-bg: rgba(22, 24, 38, 0.6);
+        --border-color: rgba(255, 255, 255, 0.08);
+        --text: #f3f4f6;
+        --text-mute: #9ca3af;
+        --primary: #6366f1;
+        --primary-glow: rgba(99, 102, 241, 0.15);
+        --accent: #10b981;
+        --radius: 16px;
+        --font-sans: "Outfit", system-ui, -apple-system, sans-serif;
+        --font-mono: "Fira Code", monospace;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        background: var(--bg);
+        background-image:
+          radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.1) 0px, transparent 50%),
+          radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.08) 0px, transparent 50%);
+        color: var(--text);
+        margin: 0;
+        padding: 24px;
+        box-sizing: border-box;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto 24px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .title-group {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .back-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+        border-radius: 20px;
+        background: var(--panel-bg);
+        border: 1px solid var(--border-color);
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+      }
+
+      .back-btn:hover {
+        border-color: var(--primary);
+        box-shadow: 0 0 12px var(--primary-glow);
+        transform: translateX(-2px);
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin: 0;
+        background: linear-gradient(135deg, #a78bfa 0%, #6366f1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.5px;
+      }
+
+      .badge {
+        font-size: 0.8rem;
+        padding: 4px 12px;
+        border-radius: 99px;
+        background: rgba(99, 102, 241, 0.15);
+        color: #a78bfa;
+        font-weight: 600;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+      }
+
+      main {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        box-sizing: border-box;
+      }
+
+      .panel {
+        background: var(--panel-bg);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        transition: border-color 0.3s ease;
+      }
+
+      .panel:focus-within {
+        border-color: rgba(99, 102, 241, 0.4);
+      }
+
+      .panel-header {
+        padding: 16px 24px;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .panel-title {
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--text-mute);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      textarea {
+        flex: 1;
+        width: 100%;
+        min-height: 550px;
+        padding: 24px;
+        background: transparent;
+        border: none;
+        color: var(--text);
+        font-family: var(--font-mono);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        resize: none;
+        outline: none;
+        box-sizing: border-box;
+      }
+
+      #preview {
+        flex: 1;
+        padding: 24px;
+        overflow-y: auto;
+        color: var(--text);
+        line-height: 1.7;
+        font-size: 1rem;
+        min-height: 550px;
+        box-sizing: border-box;
+      }
+
+      #preview h1 {
+        background: none;
+        -webkit-text-fill-color: initial;
+        color: #fff;
+        font-size: 1.8rem;
+        margin-top: 0;
+        margin-bottom: 16px;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 8px;
+      }
+
+      #preview p {
+        margin: 0 0 16px 0;
+      }
+
+      #preview code {
+        font-family: var(--font-mono);
+        background: rgba(255, 255, 255, 0.06);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+
+      #preview ul,
+      #preview ol {
+        margin: 0 0 16px 0;
+        padding-left: 24px;
+      }
+
+      #preview li {
+        margin-bottom: 8px;
+      }
+
+      math {
+        color: #a78bfa;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 16px;
+        }
+        header {
+          margin-bottom: 16px;
+        }
+        main {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+        textarea,
+        #preview {
+          min-height: 350px;
+        }
+      }
+  body
+    header
+      .title-group
+        a.back-btn(href="/plugin/index.html" title="返回面板") &lt; 返回
+        h1 @webc.site/math-marked 调试
+        span.badge Marked.js 插件
+    main
+      .panel
+        .panel-header
+          .panel-title Markdown 输入
+        textarea#input(placeholder="在此输入 Markdown / TeX 公式...")
+          | # Math Demo
+          | 
+          | This is inline math: $E=mc^2$ and this is block math:
+          | 
+          | $$
+          | a^2 + b^2 = c^2
+          | $$
+          | 
+          | Enjoy MathML rendering!
+      .panel
+        .panel-header
+          .panel-title MathML 预览
+        #preview
+    script(type="importmap").
+      {
+        "imports": {
+          "marked": "https://cdn.jsdelivr.net/npm/marked@12.0.1/lib/marked.esm.js",
+          "@webc.site/math": "../../src/mathml.js",
+          "@webc.site/math-marked": "./src/index.js"
+        }
+      }
+    script(type="module").
+      import { marked } from "marked";
+      import markedMath from "@webc.site/math-marked";
+
+      marked.use(markedMath());
+
+      const input = document.getElementById("input"),
+        preview = document.getElementById("preview"),
+        render = () => {
+          preview.innerHTML = marked.parse(input.value);
+        };
+
+      input.addEventListener("input", render);
+      render();

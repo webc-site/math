@@ -1,0 +1,258 @@
+- - $$\sin(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\sin(x)</annotation></semantics></math>
+- - $$\cos(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>cos</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\cos(x)</annotation></semantics></math>
+- - $$\tan(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>tan</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\tan(x)</annotation></semantics></math>
+- - $$\sin x$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mi>x</mi></mrow><annotation
+    encoding="application/x-tex">\sin x</annotation></semantics></math>
+- - $$\sin{x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mrow
+    data-mjx-tex><mi>x</mi></mrow></mrow><annotation
+    encoding="application/x-tex">\sin{x}</annotation></semantics></math>
+- - $$\sin[x]$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">[</mo><mi>x</mi><mo
+    stretchy="false">]</mo></mrow><annotation
+    encoding="application/x-tex">\sin[x]</annotation></semantics></math>
+- - $$\sin[2]{x}$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">[</mo><mn>2</mn><mo
+    stretchy="false">]</mo><mrow
+    data-mjx-tex><mi>x</mi></mrow></mrow><annotation
+    encoding="application/x-tex">\sin[2]{x}</annotation></semantics></math>
+- - $$\sin[2]x$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">[</mo><mn>2</mn><mo
+    stretchy="false">]</mo><mi>x</mi></mrow><annotation
+    encoding="application/x-tex">\sin[2]x</annotation></semantics></math>
+- - $$\sin[2]$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">[</mo><mn>2</mn><mo
+    stretchy="false">]</mo></mrow><annotation
+    encoding="application/x-tex">\sin[2]</annotation></semantics></math>
+- - $$\log[2](x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>log</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">[</mo><mn>2</mn><mo
+    stretchy="false">]</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\log[2](x)</annotation></semantics></math>
+- - $$\lim$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo data-mjx-tex
+    movablelimits="true">lim</mo></mrow><annotation
+    encoding="application/x-tex">\lim</annotation></semantics></math>
+- - $$\sin +$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo>+</mo></mrow><annotation
+    encoding="application/x-tex">\sin +</annotation></semantics></math>
+- - $$\cos$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>cos</mi></mrow><annotation
+    encoding="application/x-tex">\cos</annotation></semantics></math>
+- - $$\log$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>log</mi></mrow><annotation
+    encoding="application/x-tex">\log</annotation></semantics></math>
+- - $$\tan$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>tan</mi></mrow><annotation
+    encoding="application/x-tex">\tan</annotation></semantics></math>
+- - $$\sin \left(\right)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mrow data-mjx-tex><mo data-mjx-tex>(</mo><mo
+    data-mjx-tex>)</mo></mrow></mrow><annotation
+    encoding="application/x-tex">\sin
+    \left(\right)</annotation></semantics></math>
+- - $$\sin + 2$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo>+</mo><mn>2</mn></mrow><annotation
+    encoding="application/x-tex">\sin + 2</annotation></semantics></math>
+- - $$\sinh(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sinh</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\sinh(x)</annotation></semantics></math>
+- - $$\arcsin(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>arcsin</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\arcsin(x)</annotation></semantics></math>
+- - $$\cosh(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>cosh</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\cosh(x)</annotation></semantics></math>
+- - $$\arccos(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>arccos</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\arccos(x)</annotation></semantics></math>
+- - $$\tanh(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>tanh</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\tanh(x)</annotation></semantics></math>
+- - $$\arctan(x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>arctan</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\arctan(x)</annotation></semantics></math>
+- - $$\ln[2](x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>ln</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">[</mo><mn>2</mn><mo
+    stretchy="false">]</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\ln[2](x)</annotation></semantics></math>
+- - $$\exp[2](x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>exp</mi><mo
+    data-mjx-tex>&#x2061;</mo><mo stretchy="false">[</mo><mn>2</mn><mo
+    stretchy="false">]</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\exp[2](x)</annotation></semantics></math>
+- - $$\det[2](x)$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo data-mjx-tex
+    movablelimits="true">det</mo><mo stretchy="false">[</mo><mn>2</mn><mo
+    stretchy="false">]</mo><mo stretchy="false">(</mo><mi>x</mi><mo
+    stretchy="false">)</mo></mrow><annotation
+    encoding="application/x-tex">\det[2](x)</annotation></semantics></math>
+- - $$\sin\quad x$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sin</mi><mspace
+    width="1em"></mspace><mi>x</mi></mrow><annotation
+    encoding="application/x-tex">\sin\quad x</annotation></semantics></math>
+- - $$\arcsin$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>arcsin</mi></mrow><annotation
+    encoding="application/x-tex">\arcsin</annotation></semantics></math>
+- - $$\arccos$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>arccos</mi></mrow><annotation
+    encoding="application/x-tex">\arccos</annotation></semantics></math>
+- - $$\arctan$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>arctan</mi></mrow><annotation
+    encoding="application/x-tex">\arctan</annotation></semantics></math>
+- - $$\cosh$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>cosh</mi></mrow><annotation
+    encoding="application/x-tex">\cosh</annotation></semantics></math>
+- - $$\det$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo data-mjx-tex
+    movablelimits="true">det</mo></mrow><annotation
+    encoding="application/x-tex">\det</annotation></semantics></math>
+- - $$\exp$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>exp</mi></mrow><annotation
+    encoding="application/x-tex">\exp</annotation></semantics></math>
+- - $$\gcd$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo data-mjx-tex
+    movablelimits="true">gcd</mo></mrow><annotation
+    encoding="application/x-tex">\gcd</annotation></semantics></math>
+- - $$\inf$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo data-mjx-tex
+    movablelimits="true">inf</mo></mrow><annotation
+    encoding="application/x-tex">\inf</annotation></semantics></math>
+- - $$\ln$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>ln</mi></mrow><annotation
+    encoding="application/x-tex">\ln</annotation></semantics></math>
+- - $$\max$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo data-mjx-tex
+    movablelimits="true">max</mo></mrow><annotation
+    encoding="application/x-tex">\max</annotation></semantics></math>
+- - $$\min$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo data-mjx-tex
+    movablelimits="true">min</mo></mrow><annotation
+    encoding="application/x-tex">\min</annotation></semantics></math>
+- - $$\sinh$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>sinh</mi></mrow><annotation
+    encoding="application/x-tex">\sinh</annotation></semantics></math>
+- - $$\sup$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mo data-mjx-tex
+    movablelimits="true">sup</mo></mrow><annotation
+    encoding="application/x-tex">\sup</annotation></semantics></math>
+- - $$\tanh$$
+  - >-
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+    display="block"><semantics><mrow><mi>tanh</mi></mrow><annotation
+    encoding="application/x-tex">\tanh</annotation></semantics></math>
