@@ -194,10 +194,10 @@ To resolve this issue, organizations like Igalia and Mozilla refactored the spec
 
 In January 2023, Chrome 109 reintroduced support for the MathML Core specification. With Blink, Gecko, and WebKit all natively supporting this subset, web browsers achieved consistent native MathML rendering. This project compiles TeX directly to native MathML markup at compile time, eliminating client-side layout engines and avoiding client-side rendering overhead.
 
+
 ---
 
 <a id="zh"></a>
-
 # @webc.site/math : 全球最小最快的网页 Markdown 公式渲染器
 
 - [@webc.site/math : 全球最小最快的网页 Markdown 公式渲染器](#webcsitemath-全球最小最快的网页-markdown-公式渲染器)
@@ -324,7 +324,9 @@ const processor = unified()
   .use(mathRemark)
   .use(remarkHtml, { sanitize: false });
 
-const html = await processor.process("行内公式: $E = mc^2$ 和 块级公式: \n$$\n\\frac{a}{b}\n$$");
+const html = await processor.process(
+  "行内公式: $E = mc^2$ 和 块级公式: \n$$\n\\frac{a}{b}\n$$",
+);
 console.log(String(html));
 ```
 
