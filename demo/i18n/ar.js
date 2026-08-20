@@ -53,5 +53,10 @@ export default () => ({
     "نائب مساحة فارغة (\\phantom)",
     "علامات التشكيل والخطوط الرياضية (\\hat, \\mathbf, \\tilde)",
     "الاحتمال الشرطي والكسر (\\mid, \\dfrac)",
+    "الجداء التينسوري والجمع المباشر (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "التكامل الثنائي والزوايا (\\iint, \\varphi, \\degree, \\ll)",
+    "الجداء المتسلسل وسهم الحد (\\prod, \\stackrel, \\longrightarrow)",
+    "الخط العمودي والنصي (\\mathrm, \\textrm, \\rm)",
+    "الأسهم الرتيبة ووسم المعادلة (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

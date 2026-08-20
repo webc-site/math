@@ -53,5 +53,10 @@ export default () => ({
     "හිස් ඉඩ රඳවනය (\\phantom)",
     "උච්චාරණ ලකුණු සහ ගණිත අකුරු (\\hat, \\mathbf, \\tilde)",
     "කොන්දේසි සහිත සම්භාවිතාව සහ භාගය (\\mid, \\dfrac)",
+    "ටෙන්සර් ගුණිතය සහ සෘජු එකතුව (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "ද්විත්ව අනුකලනය සහ කෝණ (\\iint, \\varphi, \\degree, \\ll)",
+    "ගුණිත ශ්‍රේණිය සහ ඊතලය (\\prod, \\stackrel, \\longrightarrow)",
+    "කෙළින් සහ පෙළ අකුරු (\\mathrm, \\textrm, \\rm)",
+    "ඒකතාලික ඊතල සහ සමීකරණ ටැගය (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

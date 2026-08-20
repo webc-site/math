@@ -53,5 +53,10 @@ export default () => ({
     "Espaço Reservado em Branco (\\phantom)",
     "Acentos e fontes matemáticas (\\hat, \\mathbf, \\tilde)",
     "Probabilidade condicional e fração (\\mid, \\dfrac)",
+    "Produto tensorial e soma direta (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Integral dupla e ângulos (\\iint, \\varphi, \\degree, \\ll)",
+    "Produtório e seta com limite (\\prod, \\stackrel, \\longrightarrow)",
+    "Fontes retas e de texto (\\mathrm, \\textrm, \\rm)",
+    "Setas monótonas e etiqueta (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

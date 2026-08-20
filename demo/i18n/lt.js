@@ -53,5 +53,10 @@ export default () => ({
     "Tuščios vietos užpildas (\\phantom)",
     "Kirčiai ir matematiniai šriftai (\\hat, \\mathbf, \\tilde)",
     "Sąlyginė tikimybė ir trupmena (\\mid, \\dfrac)",
+    "Tenzorinė sandauga ir tiesioginė suma (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Dvikartis integralas ir kampai (\\iint, \\varphi, \\degree, \\ll)",
+    "Sandaugos eilutė ir rodyklė (\\prod, \\stackrel, \\longrightarrow)",
+    "Statieji ir teksto šriftai (\\mathrm, \\textrm, \\rm)",
+    "Monotoninės rodyklės ir žyma (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

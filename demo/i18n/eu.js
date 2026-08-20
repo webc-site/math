@@ -53,5 +53,10 @@ export default () => ({
     "Zuriuneen tokia hartzekoa (\\phantom)",
     "Azentuak eta letra-tipo matematikoak (\\hat, \\mathbf, \\tilde)",
     "Probabilitate baldintzatua eta zatikia (\\mid, \\dfrac)",
+    "Produktu tentsoriala eta batura zuzena (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Integral bikoitza eta angeluak (\\iint, \\varphi, \\degree, \\ll)",
+    "Produktu-seriea eta gezia (\\prod, \\stackrel, \\longrightarrow)",
+    "Letra-tipo zuzenak eta testukoak (\\mathrm, \\textrm, \\rm)",
+    "Gezi monotonoak eta ekuazio-etiketa (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

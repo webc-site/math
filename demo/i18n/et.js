@@ -53,5 +53,10 @@ export default () => ({
     "Tühiku asendaja (\\phantom)",
     "Rõhumärgid ja matemaatilised fondid (\\hat, \\mathbf, \\tilde)",
     "Tinglik tõenäosus ja murd (\\mid, \\dfrac)",
+    "Tensorruumide korrutis ja otsesumma (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Karakorratud integraal ja nurgad (\\iint, \\varphi, \\degree, \\ll)",
+    "Korrutiste jada ja nool (\\prod, \\stackrel, \\longrightarrow)",
+    "Püstised ja tekstifondid (\\mathrm, \\textrm, \\rm)",
+    "Monotoonsed nooled ja võrrandisilt (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

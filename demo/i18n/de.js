@@ -53,5 +53,10 @@ export default () => ({
     "Whitespace-Platzhalter (\\phantom)",
     "Akzente und mathematische Schriftarten (\\hat, \\mathbf, \\tilde)",
     "Bedingte Wahrscheinlichkeit und Bruch (\\mid, \\dfrac)",
+    "Tensorprodukt & Direkte Summe (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Doppelintegral & Winkel (\\iint, \\varphi, \\degree, \\ll)",
+    "Produktreihe & Pfeilbeschriftung (\\prod, \\stackrel, \\longrightarrow)",
+    "Aufrechte Schrift & Text-Schriftarten (\\mathrm, \\textrm, \\rm)",
+    "Monotone Pfeile & Gleichungsetikett (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

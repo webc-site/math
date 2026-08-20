@@ -53,5 +53,10 @@ export default () => ({
     "व्हाइटस्पेस प्लेसहोल्डर (\\phantom)",
     "उच्चारण चिह्न और गणितीय फ़ॉन्ट (\\hat, \\mathbf, \\tilde)",
     "सप्रतिबंध प्रायिकता और भिन्न (\\mid, \\dfrac)",
+    "टेंसर गुणन और प्रत्यक्ष योग (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "द्वि-समाकलन और कोण (\\iint, \\varphi, \\degree, \\ll)",
+    "गुणनफल श्रृंखला और तीर (\\prod, \\stackrel, \\longrightarrow)",
+    "सीधा और पाठ फ़ॉन्ट (\\mathrm, \\textrm, \\rm)",
+    "एकदिष्ट तीर और समीकरण टैग (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

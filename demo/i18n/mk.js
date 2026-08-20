@@ -53,5 +53,10 @@ export default () => ({
     "Резервиран празен простор (\\phantom)",
     "Аксенти и математички фонтови (\\hat, \\mathbf, \\tilde)",
     "Условна веројатност и дропка (\\mid, \\dfrac)",
+    "Тензорски производ и директна сума (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Двоен интеграл и агли (\\iint, \\varphi, \\degree, \\ll)",
+    "Производ и стрелка (\\prod, \\stackrel, \\longrightarrow)",
+    "Прави и текстуални фонтови (\\mathrm, \\textrm, \\rm)",
+    "Монотони стрелки и ознака (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

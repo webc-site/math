@@ -53,5 +53,10 @@ export default () => ({
     "ખાલી જગ્યા પ્લેસહોલ્ડર (\\phantom)",
     "ઉચ્ચારણ ચિહ્નો અને ગાણિતિક ફોન્ટ્સ (\\hat, \\mathbf, \\tilde)",
     "શરતી સંભાવના અને અપૂર્ણાંક (\\mid, \\dfrac)",
+    "ટેન્સર ગુણાકાર અને સીધો સરવાળો (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "દ્વિ-સંકલન અને ખૂણા (\\iint, \\varphi, \\degree, \\ll)",
+    "ગુણાકાર શ્રેણી અને તીર (\\prod, \\stackrel, \\longrightarrow)",
+    "સીધા અને ટેક્સ્ટ ફોન્ટ્સ (\\mathrm, \\textrm, \\rm)",
+    "મોનોટોનિક તીરો અને સમીકરણ ટેગ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

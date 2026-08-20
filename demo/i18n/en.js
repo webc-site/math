@@ -54,5 +54,10 @@ export default () => ({
     "Whitespace Placeholder (\\phantom)",
     "Accents & Math Fonts (\\hat, \\mathbf, \\tilde)",
     "Conditional Probability & Fraction (\\mid, \\dfrac)",
+    "Tensor Product & Direct Sum (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Double Integral & Angles (\\iint, \\varphi, \\degree, \\ll)",
+    "Product Series & Stacked Arrow (\\prod, \\stackrel, \\longrightarrow)",
+    "Upright & Text Fonts (\\mathrm, \\textrm, \\rm)",
+    "Monotonic Arrows & Equation Tag (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

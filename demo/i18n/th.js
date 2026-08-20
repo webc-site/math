@@ -53,5 +53,10 @@ export default () => ({
     "ตัวแทนพื้นที่ว่าง (\\phantom)",
     "เครื่องหมายกำกับและฟอนต์คณิตศาสตร์ (\\hat, \\mathbf, \\tilde)",
     "ความน่าจะเป็นแบบมีเงื่อนไขและเศษส่วน (\\mid, \\dfrac)",
+    "ผลคูณเทนเซอร์และผลบวกตรง (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "ปริพันธ์สองชั้นและมุม (\\iint, \\varphi, \\degree, \\ll)",
+    "อนุกรมผลคูณและลูกศรซ้อน (\\prod, \\stackrel, \\longrightarrow)",
+    "ฟอนต์ตัวตรงและข้อความ (\\mathrm, \\textrm, \\rm)",
+    "ลูกศรทางเดียวและป้ายสมการ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

@@ -53,5 +53,10 @@ export default () => ({
     "Plásshaldari fyrir autt svæði (\\phantom)",
     "Áherslumerki og stærðfræðilegt letur (\\hat, \\mathbf, \\tilde)",
     "Skilyrt líkindi og brot (\\mid, \\dfrac)",
+    "Tensorsmargföldun og bein summa (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Tvöföld heildi og horn (\\iint, \\varphi, \\degree, \\ll)",
+    "Margfeldisröð og ör (\\prod, \\stackrel, \\longrightarrow)",
+    "Lóðrétt og textaletur (\\mathrm, \\textrm, \\rm)",
+    "Einrækisörvar og jöfnumerki (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

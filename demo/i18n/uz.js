@@ -53,5 +53,10 @@ export default () => ({
     "Bo'sh joy to'ldiruvchisi (\\phantom)",
     "Urgʻular va matematik shriftlar (\\hat, \\mathbf, \\tilde)",
     "Shartli ehtimollik va kasr (\\mid, \\dfrac)",
+    "Tensor koʻpaytmasi va toʻgʻridan-toʻgʻri yigʻindi (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Ikki karra integral va burchaklar (\\iint, \\varphi, \\degree, \\ll)",
+    "Koʻpaytma qatori va ustma-ust oʻq (\\prod, \\stackrel, \\longrightarrow)",
+    "Tik va matnli shriftlar (\\mathrm, \\textrm, \\rm)",
+    "Monoton oʻqlar va tenglama tegi (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

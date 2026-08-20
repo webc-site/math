@@ -53,5 +53,10 @@ export default () => ({
     "Hapësirëmbajtës bosh (\\phantom)",
     "Thekset dhe fontet matematike (\\hat, \\mathbf, \\tilde)",
     "Probabiliteti i kushtëzuar dhe thyesa (\\mid, \\dfrac)",
+    "Prodhimi tensorial dhe shuma direkte (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Integrali i dyfishtë dhe këndet (\\iint, \\varphi, \\degree, \\ll)",
+    "Seria e prodhimit dhe shigjeta (\\prod, \\stackrel, \\longrightarrow)",
+    "Fontet e drejta dhe teksti (\\mathrm, \\textrm, \\rm)",
+    "Shigjetat monotone dhe etiketa (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

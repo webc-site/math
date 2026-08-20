@@ -53,5 +53,10 @@ export default () => ({
     "Nafasi ya Kushikilia Nafasi (\\phantom)",
     "Lafudhi na fonti za kihisabati (\\hat, \\mathbf, \\tilde)",
     "Uwezekano wa masharti na sehemu (\\mid, \\dfrac)",
+    "Zao la tensa na jumla ya moja kwa moja (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Muunganisho maradufu na pembe (\\iint, \\varphi, \\degree, \\ll)",
+    "Mfululizo wa zao na mshale (\\prod, \\stackrel, \\longrightarrow)",
+    "Fonti zilizosimama na za maandishi (\\mathrm, \\textrm, \\rm)",
+    "Mishale ya monotoniki na lebo (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

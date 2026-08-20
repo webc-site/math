@@ -53,5 +53,10 @@ export default () => ({
     "ცარიელი სივრცის შემავსებელი (\\phantom)",
     "მახვილები და მათემატიკური შრიფტები (\\hat, \\mathbf, \\tilde)",
     "პირობითი ალბათობა და წილადი (\\mid, \\dfrac)",
+    "ტენზორული ნამრავლი და პირდაპირი ჯამი (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "ორმაგი ინტეგრალი და კუთხეები (\\iint, \\varphi, \\degree, \\ll)",
+    "ნამრავლის მწკრივი და ისარი (\\prod, \\stackrel, \\longrightarrow)",
+    "მართი და ტექსტური შრიფტები (\\mathrm, \\textrm, \\rm)",
+    "მონოტონური ისრები და ჭდე (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

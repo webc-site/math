@@ -53,5 +53,10 @@ export default () => ({
     "व्हाइटस्पेस प्लेसहोल्डर (\\phantom)",
     "उच्चार चिन्हे आणि गणितीय फॉन्ट (\\hat, \\mathbf, \\tilde)",
     "सशर्त संभाव्यता आणि अपूर्णांक (\\mid, \\dfrac)",
+    "टेंसर गुणाकार आणि थेट बेरीज (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "दुहेरी समाकलन आणि कोन (\\iint, \\varphi, \\degree, \\ll)",
+    "गुणाकार मालिका आणि स्टॅक केलेला बाण (\\prod, \\stackrel, \\longrightarrow)",
+    "उभे आणि मजकूर फॉन्ट (\\mathrm, \\textrm, \\rm)",
+    "मोनोटोनिक बाण आणि समीकरण टॅग (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

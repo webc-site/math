@@ -53,5 +53,10 @@ export default () => ({
     "Запълващ символ за празно пространство (\\phantom)",
     "Диакритични знаци и математически шрифтове (\\hat, \\mathbf, \\tilde)",
     "Условна вероятност и дроб (\\mid, \\dfrac)",
+    "Тензорно произведение и директна сума (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Двоен интеграл и ъгли (\\iint, \\varphi, \\degree, \\ll)",
+    "Произведение и стрелка (\\prod, \\stackrel, \\longrightarrow)",
+    "Прави и текстови шрифтове (\\mathrm, \\textrm, \\rm)",
+    "Монотонни стрелки и етикет (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

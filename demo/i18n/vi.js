@@ -53,5 +53,10 @@ export default () => ({
     "Giữ chỗ khoảng trắng (\\phantom)",
     "Dấu phụ và phông chữ toán học (\\hat, \\mathbf, \\tilde)",
     "Xác suất có điều kiện và phân số (\\mid, \\dfrac)",
+    "Tích tensor và tổng trực tiếp (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Tích phân kép và góc (\\iint, \\varphi, \\degree, \\ll)",
+    "Chuỗi tích và mũi tên giới hạn (\\prod, \\stackrel, \\longrightarrow)",
+    "Phông chữ đứng và văn bản (\\mathrm, \\textrm, \\rm)",
+    "Mũi tên đơn điệu và nhãn phương trình (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

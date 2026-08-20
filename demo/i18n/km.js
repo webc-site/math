@@ -53,5 +53,10 @@ export default () => ({
     "កន្លែងរក្សាទុកចន្លោះទទេ (\\phantom)",
     "សញ្ញាសង្កត់សំឡេង និងពុម្ពអក្សរគណិតវិទ្យា (\\hat, \\mathbf, \\tilde)",
     "ប្រូបាប៊ីលីតេមានលក្ខខណ្ឌ និងប្រភាគ (\\mid, \\dfrac)",
+    "ផលគុណតង់ស័រ និងផលបូកផ្ទាល់ (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "អាំងតេក្រាលឌុប និងមុំ (\\iint, \\varphi, \\degree, \\ll)",
+    "ស៊េរីផលគុណ និងព្រួញជង់ (\\prod, \\stackrel, \\longrightarrow)",
+    "ពុម្ពអក្សរត្រង់ និងអត្ថបទ (\\mathrm, \\textrm, \\rm)",
+    "ព្រួញម៉ូណូតូន និងស្លាកសមីការ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

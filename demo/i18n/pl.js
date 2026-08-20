@@ -53,5 +53,10 @@ export default () => ({
     "Wypełniacz pustego miejsca (\\phantom)",
     "Akcenty i czcionki matematyczne (\\hat, \\mathbf, \\tilde)",
     "Prawdopodobieństwo warunkowe i ułamek (\\mid, \\dfrac)",
+    "Iloczyn tensorowy i suma prosta (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Całka podwójna i kąty (\\iint, \\varphi, \\degree, \\ll)",
+    "Iloczyn szeregu i strzałka (\\prod, \\stackrel, \\longrightarrow)",
+    "Czcionki proste i tekstowe (\\mathrm, \\textrm, \\rm)",
+    "Strzałki monotoniczne i etykieta (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

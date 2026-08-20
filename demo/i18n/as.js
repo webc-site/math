@@ -53,5 +53,10 @@ export default () => ({
     "হোৱাইটস্পেচ প্লেচহোল্ডাৰ (\\phantom)",
     "উচ্চাৰণ চিহ্ন আৰু গাণিতিক ফন্ট (\\hat, \\mathbf, \\tilde)",
     "চৰ্তসাপেক্ষ সম্ভাৱিতা আৰু ভগ্নাংশ (\\mid, \\dfrac)",
+    "টেনচৰ গুণন আৰু প্ৰত্যক্ষ যোগ (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "দ্বৈত অনুকলন আৰু কোণসমূহ (\\iint, \\varphi, \\degree, \\ll)",
+    "গুণফল শৃংখলা আৰু স্তূপীকৃত কাঁড় (\\prod, \\stackrel, \\longrightarrow)",
+    "থিয় আৰু পাঠ্য ফন্ট (\\mathrm, \\textrm, \\rm)",
+    "একমুখী কাঁড় আৰু সমীকৰণ টেগ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

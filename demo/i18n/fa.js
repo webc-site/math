@@ -53,5 +53,10 @@ export default () => ({
     "نگهدارنده فضای خالی (\\phantom)",
     "نشانه‌های زیر و زبر و قلم‌های ریاضی (\\hat, \\mathbf, \\tilde)",
     "احتمال شرطی و کسر (\\mid, \\dfrac)",
+    "ضرب تانسوری و جمع مستقیم (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "انتگرال دوگانه و زوایا (\\iint, \\varphi, \\degree, \\ll)",
+    "حاصل‌ضرب و پیکان حد (\\prod, \\stackrel, \\longrightarrow)",
+    "قلم‌های مستقیم و متن (\\mathrm, \\textrm, \\rm)",
+    "پیکان‌های یکنوا و برچسب معادله (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

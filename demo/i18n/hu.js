@@ -53,5 +53,10 @@ export default () => ({
     "Helykitöltő üres hely (\\phantom)",
     "Ékezetek és matematikai betűtípusok (\\hat, \\mathbf, \\tilde)",
     "Feltételes valószínűség és tört (\\mid, \\dfrac)",
+    "Tenzorszorzat és direkt összeg (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Kettős integrál és szögek (\\iint, \\varphi, \\degree, \\ll)",
+    "Szorzatsorozat és nyíl (\\prod, \\stackrel, \\longrightarrow)",
+    "Álló és szöveges betűtípusok (\\mathrm, \\textrm, \\rm)",
+    "Monoton nyilak és egyenletcímke (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

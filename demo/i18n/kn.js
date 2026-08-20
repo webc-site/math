@@ -53,5 +53,10 @@ export default () => ({
     "ಖಾಲಿಜಾಗದ ಪ್ಲೇಸ್‌ಹೋಲ್ಡರ್ (\\phantom)",
     "ಉಚ್ಚಾರಣಾ ಚಿಹ್ನೆಗಳು ಮತ್ತು ಗಣಿತದ ಫಾಂಟ್‌ಗಳು (\\hat, \\mathbf, \\tilde)",
     "ಷರತ್ತುಬದ್ಧ ಸಂಭವನೀಯತೆ ಮತ್ತು ಭಿನ್ನರಾಶಿ (\\mid, \\dfrac)",
+    "ಟೆನ್ಸರ್ ಗುಣಲಬ್ಧ ಮತ್ತು ನೇರ ಮೊತ್ತ (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "ಡಬಲ್ ಇಂಟಿಗ್ರಲ್ ಮತ್ತು ಕೋನಗಳು (\\iint, \\varphi, \\degree, \\ll)",
+    "ಗುಣಲಬ್ಧ ಸರಣಿ ಮತ್ತು ಬಾಣ (\\prod, \\stackrel, \\longrightarrow)",
+    "ನೇರ ಮತ್ತು ಪಠ್ಯ ಫಾಂಟ್‌ಗಳು (\\mathrm, \\textrm, \\rm)",
+    "ಮೊನೊಟೋನಿಕ್ ಬಾಣಗಳು ಮತ್ತು ಟ್ಯಾಗ್ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

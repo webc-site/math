@@ -53,5 +53,10 @@ export default () => ({
     "Заповнювач порожнього простору (\\phantom)",
     "Діакритика та математичні шрифти (\\hat, \\mathbf, \\tilde)",
     "Умовна ймовірність і дріб (\\mid, \\dfrac)",
+    "Тензорний добуток і пряма сума (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Подвійний інтеграл і кути (\\iint, \\varphi, \\degree, \\ll)",
+    "Добуток і стрілка границі (\\prod, \\stackrel, \\longrightarrow)",
+    "Прямий шрифт і текст (\\mathrm, \\textrm, \\rm)",
+    "Монотонні стрілки та мітка (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

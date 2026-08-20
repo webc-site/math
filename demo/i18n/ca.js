@@ -53,5 +53,10 @@ export default () => ({
     "Espai reservat buit (\\phantom)",
     "Accents i fonts matemàtiques (\\hat, \\mathbf, \\tilde)",
     "Probabilitat condicional i fracció (\\mid, \\dfrac)",
+    "Producte tensorial i suma directa (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Integral doble i angles (\\iint, \\varphi, \\degree, \\ll)",
+    "Producte i fletxa apilada (\\prod, \\stackrel, \\longrightarrow)",
+    "Fonts rectes i de text (\\mathrm, \\textrm, \\rm)",
+    "Fletxes monòtones i etiqueta (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

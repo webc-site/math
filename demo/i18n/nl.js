@@ -53,5 +53,10 @@ export default () => ({
     "Whitespace tijdelijke aanduiding (\\phantom)",
     "Accenten en wiskundige lettertypen (\\hat, \\mathbf, \\tilde)",
     "Voorwaardelijke kans en breuk (\\mid, \\dfrac)",
+    "Tensorproduct en directe som (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Dubbelintegraal en hoeken (\\iint, \\varphi, \\degree, \\ll)",
+    "Productreeks en gestapelde pijl (\\prod, \\stackrel, \\longrightarrow)",
+    "Rechte en tekstlettertypen (\\mathrm, \\textrm, \\rm)",
+    "Monotone pijlen en vergelijkingstag (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

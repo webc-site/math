@@ -53,5 +53,10 @@ export default () => ({
     "Tyhjän tilan paikkamerkki (\\phantom)",
     "Tarkkeet ja matemaattiset fontit (\\hat, \\mathbf, \\tilde)",
     "Ehdollinen todennäköisyys ja murtoluku (\\mid, \\dfrac)",
+    "Tensoritulo ja suora summa (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Kaksoisintegraali ja kulmat (\\iint, \\varphi, \\degree, \\ll)",
+    "Tulotermi ja pinottu nuoli (\\prod, \\stackrel, \\longrightarrow)",
+    "Pysty- ja tekstifontit (\\mathrm, \\textrm, \\rm)",
+    "Monotoniset nuolet ja yhtälötunniste (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

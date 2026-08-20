@@ -53,5 +53,10 @@ export default () => ({
     "空白プレースホルダー (\\phantom)",
     "アクセントと数学フォント (\\hat, \\mathbf, \\tilde)",
     "条件付き確率と分数 (\\mid, \\dfrac)",
+    "テンソル積と直和 (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "二重積分と角度 (\\iint, \\varphi, \\degree, \\ll)",
+    "総乗と極限矢印 (\\prod, \\stackrel, \\longrightarrow)",
+    "立体とテキストフォント (\\mathrm, \\textrm, \\rm)",
+    "単調矢印と数式タグ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

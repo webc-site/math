@@ -53,5 +53,10 @@ export default () => ({
     "Espace réservé vide (\\phantom)",
     "Accents et polices mathématiques (\\hat, \\mathbf, \\tilde)",
     "Probabilité conditionnelle et fraction (\\mid, \\dfrac)",
+    "Produit tensoriel & somme directe (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Intégrale double & angles (\\iint, \\varphi, \\degree, \\ll)",
+    "Produit & flèche avec limite (\\prod, \\stackrel, \\longrightarrow)",
+    "Polices droites & texte (\\mathrm, \\textrm, \\rm)",
+    "Flèches monotones & numérotation (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

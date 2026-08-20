@@ -53,5 +53,10 @@ export default () => ({
     "Marcador de posición de espazo en branco (\\phantom)",
     "Acentos e fontes matemáticas (\\hat, \\mathbf, \\tilde)",
     "Probabilidade condicional e fracción (\\mid, \\dfrac)",
+    "Produto tensorial e suma directa (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Integral dobre e ángulos (\\iint, \\varphi, \\degree, \\ll)",
+    "Serie de produtos e frecha (\\prod, \\stackrel, \\longrightarrow)",
+    "Fontes rectas e de texto (\\mathrm, \\textrm, \\rm)",
+    "Frechas monótonas e etiqueta (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

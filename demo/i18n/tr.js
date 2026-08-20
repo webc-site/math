@@ -53,5 +53,10 @@ export default () => ({
     "Boşluk Yer Tutucusu (\\phantom)",
     "Vurgular ve matematiksel yazı tipleri (\\hat, \\mathbf, \\tilde)",
     "Koşullu olasılık ve kesir (\\mid, \\dfrac)",
+    "Tensör çarpımı ve direkt toplam (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "İki katlı integral ve açılar (\\iint, \\varphi, \\degree, \\ll)",
+    "Çarpım serisi ve yığılmış ok (\\prod, \\stackrel, \\longrightarrow)",
+    "Dik ve metin yazı tipleri (\\mathrm, \\textrm, \\rm)",
+    "Monoton oklar ve denklem etiketi (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

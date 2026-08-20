@@ -53,5 +53,10 @@ export default () => ({
     "Oznaka mesta praznega prostora (\\phantom)",
     "Naglasna znamenja in matematične pisave (\\hat, \\mathbf, \\tilde)",
     "Pogojna verjetnost in ulomek (\\mid, \\dfrac)",
+    "Tenzorski produkt in direktna vsota (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Dvojni integral in koti (\\iint, \\varphi, \\degree, \\ll)",
+    "Produktna vrsta in puščica (\\prod, \\stackrel, \\longrightarrow)",
+    "Pokončne in besedilne pisave (\\mathrm, \\textrm, \\rm)",
+    "Monotone puščice in oznaka enačbe (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

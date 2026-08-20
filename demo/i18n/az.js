@@ -53,5 +53,10 @@ export default () => ({
     "Boşluq yer tutucusu (\\phantom)",
     "Vurğular və riyazi şriftlər (\\hat, \\mathbf, \\tilde)",
     "Şərti ehtimal və kəsr (\\mid, \\dfrac)",
+    "Tensor hasili və birbaşa cəm (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "İkiqat inteqral və bucaqlar (\\iint, \\varphi, \\degree, \\ll)",
+    "Hasil ardıcıllığı və limit oxu (\\prod, \\stackrel, \\longrightarrow)",
+    "Düz və mətn şriftləri (\\mathrm, \\textrm, \\rm)",
+    "Monoton oxlar və tənlik etiketi (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

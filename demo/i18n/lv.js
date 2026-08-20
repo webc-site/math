@@ -53,5 +53,10 @@ export default () => ({
     "Tukšās vietas aizpildītājs (\\phantom)",
     "Diakritiskās zīmes un matemātiskie fonti (\\hat, \\mathbf, \\tilde)",
     "Nosacītā varbūtība un daļa (\\mid, \\dfrac)",
+    "Tenzora reizinājums un tiešā summa (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Divkāršais integrālis un leņķi (\\iint, \\varphi, \\degree, \\ll)",
+    "Reizinājumu rinda un bultiņa (\\prod, \\stackrel, \\longrightarrow)",
+    "Taisnie un teksta fonti (\\mathrm, \\textrm, \\rm)",
+    "Monotonās bultiņas un vienādojuma birka (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

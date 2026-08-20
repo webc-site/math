@@ -53,5 +53,10 @@ export default () => ({
     "Segnaposto spazio vuoto (\\phantom)",
     "Accenti e caratteri matematici (\\hat, \\mathbf, \\tilde)",
     "Probabilità condizionata e frazione (\\mid, \\dfrac)",
+    "Prodotto tensoriale e somma diretta (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Integrale doppio e angoli (\\iint, \\varphi, \\degree, \\ll)",
+    "Produttoria e freccia con limite (\\prod, \\stackrel, \\longrightarrow)",
+    "Font diritti e di testo (\\mathrm, \\textrm, \\rm)",
+    "Frecce monotone ed etichetta (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

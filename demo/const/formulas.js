@@ -33,6 +33,11 @@ const FORMULAS = [
   "\\phantom{x} + y",
   "\\hat{h}_U[n] = \\mathbf{W} \\mathbf{x}[n] + \\tilde{\\mathbf{e}}",
   "P(w_i \\mid w_{1:i-1}) = \\dfrac{P(w_1, \\dots, w_i)}{P(w_1, \\dots, w_{i-1})}",
+  "\\mathcal{H}_A \\otimes \\mathcal{H}_B \\oplus \\mathbb{C}^n",
+  "\\iint_D \\rho(r, \\varphi) dr d\\varphi \\quad (r \\ll R, \\theta = 45\\degree)",
+  "\\prod_{k=2}^n \\left(1 - \\frac{1}{k^2}\\right) \\stackrel{n \\to \\infty}{\\longrightarrow} \\frac{1}{2}",
+  "\\Delta H_{\\rm rxn}^\\circ = -R T \\ln K \\quad \\textrm{where } \\mathrm{const} > 0",
+  "a_n \\uparrow a, \\, b_n \\downarrow b \\Rightarrow (f \\circ g)(x) \\bullet y \\lt 1 \\tag{1}",
 ];
 
 export default FORMULAS;

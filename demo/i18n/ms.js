@@ -53,5 +53,10 @@ export default () => ({
     "Placeholder Ruang Kosong (\\phantom)",
     "Aksen & fon matematik (\\hat, \\mathbf, \\tilde)",
     "Kebarangkalian bersyarat dan pecahan (\\mid, \\dfrac)",
+    "Hasil darab tensor dan hasil tambah langsung (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Kamiran berganda dan sudut (\\iint, \\varphi, \\degree, \\ll)",
+    "Siri produk dan anak panah bertindih (\\prod, \\stackrel, \\longrightarrow)",
+    "Fon tegak dan teks (\\mathrm, \\textrm, \\rm)",
+    "Anak panah monoton dan tag persamaan (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

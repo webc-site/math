@@ -53,5 +53,10 @@ export default () => ({
     "ఖాళీ స్థల ప్లేస్‌హోల్డర్ (\\phantom)",
     "ఉచ్చారణ గుర్తులు మరియు గణిత ఫాంట్లు (\\hat, \\mathbf, \\tilde)",
     "షరతులతో కూడిన సంభావ్యత మరియు భిన్నం (\\mid, \\dfrac)",
+    "టెన్సర్ గుణకారం మరియు ప్రత్యక్ష మొత్తం (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "ద్వి సమాకలనం మరియు కోణాలు (\\iint, \\varphi, \\degree, \\ll)",
+    "లబ్ద శ్రేణి మరియు పేర్చబడిన బాణం (\\prod, \\stackrel, \\longrightarrow)",
+    "నిలువు మరియు వచన ఫాంట్లు (\\mathrm, \\textrm, \\rm)",
+    "మోనోటోనిక్ బాణాలు మరియు ట్యాగ్ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

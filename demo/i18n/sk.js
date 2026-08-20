@@ -53,5 +53,10 @@ export default () => ({
     "Zástupný symbol voľného miesta (\\phantom)",
     "Dĺžne a matematické písma (\\hat, \\mathbf, \\tilde)",
     "Podmienená pravdepodobnosť a zlomok (\\mid, \\dfrac)",
+    "Tenzorový súčin a priamy súčet (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Dvojný integrál a uhly (\\iint, \\varphi, \\degree, \\ll)",
+    "Produktový rad a šípka (\\prod, \\stackrel, \\longrightarrow)",
+    "Stojaté a textové písma (\\mathrm, \\textrm, \\rm)",
+    "Monotónne šípky a štítok (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

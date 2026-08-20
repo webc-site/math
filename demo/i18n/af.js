@@ -53,5 +53,10 @@ export default () => ({
     "Witspasie-plekhouer (\\phantom)",
     "Aksente en wiskundige lettertipes (\\hat, \\mathbf, \\tilde)",
     "Voorwaardelike waarskynlikheid en breuk (\\mid, \\dfrac)",
+    "Tensorproduk en direkte som (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Dubbelintegraal en hoeke (\\iint, \\varphi, \\degree, \\ll)",
+    "Produkreeks en gestapelde pyl (\\prod, \\stackrel, \\longrightarrow)",
+    "Regop- en tekslettertipes (\\mathrm, \\textrm, \\rm)",
+    "Monotone pyle en vergelykingetiket (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

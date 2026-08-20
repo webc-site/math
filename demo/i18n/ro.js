@@ -53,5 +53,10 @@ export default () => ({
     "Substituent spațiu gol (\\phantom)",
     "Accente și fonturi matematice (\\hat, \\mathbf, \\tilde)",
     "Probabilitate condiționată și fracție (\\mid, \\dfrac)",
+    "Produs tensorial și sumă directă (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Integrală dublă și unghiuri (\\iint, \\varphi, \\degree, \\ll)",
+    "Serie de produse și săgeată (\\prod, \\stackrel, \\longrightarrow)",
+    "Fonturi drepte și de text (\\mathrm, \\textrm, \\rm)",
+    "Săgeți monotone și etichetă (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

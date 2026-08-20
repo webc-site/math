@@ -53,5 +53,10 @@ export default () => ({
     "खाली ठाउँ प्लेसहोल्डर (\\phantom)",
     "उच्चारण चिन्ह र गणितीय फन्टहरू (\\hat, \\mathbf, \\tilde)",
     "सशर्त सम्भाव्यता र भिन्न (\\mid, \\dfrac)",
+    "टेन्सर गुणन र प्रत्यक्ष योग (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "दोहोरो समाकलन र कोणहरू (\\iint, \\varphi, \\degree, \\ll)",
+    "गुणनफल शृङ्खला र तीर (\\prod, \\stackrel, \\longrightarrow)",
+    "ठाडो र पाठ फन्टहरू (\\mathrm, \\textrm, \\rm)",
+    "एकदिष्ट तीरहरू र समीकरण ट्याग (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

@@ -54,5 +54,10 @@ export default () => ({
     "占位占高 (\\phantom)",
     "重音与数学字体 (\\hat, \\mathbf, \\tilde)",
     "条件概率与分式 (\\mid, \\dfrac)",
+    "张量积与直和 (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "二重积分与角度 (\\iint, \\varphi, \\degree, \\ll)",
+    "连乘积与极限箭头 (\\prod, \\stackrel, \\longrightarrow)",
+    "正体与文本字体 (\\mathrm, \\textrm, \\rm)",
+    "单调箭头与公式编号 (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

@@ -53,5 +53,10 @@ export default () => ({
     "হোয়াইটস্পেস প্লেসহোল্ডার (\\phantom)",
     "উচ্চারণ চিহ্ন এবং গাণিতিক ফন্ট (\\hat, \\mathbf, \\tilde)",
     "শর্তাধীন সম্ভাব্যতা এবং ভগ্নাংশ (\\mid, \\dfrac)",
+    "টেনসর গুণন এবং সরাসরি যোগ (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "দ্বৈত সমাকলন এবং কোণ (\\iint, \\varphi, \\degree, \\ll)",
+    "গুণফল ধারা এবং স্তূপীকৃত তীর (\\prod, \\stackrel, \\longrightarrow)",
+    "সোজা এবং পাঠ্য ফন্ট (\\mathrm, \\textrm, \\rm)",
+    "একমুখী তীর এবং সমীকরণ ট্যাগ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

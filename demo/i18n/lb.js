@@ -53,5 +53,10 @@ export default () => ({
     "Whitespace Plazhalter (\\phantom)",
     "Akzenter a mathematesch Schrëften (\\hat, \\mathbf, \\tilde)",
     "Bedingt Wahrscheinlechkeet a Fraktioun (\\mid, \\dfrac)",
+    "Tensorprodukt an direkt Zomm (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Duebelintegral a Wénkelen (\\iint, \\varphi, \\degree, \\ll)",
+    "Produktserie a gestapelte Feil (\\prod, \\stackrel, \\longrightarrow)",
+    "Opriicht a Textschrëften (\\mathrm, \\textrm, \\rm)",
+    "Monoton Feiler a Gläichungstag (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

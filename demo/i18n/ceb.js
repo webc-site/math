@@ -54,5 +54,10 @@ export default () => ({
     "Tigbutang sa Blangko nga Luna (\\phantom)",
     "Mga accent ug mga font sa matematika (\\hat, \\mathbf, \\tilde)",
     "Kondisyonal nga posibilidad ug tipik (\\mid, \\dfrac)",
+    "Tensor nga produkto ug direkta nga sum (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Doble nga integral ug mga anggulo (\\iint, \\varphi, \\degree, \\ll)",
+    "Serye sa produkto ug gipatong nga pana (\\prod, \\stackrel, \\longrightarrow)",
+    "Tul-id ug teksto nga mga font (\\mathrm, \\textrm, \\rm)",
+    "Monotonikong mga pana ug tag sa equation (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

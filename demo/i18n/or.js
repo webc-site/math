@@ -53,5 +53,10 @@ export default () => ({
     "ଖାଲି ସ୍ଥାନ ରକ୍ଷକ (\\phantom)",
     "ଉଚ୍ଚାରଣ ଚିହ୍ନ ଏବଂ ଗାଣିତିକ ଫଣ୍ଟ (\\hat, \\mathbf, \\tilde)",
     "ସର୍ତ୍ତମୂଳକ ସମ୍ଭାବ୍ୟତା ଏବଂ ଭଗ୍ନାଂଶ (\\mid, \\dfrac)",
+    "ଟେନ୍ସର ଗୁଣନ ଏବଂ ପ୍ରତ୍ୟକ୍ଷ ଯୋଗ (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "ଦ୍ୱି-ସମାକଳନ ଏବଂ କୋଣ (\\iint, \\varphi, \\degree, \\ll)",
+    "ଗୁଣଫଳ ଶ୍ରେଣୀ ଏବଂ ତୀର (\\prod, \\stackrel, \\longrightarrow)",
+    "ସଳଖ ଏବଂ ପାଠ୍ୟ ଫଣ୍ଟ (\\mathrm, \\textrm, \\rm)",
+    "ଏକଦିଷ୍ଟ ତୀର ଏବଂ ସମୀକରଣ ଟ୍ୟାଗ୍ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

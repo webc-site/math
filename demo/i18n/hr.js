@@ -53,5 +53,10 @@ export default () => ({
     "Čuvar mjesta praznog prostora (\\phantom)",
     "Naglasci i matematički fontovi (\\hat, \\mathbf, \\tilde)",
     "Uvjetna vjerojatnost i razlomak (\\mid, \\dfrac)",
+    "Tenzorski produkt i izravna suma (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Dvostruki integral i kutovi (\\iint, \\varphi, \\degree, \\ll)",
+    "Produktni niz i naslagana strelica (\\prod, \\stackrel, \\longrightarrow)",
+    "Uspravni i tekstualni fontovi (\\mathrm, \\textrm, \\rm)",
+    "Monotone strelice i oznaka (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

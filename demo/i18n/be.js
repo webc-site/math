@@ -53,5 +53,10 @@ export default () => ({
     "Запаўняльнік пустой прасторы (\\phantom)",
     "Дыякрытыка і матэматычныя шрыфты (\\hat, \\mathbf, \\tilde)",
     "Умоўная верагоднасць і дроб (\\mid, \\dfrac)",
+    "Тэнзарны здабытак і прамая сума (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Двайны інтэграл і вуглы (\\iint, \\varphi, \\degree, \\ll)",
+    "Здабытак і стрэлка ліміту (\\prod, \\stackrel, \\longrightarrow)",
+    "Прамы шрыфт і тэкст (\\mathrm, \\textrm, \\rm)",
+    "Манатонныя стрэлкі і пазнака (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

@@ -53,5 +53,10 @@ export default () => ({
     "Placeholder ng Whitespace (\\phantom)",
     "Mga tuldik at mga font sa matematika (\\hat, \\mathbf, \\tilde)",
     "May kondisyong posibilidad at praksyon (\\mid, \\dfrac)",
+    "Tensor na produkto at direktang kabuuan (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Dobleng integral at mga anggulo (\\iint, \\varphi, \\degree, \\ll)",
+    "Serye ng produkto at nakasalansan na arrow (\\prod, \\stackrel, \\longrightarrow)",
+    "Tuwid at teksto na mga font (\\mathrm, \\textrm, \\rm)",
+    "Monotonikong mga arrow at tag (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

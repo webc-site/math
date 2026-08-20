@@ -53,5 +53,10 @@ export default () => ({
     "ຕົວແທນພື້ນທີ່ວ່າງ (\\phantom)",
     "ເຄື່ອງໝາຍສຳນຽງ ແລະ ຟອນຄະນິດສາດ (\\hat, \\mathbf, \\tilde)",
     "ຄວາມໜ້າຈະເປັນແບບມີເງື່ອນໄຂ ແລະ ເສດສ່ວນ (\\mid, \\dfrac)",
+    "ຜົນຄູນເທນເຊີ ແລະ ຜົນບວກກົງ (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "ອິນທິເກຣນສອງຊັ້ນ ແລະ ມຸມ (\\iint, \\varphi, \\degree, \\ll)",
+    "ອະນຸກົມຜົນຄູນ ແລະ ລູກສອນຊ້ອນ (\\prod, \\stackrel, \\longrightarrow)",
+    "ຟອນຕັ້ງຊື່ ແລະ ຂໍ້ຄວາມ (\\mathrm, \\textrm, \\rm)",
+    "ລູກສອນໂມໂນໂທນິກ ແລະ ປ້າຍສົມຜົນ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

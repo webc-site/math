@@ -53,5 +53,10 @@ export default () => ({
     "ממלא מקום רווח (\\phantom)",
     "סימני הטעמה וגופנים מתמטיים (\\hat, \\mathbf, \\tilde)",
     "הסתברות מותנית ושבר (\\mid, \\dfrac)",
+    "מכפלה טנזורית וסכום ישר (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "אינטגרל כפול וזוויות (\\iint, \\varphi, \\degree, \\ll)",
+    "מכפלה וחץ מוערם (\\prod, \\stackrel, \\longrightarrow)",
+    "גופנים ישרים וטקסט (\\mathrm, \\textrm, \\rm)",
+    "חצים מונוטוניים ותג משוואה (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

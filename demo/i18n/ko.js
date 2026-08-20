@@ -53,5 +53,10 @@ export default () => ({
     "공백 자리 표시자 (\\phantom)",
     "악센트 및 수학 폰트 (\\hat, \\mathbf, \\tilde)",
     "조건부 확률 및 분수 (\\mid, \\dfrac)",
+    "텐서곱 및 직합 (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "이중적분 및 각도 (\\iint, \\varphi, \\degree, \\ll)",
+    "총곱 및 극한 화살표 (\\prod, \\stackrel, \\longrightarrow)",
+    "로만체 및 텍스트 폰트 (\\mathrm, \\textrm, \\rm)",
+    "단조 화살표 및 수식 번호 (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

@@ -54,5 +54,10 @@ export default () => ({
     "Διακριτικό κενώματος (\\phantom)",
     "Τόνοι και μαθηματικές γραμματοσειρές (\\hat, \\mathbf, \\tilde)",
     "Δεσμευμένη πιθανότητα και κλάσμα (\\mid, \\dfrac)",
+    "Τανυστικό γινόμενο και ευθύ άθροισμα (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Διπλό ολοκλήρωμα και γωνίες (\\iint, \\varphi, \\degree, \\ll)",
+    "Σειρά γινομένου και βέλος (\\prod, \\stackrel, \\longrightarrow)",
+    "Όρθιες γραμματοσειρές και κείμενο (\\mathrm, \\textrm, \\rm)",
+    "Μονότονα βέλη και ετικέτα (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

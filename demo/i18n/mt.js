@@ -53,5 +53,10 @@ export default () => ({
     "Placeholder tal-Ispazju Abjad (\\phantom)",
     "Aċċenti u fonts matematiċi (\\hat, \\mathbf, \\tilde)",
     "Probabbiltà kundizzjonali u frazzjoni (\\mid, \\dfrac)",
+    "Prodott tensorju u somma diretta (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Integral doppju u angoli (\\iint, \\varphi, \\degree, \\ll)",
+    "Serje ta' prodott u vleġġa (\\prod, \\stackrel, \\longrightarrow)",
+    "Fonts dritti u tat-test (\\mathrm, \\textrm, \\rm)",
+    "Vleġġeġ monotoniċi u tikketta (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

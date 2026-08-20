@@ -53,5 +53,10 @@ export default () => ({
     "Mellemrum-platsholder (\\phantom)",
     "Accenter og matematiske skrifttyper (\\hat, \\mathbf, \\tilde)",
     "Betinget sandsynlighed og brøk (\\mid, \\dfrac)",
+    "Tensorprodukt og direkte sum (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Dobbeltintegral og vinkler (\\iint, \\varphi, \\degree, \\ll)",
+    "Produktserie og stablet pil (\\prod, \\stackrel, \\longrightarrow)",
+    "Opretstående og tekstskrifttyper (\\mathrm, \\textrm, \\rm)",
+    "Monotone pile og ligningsmærke (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

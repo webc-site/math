@@ -53,5 +53,10 @@ export default () => ({
     "خالی جگہ کا ہولڈر (\\phantom)",
     "اعراب اور ریاضیاتی فونٹس (\\hat, \\mathbf, \\tilde)",
     "مشروط احتمال اور کسر (\\mid, \\dfrac)",
+    "ٹینسر ضرب اور براہ راست جمع (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "ڈبل انٹیگرل اور زاویے (\\iint, \\varphi, \\degree, \\ll)",
+    "حاصل ضرب سیریز اور تیر (\\prod, \\stackrel, \\longrightarrow)",
+    "سیدھے اور متن کے فونٹس (\\mathrm, \\textrm, \\rm)",
+    "یکساں تیر اور مساوات کا ٹیگ (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

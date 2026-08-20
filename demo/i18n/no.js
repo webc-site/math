@@ -53,5 +53,10 @@ export default () => ({
     "Mellomrom-platshållare (\\phantom)",
     "Aksenter og matematiske fonter (\\hat, \\mathbf, \\tilde)",
     "Betinget sannsynlighet og brøk (\\mid, \\dfrac)",
+    "Tensorprodukt og direkte sum (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Dobbeltintegral og vinkler (\\iint, \\varphi, \\degree, \\ll)",
+    "Produktserie og stablet pil (\\prod, \\stackrel, \\longrightarrow)",
+    "Rette og tekstfonter (\\mathrm, \\textrm, \\rm)",
+    "Monotone piler og ligningsmerke (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

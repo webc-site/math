@@ -53,5 +53,10 @@ export default () => ({
     "Daliwr Lle Gofod Gwag (\\phantom)",
     "Acennau a ffontiau mathemategol (\\hat, \\mathbf, \\tilde)",
     "Tebygolrwydd amodol a ffracsiwn (\\mid, \\dfrac)",
+    "Lluoswm tensor a swm uniongyrchol (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Integryn dwbl ac onglau (\\iint, \\varphi, \\degree, \\ll)",
+    "Cyfres lluoswm a saeth (\\prod, \\stackrel, \\longrightarrow)",
+    "Ffontiau unionsyth a thestun (\\mathrm, \\textrm, \\rm)",
+    "Saethau monotonaidd a thag (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

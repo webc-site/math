@@ -53,5 +53,10 @@ export default () => ({
     "Tomrums-platshållare (\\phantom)",
     "Accenter och matematiska teckensnitt (\\hat, \\mathbf, \\tilde)",
     "Betingad sannolikhet och bråk (\\mid, \\dfrac)",
+    "Tensorprodukt och direkt summa (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Dubbelintegral och vinklar (\\iint, \\varphi, \\degree, \\ll)",
+    "Produktserie och staplad pil (\\prod, \\stackrel, \\longrightarrow)",
+    "Rak och texttypsnitt (\\mathrm, \\textrm, \\rm)",
+    "Monotona pilar och ekvationstagg (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });

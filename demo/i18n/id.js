@@ -53,5 +53,10 @@ export default () => ({
     "Placeholder Spasi (\\phantom)",
     "Aksen & font matematika (\\hat, \\mathbf, \\tilde)",
     "Probabilitas bersyarat dan pecahan (\\mid, \\dfrac)",
+    "Produk tensor dan jumlah langsung (\\mathcal, \\mathbb, \\otimes, \\oplus)",
+    "Integral ganda dan sudut (\\iint, \\varphi, \\degree, \\ll)",
+    "Seri produk dan panah bertumpuk (\\prod, \\stackrel, \\longrightarrow)",
+    "Font tegak dan teks (\\mathrm, \\textrm, \\rm)",
+    "Panah monoton dan tag persamaan (\\uparrow, \\downarrow, \\circ, \\bullet, \\lt, \\tag)",
   ],
 });
