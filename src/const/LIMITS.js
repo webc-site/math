@@ -1,0 +1,3 @@
+export const LIMITS_DEFAULT = 0,
+  LIMITS_DISPLAY = 1,
+  LIMITS_INLINE = 2;

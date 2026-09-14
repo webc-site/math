@@ -1,0 +1,266 @@
+doctype html
+html(lang="zh-CN")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title @webc.site/math 插件调试面板
+    style.
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap");
+
+      :root {
+        --bg: #07080c;
+        --card-bg: rgba(22, 24, 38, 0.5);
+        --border-color: rgba(255, 255, 255, 0.06);
+        --text: #f3f4f6;
+        --text-mute: #9ca3af;
+        --primary: #6366f1;
+        --accent: #10b981;
+        --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        --font-sans: "Outfit", system-ui, -apple-system, sans-serif;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        background: var(--bg);
+        background-image:
+          radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 55%),
+          radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.1) 0px, transparent 50%),
+          radial-gradient(at 50% 100%, rgba(167, 139, 250, 0.08) 0px, transparent 50%);
+        background-attachment: fixed;
+        color: var(--text);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+      }
+
+      .container {
+        max-width: 1000px;
+        width: 100%;
+        text-align: center;
+        padding: 60px 24px;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        margin: 0 0 16px 0;
+        background: linear-gradient(135deg, #c084fc 0%, #6366f1 50%, #34d399 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -1px;
+        line-height: 1.2;
+      }
+
+      p.subtitle {
+        font-size: 1.25rem;
+        color: var(--text-mute);
+        max-width: 600px;
+        margin: 0 auto 48px auto;
+        line-height: 1.6;
+        font-weight: 400;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 32px;
+        margin-top: 20px;
+      }
+
+      .card {
+        background: var(--card-bg);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-radius: 20px;
+        padding: 40px 32px;
+        text-align: left;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+
+      .card:hover::before {
+        opacity: 1;
+      }
+
+      .card.marked-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(99, 102, 241, 0.4);
+        box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+      }
+
+      .card.remark-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(16, 185, 129, 0.4);
+        box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+      }
+
+      .card.markdownit-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(192, 132, 252, 0.4);
+        box-shadow: 0 20px 40px rgba(192, 132, 252, 0.15);
+      }
+
+      .card h2 {
+        font-size: 1.6rem;
+        margin: 0 0 16px 0;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+      }
+
+      .card h2 .badge {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        border-radius: 99px;
+        font-weight: 600;
+      }
+
+      .marked-card h2 .badge {
+        background: rgba(99, 102, 241, 0.15);
+        color: #a78bfa;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+      }
+
+      .remark-card h2 .badge {
+        background: rgba(16, 185, 129, 0.15);
+        color: #34d399;
+        border: 1px solid rgba(16, 185, 129, 0.2);
+      }
+
+      .markdownit-card h2 .badge {
+        background: rgba(192, 132, 252, 0.15);
+        color: #c084fc;
+        border: 1px solid rgba(192, 132, 252, 0.2);
+      }
+
+      .card p {
+        font-size: 0.95rem;
+        color: var(--text-mute);
+        line-height: 1.7;
+        margin: 0 0 32px 0;
+      }
+
+      .card .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.95rem;
+        padding: 12px 24px;
+        border-radius: 10px;
+        border: none;
+        transition: all 0.3s ease;
+        align-self: flex-start;
+        position: relative;
+        z-index: 2;
+      }
+
+      .marked-card .btn {
+        background: linear-gradient(135deg, #a78bfa 0%, #6366f1 100%);
+        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+      }
+
+      .remark-card .btn {
+        background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+      }
+
+      .markdownit-card .btn {
+        background: linear-gradient(135deg, #c084fc 0%, #6366f1 100%);
+        box-shadow: 0 4px 12px rgba(192, 132, 252, 0.2);
+      }
+
+      .marked-card:hover .btn {
+        box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+        transform: scale(1.03);
+      }
+
+      .remark-card:hover .btn {
+        box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+        transform: scale(1.03);
+      }
+
+      .markdownit-card:hover .btn {
+        box-shadow: 0 6px 20px rgba(192, 132, 252, 0.4);
+        transform: scale(1.03);
+      }
+
+      footer {
+        margin-top: 80px;
+        color: var(--text-mute);
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 40px 16px;
+        }
+        h1 {
+          font-size: 2.2rem;
+        }
+        p.subtitle {
+          font-size: 1.1rem;
+          margin-bottom: 32px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .card {
+          padding: 32px 24px;
+        }
+      }
+  body
+    .container
+      h1 MathML 公式渲染器插件调试面板
+      p.subtitle 极速、轻量级的 TeX-to-MathML 渲染器（Marked.js, Remark.js 与 markdown-it 插件）
+      .grid
+        a.card.marked-card(href="/plugin/marked/demo.html")
+          div
+            h2 Marked 插件 
+              span.badge @webc.site/math-marked
+            p 在 Marked 转换 Markdown 时，自动将 $...$ 和 $$...$$ 内的 TeX 公式编译为高效的原生 MathML 标记。
+          .btn 进入 Demo 调试 →
+        a.card.remark-card(href="/plugin/remark/demo.html")
+          div
+            h2 Remark 插件 
+              span.badge @webc.site/math-remark
+            p 在 Unified/Remark 语法树转换中，无缝将 AST 中的 inlineMath 与 math 节点替换为原生 MathML HTML，无需第三方 KaTeX/MathJax 依赖。
+          .btn 进入 Demo 调试 →
+        a.card.markdownit-card(href="/plugin/markdown-it/demo.html")
+          div
+            h2 markdown-it 插件 
+              span.badge @webc.site/math-markdown-it
+            p 在 markdown-it 解析 Markdown 时，自动将行内和块级 TeX 公式渲染为原生 MathML 标记，无需引入庞大的客户端渲染脚本。
+          .btn 进入 Demo 调试 →
+      footer © 2026 webc.site
