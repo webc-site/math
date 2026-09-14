@@ -1,0 +1,59 @@
+name: npm
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "package.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v6
+
+      - name: 拉取配置
+        uses: actions/checkout@v6
+        with:
+          repository: webc-cron/conf
+          path: conf-repo
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: 链接配置
+        run: |
+          rm -f conf
+          ln -s conf-repo conf
+
+      - name: 安装 Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+
+      - name: 安装依赖
+        run: bun install
+
+      - name: 生成配置
+        run: bun sh/github/pkg.js
+
+      - name: 复制 README.md 到 lib 目录
+        run: cp README.md lib/
+
+      - name: 上传 SVG 图片
+        run: bunx mdimg2cdn -w README.md
+        working-directory: ./lib
+
+      - name: 发布
+        run: npm publish --access=public --provenance
+        working-directory: ./lib
