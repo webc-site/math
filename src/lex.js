@@ -24,10 +24,13 @@ export default (str) => {
     CMD_RE.lastIndex = idx;
     let m = CMD_RE.exec(str);
     if (m) {
-      const cmd = m[0];
+      let cmd = m[0];
       idx += cmd.length;
+      // \textrm 等 6 种 text 命令行为一致，统一归一为 \text，省去 CMD_MAP 同义键
+      const is_text = /^\\text(?:rm|bf|it|sf|tt)?$/.test(cmd);
+      if (is_text) cmd = "\\text";
       res.push(TOK_CMD, cmd);
-      if (/^\\text(?:rm|bf|it|sf|tt)?$/.test(cmd)) {
+      if (is_text) {
         const pos = skip(str, idx);
         if (str.charCodeAt(pos) === 123) {
           let braces = 1,

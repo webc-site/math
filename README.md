@@ -6,22 +6,21 @@
 
 # @webc.site/math : The world's smallest and fastest web Markdown formula renderer
 
-- [@webc.site/math : The world's smallest and fastest web Markdown formula renderer](#webcsitemath-the-worlds-smallest-and-fastest-web-markdown-formula-renderer)
-  - [1. Features](#1-features)
-  - [2. Usage](#2-usage)
-    - [Compilation Examples](#compilation-examples)
-      - [Render TeX Formulas Directly](#render-tex-formulas-directly)
-      - [Replace Formulas in Markdown Text](#replace-formulas-in-markdown-text)
-    - [Font and CSS Configuration](#font-and-css-configuration)
-      - [CSS Font Styling](#css-font-styling)
-  - [3. Plugins](#3-plugins)
-    - [3.1 markdown-it](#31-markdown-it)
-    - [3.2 marked](#32-marked)
-    - [3.3 remark](#33-remark)
-  - [4. Design](#4-design)
-  - [5. Tech Stack](#5-tech-stack)
-  - [6. Code Structure](#6-code-structure)
-  - [7. Historical Background](#7-historical-background)
+- [1. Features](#1-features)
+- [2. Usage](#2-usage)
+  - [Compilation Examples](#compilation-examples)
+    - [Render TeX Formulas Directly](#render-tex-formulas-directly)
+    - [Replace Formulas in Markdown Text](#replace-formulas-in-markdown-text)
+  - [Font and CSS Configuration](#font-and-css-configuration)
+    - [CSS Font Styling](#css-font-styling)
+- [3. Plugins](#3-plugins)
+  - [3.1 markdown-it](#31-markdown-it)
+  - [3.2 marked](#32-marked)
+  - [3.3 remark](#33-remark)
+- [4. Design](#4-design)
+- [5. Tech Stack](#5-tech-stack)
+- [6. Code Structure](#6-code-structure)
+- [7. Historical Background](#7-historical-background)
 
 ## 1. Features
 
@@ -30,7 +29,7 @@ This project compiles LaTeX math formulas into browser-native MathML Core markup
 Key Features:
 
 - **High Performance**: Compiles TeX formulas directly to native MathML. Processing speed exceeds 300,000 operations per second, 3 times faster than KaTeX and 40 times faster than MathJax.
-- **Lightweight**: Core package size is 9.30 KB (4.61 KB gzipped) with zero external dependencies.
+- **Lightweight**: Core package size is 9.19 KB (4.61 KB gzipped) with zero external dependencies.
 - **Zero Runtime Overhead**: Relies entirely on the browser's native engine for layout, eliminating client-side JavaScript formatting libraries.
 - **Robust Fault Tolerance**: Catches syntax errors (such as unclosed braces) and reverts to raw TeX string output to prevent application crashes.
 - **High Compatibility**: Generates standard MathML tags suitable for Server-Side Rendering (SSR), Static Site Generation (SSG), and Client-Side Rendering (CSR).
@@ -200,20 +199,19 @@ In January 2023, Chrome 109 reintroduced support for the MathML Core specificati
 
 # @webc.site/math : 全球最小最快的网页 Markdown 公式渲染器
 
-- [@webc.site/math : 全球最小最快的网页 Markdown 公式渲染器](#webcsitemath-全球最小最快的网页-markdown-公式渲染器)
-  - [1. 功能介绍](#1-功能介绍)
-  - [2. 使用演示](#2-使用演示)
-    - [直接渲染 TeX 公式](#直接渲染-tex-公式)
-    - [替换 Markdown 文本中的公式](#替换-markdown-文本中的公式)
-    - [字体与 CSS 配置](#字体与-css-配置)
-  - [3. 插件](#3-插件)
-    - [3.1 markdown-it](#31-markdown-it)
-    - [3.2 marked](#32-marked)
-    - [3.3 remark](#33-remark)
-  - [4. 设计思路](#4-设计思路)
-  - [5. 技术栈](#5-技术栈)
-  - [6. 代码结构](#6-代码结构)
-  - [7. 历史故事](#7-历史故事)
+- [1. 功能介绍](#1-功能介绍)
+- [2. 使用演示](#2-使用演示)
+  - [直接渲染 TeX 公式](#直接渲染-tex-公式)
+  - [替换 Markdown 文本中的公式](#替换-markdown-文本中的公式)
+  - [字体与 CSS 配置](#字体与-css-配置)
+- [3. 插件](#3-插件)
+  - [3.1 markdown-it](#31-markdown-it)
+  - [3.2 marked](#32-marked)
+  - [3.3 remark](#33-remark)
+- [4. 设计思路](#4-设计思路)
+- [5. 技术栈](#5-技术栈)
+- [6. 代码结构](#6-代码结构)
+- [7. 历史故事](#7-历史故事)
 
 ## 1. 功能介绍
 
@@ -222,7 +220,7 @@ In January 2023, Chrome 109 reintroduced support for the MathML Core specificati
 核心特性：
 
 - **高性能**：TeX 公式直接转换为原生 MathML 标签，处理速度达每秒 300,000 次以上
-- **轻量化**：核心包体积 9.30 KB（Gzip 压缩后 4.61 KB），无外部依赖
+- **轻量化**：核心包体积 9.19 KB（Gzip 压缩后 4.61 KB），无外部依赖
 - **零运行开销**：完全依赖浏览器原生引擎排版与渲染
 - **高容错性**：自动捕获语法错误，降级输出原始 TeX 字符串
 - **强兼容性**：生成标准 MathML 标签，适配 SSR、SSG 和 CSR
