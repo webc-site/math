@@ -74,7 +74,7 @@ const MROW = "mrow",
     [TYPE_MSQRT]: ([, n_1]) => wrap("msqrt", row(n_1)),
     [TYPE_MROOT]: ([, n_1, n_2]) => nest("mroot", n_1, n_2),
     [TYPE_LEFT_RIGHT]: ([, ns]) => wrap(MROW, ns.map(show).join("")),
-    [TYPE_OVERLINE]: ([, n_1, op = "¯"]) => nest("mover", n_1, [TYPE_OP, op]),
+    [TYPE_OVERLINE]: ([, n_1, op]) => nest("mover", n_1, [TYPE_OP, op]),
     [TYPE_MENCLOSE]: ([, style_id, node]) =>
       STYLES[style_id] ? wrap(MROW, row(node), STYLES[style_id]) : row(node),
     [TYPE_MPHANTOM]: ([, n_1]) => wrap("mphantom", row(n_1)),
