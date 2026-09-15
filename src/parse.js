@@ -223,14 +223,13 @@ const MENCLOSE_MAP = {
   mathFont = (attr) => (tokens, ref) => fontNode(read(tokens, ref, 1), attr),
   accent = (op) => (tokens, ref) => [TYPE_OVERLINE, read(tokens, ref, 1), op],
   over = accent("¯"),
-  mover = (tokens, ref) => {
+  // stackrel/overset 与 underset 结构一致，type 参数化
+  stack = (type) => (tokens, ref) => {
     const top = read(tokens, ref, 1);
-    return [TYPE_SUP, read(tokens, ref, 1), top, 1];
+    return [type, read(tokens, ref, 1), top, 1];
   },
-  munder = (tokens, ref) => {
-    const bot = read(tokens, ref, 1);
-    return [TYPE_SUB, read(tokens, ref, 1), bot, 1];
-  },
+  mover = stack(TYPE_SUP),
+  munder = stack(TYPE_SUB),
   frac = (tokens, ref) => [TYPE_FRAC, read(tokens, ref, 1), read(tokens, ref, 1)],
   phantom = (tokens, ref) => [TYPE_MPHANTOM, read(tokens, ref, 1)],
   pmod = (tokens, ref) => [
@@ -259,14 +258,11 @@ const MENCLOSE_MAP = {
     overline: over,
     bar: over,
     hat: accent("^"),
-    widehat: accent("^"),
     tilde: accent("~"),
-    widetilde: accent("~"),
     vec: accent("→"),
     dot: accent("˙"),
     ddot: accent("¨"),
     check: accent("ˇ"),
-    widecheck: accent("ˇ"),
     acute: accent("´"),
     grave: accent("`"),
     breve: accent("˘"),
@@ -327,7 +323,8 @@ const MENCLOSE_MAP = {
     },
     [TOK_CMD]: (val, tokens, ref) => {
       const name = val.slice(1),
-        handler = CMD_MAP[name];
+        // \widehat 等与 \hat 共用同一处理，去掉 wide 前缀回退查表
+        handler = CMD_MAP[name] || CMD_MAP[name.replace(/^wide/, "")];
       if (handler) return handler(tokens, ref, val, name);
       if (/^(?:[pbvV]?matrix|cases|array)$/.test(name)) {
         const mat = matrix(tokens, ref, name);

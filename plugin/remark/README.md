@@ -6,11 +6,10 @@
 
 # @webc.site/math-remark
 
-- [@webc.site/math-remark](#webcsitemath-remark)
-  - [Installation](#installation)
-  - [Usage](#usage)
-
 Remark plugin for `@webc.site/math`. Renders Markdown math formulas (LaTeX / TeX) directly to MathML at compile time, featuring extremely small size and fast speed.
+
+- [Installation](#installation)
+- [Usage](#usage)
 
 ## Installation
 
@@ -45,11 +44,10 @@ console.log(String(html));
 
 # @webc.site/math-remark
 
-- [@webc.site/math-remark](#webcsitemath-remark)
-  - [安装](#安装)
-  - [使用方法](#使用方法)
-
 `@webc.site/math` 的 Remark 扩展插件。在编译时直接将 Markdown 数学公式 (LaTeX / TeX) 渲染为 MathML，具有极小的体积和极快的运行速度。
+
+- [安装](#安装)
+- [使用方法](#使用方法)
 
 ## 安装
 

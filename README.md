@@ -12,7 +12,12 @@
     - [Render TeX Formulas Directly](#render-tex-formulas-directly)
     - [Replace Formulas in Markdown Text](#replace-formulas-in-markdown-text)
   - [Font and CSS Configuration](#font-and-css-configuration)
-    - [CSS Font Styling](#css-font-styling)
+    - [Importing the Math Font](#importing-the-math-font)
+      - [Option 1: Via CDN (Recommended)](#option-1-via-cdn-recommended)
+      - [Option 2: Self-hosting Font Files](#option-2-self-hosting-font-files)
+    - [CSS Styling Configuration](#css-styling-configuration)
+      - [Font Family Fallback Chain](#font-family-fallback-chain)
+      - [Block Formula Layout Optimization](#block-formula-layout-optimization)
 - [3. Plugins](#3-plugins)
   - [3.1 markdown-it](#31-markdown-it)
   - [3.2 marked](#32-marked)
@@ -29,7 +34,7 @@ This project compiles LaTeX math formulas into browser-native MathML Core markup
 Key Features:
 
 - **High Performance**: Compiles TeX formulas directly to native MathML. Processing speed exceeds 300,000 operations per second, 3 times faster than KaTeX and 40 times faster than MathJax.
-- **Lightweight**: Core package size is 9.19 KB (4.61 KB gzipped) with zero external dependencies.
+- **Lightweight**: Core package size is 9.14 KB (4.62 KB gzipped) with zero external dependencies.
 - **Zero Runtime Overhead**: Relies entirely on the browser's native engine for layout, eliminating client-side JavaScript formatting libraries.
 - **Robust Fault Tolerance**: Catches syntax errors (such as unclosed braces) and reverts to raw TeX string output to prevent application crashes.
 - **High Compatibility**: Generates standard MathML tags suitable for Server-Side Rendering (SSR), Static Site Generation (SSG), and Client-Side Rendering (CSR).
@@ -58,13 +63,79 @@ const html = mdMath("Euler's identity: $$e^{i\\pi} + 1 = 0$$", compile);
 
 ### Font and CSS Configuration
 
-Configure math fonts to ensure proper layout alignment. Latin Modern Math font from the `18s` package is recommended.
+MathML layout relies on OpenType Math fonts containing dedicated mathematical metrics (the `MATH` table) to correctly handle radical scaling, delimiter stretching (e.g., parentheses, braces), fraction line thickness, and sub/superscript alignments.
 
-#### CSS Font Styling
+The classic TeX math font **Latin Modern Math** (derived from Donald Knuth's Computer Modern family) is recommended.
+
+#### Importing the Math Font
+
+##### Option 1: Via CDN (Recommended)
+
+Import the Latin Modern Math font stylesheet from the `18s` font package (which registers the font family name as `m`):
+
+In CSS:
+
+```css
+@import url("https://registry.npmmirror.com/18s/0.2.24/files/m.css");
+```
+
+Or in HTML `<head>`:
+
+```html
+<link rel="stylesheet" href="https://registry.npmmirror.com/18s/0.2.24/files/m.css" />
+```
+
+To include the body text font (`t`) and monospace code font (`c`) along with the math font, import the complete stylesheet:
+
+```html
+<link rel="stylesheet" href="https://registry.npmmirror.com/18s/0.2.24/files/_.css" />
+```
+
+##### Option 2: Self-hosting Font Files
+
+Download the Latin Modern Math WOFF2 font file and declare `@font-face`:
+
+```css
+@font-face {
+  font-family: "Latin Modern Math";
+  src: url("/fonts/latinmodern-math.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+```
+
+#### CSS Styling Configuration
+
+##### Font Family Fallback Chain
+
+Declare the font stack and inherit text color for `<math>` elements:
 
 ```css
 math {
-  font-family: m, t, math, sans-serif;
+  font-family: m, "Latin Modern Math", "Cambria Math", math, sans-serif;
+  color: inherit;
+}
+```
+
+- `m`: Latin Modern Math declared via `m.css`
+- `"Latin Modern Math"`: Self-hosted or system-installed Latin Modern Math
+- `"Cambria Math"`: Built-in Windows system math font
+- `math`: W3C CSS Fonts generic math font family keyword (natively supported in modern browsers)
+- `sans-serif`: Final sans-serif fallback
+
+##### Block Formula Layout Optimization
+
+Compiled block formulas contain the `display="block"` attribute. To prevent wide formulas from overflowing containers on mobile or narrow screens, configure horizontal scrolling and centering:
+
+```css
+math[display="block"] {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1em auto;
+  padding: 0.5em 0;
+  text-align: center;
 }
 ```
 
@@ -204,6 +275,12 @@ In January 2023, Chrome 109 reintroduced support for the MathML Core specificati
   - [直接渲染 TeX 公式](#直接渲染-tex-公式)
   - [替换 Markdown 文本中的公式](#替换-markdown-文本中的公式)
   - [字体与 CSS 配置](#字体与-css-配置)
+    - [引入数学字体](#引入数学字体)
+      - [方式一：CDN 在线引用（推荐）](#方式一cdn-在线引用推荐)
+      - [方式二：本地托管字体文件](#方式二本地托管字体文件)
+    - [CSS 样式配置](#css-样式配置)
+      - [字体族声明与回退链](#字体族声明与回退链)
+      - [块级公式排版优化](#块级公式排版优化)
 - [3. 插件](#3-插件)
   - [3.1 markdown-it](#31-markdown-it)
   - [3.2 marked](#32-marked)
@@ -220,7 +297,7 @@ In January 2023, Chrome 109 reintroduced support for the MathML Core specificati
 核心特性：
 
 - **高性能**：TeX 公式直接转换为原生 MathML 标签，处理速度达每秒 300,000 次以上
-- **轻量化**：核心包体积 9.19 KB（Gzip 压缩后 4.61 KB），无外部依赖
+- **轻量化**：核心包体积 9.14 KB（Gzip 压缩后 4.62 KB），无外部依赖
 - **零运行开销**：完全依赖浏览器原生引擎排版与渲染
 - **高容错性**：自动捕获语法错误，降级输出原始 TeX 字符串
 - **强兼容性**：生成标准 MathML 标签，适配 SSR、SSG 和 CSR
@@ -247,11 +324,79 @@ const html = mdMath("欧拉恒等式：$$e^{i\\pi} + 1 = 0$$", compile);
 
 ### 字体与 CSS 配置
 
-配置数学字体确保排版对齐：
+浏览器排版 MathML 依赖包含数学排版度量（OpenType Math 表）的数学字体，用于呈现根号伸缩、大括号拉伸、分式厚度与上下标对齐。
+
+推荐使用 TeX 经典数学字体 **Latin Modern Math**（源自 Computer Modern 字体家族）。
+
+#### 引入数学字体
+
+##### 方式一：CDN 在线引用（推荐）
+
+通过 `18s` 字体包在线引入 Latin Modern Math 样式（该样式将 Latin Modern Math 声明为字体族 `m`）：
+
+在 CSS 中引入：
+
+```css
+@import url("https://registry.npmmirror.com/18s/0.2.24/files/m.css");
+```
+
+或在 HTML `<head>` 中引入：
+
+```html
+<link rel="stylesheet" href="https://registry.npmmirror.com/18s/0.2.24/files/m.css" />
+```
+
+若同时需要页面正文字体（`t`）与代码等宽字体（`c`），可直接引用完整样式表：
+
+```html
+<link rel="stylesheet" href="https://registry.npmmirror.com/18s/0.2.24/files/_.css" />
+```
+
+##### 方式二：本地托管字体文件
+
+下载 Latin Modern Math 字体文件（WOFF2 格式），通过 `@font-face` 声明：
+
+```css
+@font-face {
+  font-family: "Latin Modern Math";
+  src: url("/fonts/latinmodern-math.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+```
+
+#### CSS 样式配置
+
+##### 字体族声明与回退链
+
+为 `<math>` 标签配置字体族与继承颜色：
 
 ```css
 math {
-  font-family: m, t, math, sans-serif;
+  font-family: m, "Latin Modern Math", "Cambria Math", math, sans-serif;
+  color: inherit;
+}
+```
+
+- `m`：`m.css` 声明的 Latin Modern Math 网页字体
+- `"Latin Modern Math"`：本地托管或系统安装的 Latin Modern Math 字体
+- `"Cambria Math"`：Windows 系统内置数学字体
+- `math`：CSS Fonts 规范定义的数学通用字体族关键字（现代主流浏览器原生支持）
+- `sans-serif`：无衬线回退字体
+
+##### 块级公式排版优化
+
+块级公式编译后带有 `display="block"` 属性。为防止长公式超出容器或在移动端撑破页面，推荐配置横向滚动与居中样式：
+
+```css
+math[display="block"] {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1em auto;
+  padding: 0.5em 0;
+  text-align: center;
 }
 ```
 
