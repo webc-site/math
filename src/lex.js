@@ -38,7 +38,8 @@ export default (str) => {
             else if (cc === 125) --braces;
           }
           if (!braces) {
-            res.push(TOK_LBRACE, "{", TOK_IDENT, str.slice(pos + 1, t_idx), TOK_RBRACE, "}");
+            // LBRACE/RBRACE 的值不会被读取，填空串省体积
+            res.push(TOK_LBRACE, "", TOK_IDENT, str.slice(pos + 1, t_idx), TOK_RBRACE, "");
             idx = t_idx + 1;
           }
         }

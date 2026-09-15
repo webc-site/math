@@ -403,6 +403,6 @@ const MENCLOSE_MAP = {
     return nodes;
   };
 
-[..."()[]"].map((c) => (CHAR_MAP[c] = [TYPE_OP, c, ATTR_STRETCHY_FALSE]));
+for (const c of "()[]") CHAR_MAP[c] = [TYPE_OP, c, ATTR_STRETCHY_FALSE];
 
 export default parse;

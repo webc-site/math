@@ -34,10 +34,7 @@ const MROW = "mrow",
   STYLE_CASES_REL = PAD_RL.map((p) => JUSTIFY + START + p + '"'),
   STYLE_START = JUSTIFY + START + '"',
   TAGS = [null, "mi", "mn", "mo"],
-  esc = (str) =>
-    str.replace(/[&<>"]/g, (m) =>
-      m === "&" ? "&amp;" : m === "<" ? "&lt;" : m === ">" ? "&gt;" : "&quot;",
-    ),
+  esc = (str) => str.replace(/[&<>"]/g, (m) => "&#" + m.charCodeAt(0) + ";"),
   wrap = (tag_name, inner, attr) =>
     "<" + tag_name + (attr || "") + ">" + inner + "</" + tag_name + ">",
   tag = (name, val, attr) => wrap(name, esc(val), attr),

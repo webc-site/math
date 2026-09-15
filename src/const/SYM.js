@@ -40,20 +40,20 @@ parseSymbols(
   (e) => (SYM_MAP[e] = [TYPE_FUNC, e]),
 );
 
-// 空格命令直接并入 SYM_MAP，消除 SPACE_MAP
+// 空格命令直接并入 SYM_MAP，消除 SPACE_MAP；宽度用数字书写，构建 map 时统一补 px
 [
-  [",", "3px"],
-  [":", "4px"],
-  [";", "5px"],
-  ["!", "-3px"],
-  [" ", "4px"],
-  ["quad", "16px"],
-  ["qquad", "32px"],
-  ["thinspace", "3px"],
-  ["medspace", "4px"],
-  ["thickspace", "5px"],
-  ["enspace", "8px"],
-  ["negthinspace", "-3px"],
-  ["negmedspace", "-4px"],
-  ["negthickspace", "-5px"],
-].map(([k, v]) => (SYM_MAP[k] = [TYPE_SPACE, v]));
+  [",", 3],
+  [":", 4],
+  [";", 5],
+  ["!", -3],
+  [" ", 4],
+  ["quad", 16],
+  ["qquad", 32],
+  ["thinspace", 3],
+  ["medspace", 4],
+  ["thickspace", 5],
+  ["enspace", 8],
+  ["negthinspace", -3],
+  ["negmedspace", -4],
+  ["negthickspace", -5],
+].map(([k, v]) => (SYM_MAP[k] = [TYPE_SPACE, v + "px"]));
