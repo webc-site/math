@@ -1,24 +1,4 @@
-import {
-  TYPE_IDENT,
-  TYPE_NUM,
-  TYPE_OP,
-  TYPE_SUP,
-  TYPE_SUB,
-  TYPE_SUPSUB,
-  TYPE_FRAC,
-  TYPE_GROUP,
-  TYPE_FUNC,
-  TYPE_MSQRT,
-  TYPE_LEFT_RIGHT,
-  TYPE_MROOT,
-  TYPE_OVERLINE,
-  TYPE_MATRIX,
-  TYPE_LINEBREAK,
-  TYPE_TEXT,
-  TYPE_SPACE,
-  TYPE_MENCLOSE,
-  TYPE_MPHANTOM,
-} from "./const/TYPE.js";
+import { TYPE_OP, TYPE_GROUP, TYPE_FUNC } from "./const/TYPE.js";
 import { STYLE_BOX, STYLE_CANCEL, STYLE_SOUT } from "./const/STYL.js";
 import lex from "./lex.js";
 import parse from "./parse.js";
@@ -48,6 +28,7 @@ const MROW = "mrow",
     space +
     '"',
   nest = (name, ...ns) => wrap(name, ns.map(row).join("")),
+  flat = (ns) => wrap(MROW, ns.map(show).join("")),
   scr = (n, idx, display, inline, [, v] = n[1], limits = n[idx]) =>
     nest(
       limits === 1 || (!limits && /^([∑∏∐⋂⋃⨁⨂⋁⋀]|lim|max|min|sup|inf)$/.test(v)) ? display : inline,
@@ -62,23 +43,23 @@ const MROW = "mrow",
         ? wrap(MROW, show(n))
         : show(n);
   },
-  SHOW_MAP = {
-    [TYPE_FUNC]: ([, val]) => tag("mi", val) + wrap("mo", "\u2061"),
-    [TYPE_GROUP]: ([, ns]) => ns.map(show).join(""),
-    [TYPE_FRAC]: ([, n_1, n_2]) => nest("mfrac", n_1, n_2),
-    [TYPE_SUP]: (n) => scr(n, 3, "mover", "msup"),
-    [TYPE_SUB]: (n) => scr(n, 3, "munder", "msub"),
-    [TYPE_SUPSUB]: (n) => scr(n, 4, "munderover", "msubsup"),
-    [TYPE_TEXT]: ([, val]) => tag("mtext", val.replace(/ /g, "\u00A0")),
-    [TYPE_SPACE]: ([, val]) => wrap("mspace", "", ' width="' + val + '"'),
-    [TYPE_MSQRT]: ([, n_1]) => wrap("msqrt", row(n_1)),
-    [TYPE_MROOT]: ([, n_1, n_2]) => nest("mroot", n_1, n_2),
-    [TYPE_LEFT_RIGHT]: ([, ns]) => wrap(MROW, ns.map(show).join("")),
-    [TYPE_OVERLINE]: ([, n_1, op]) => nest("mover", n_1, [TYPE_OP, op]),
-    [TYPE_MENCLOSE]: ([, style_id, node]) =>
-      STYLES[style_id] ? wrap(MROW, row(node), STYLES[style_id]) : row(node),
-    [TYPE_MPHANTOM]: ([, n_1]) => wrap("mphantom", row(n_1)),
-    [TYPE_MATRIX]: (n) => {
+  // 按 TYPE.js 数字码位置排列的渲染函数表，1-3 走 tag 路径，连同 0 留空位
+  SHOW_MAP = [
+    ,
+    ,
+    ,
+    ,
+    (n) => scr(n, 3, "mover", "msup"),
+    (n) => scr(n, 3, "munder", "msub"),
+    (n) => scr(n, 4, "munderover", "msubsup"),
+    ([, n_1, n_2]) => nest("mfrac", n_1, n_2),
+    ([, ns]) => ns.map(show).join(""),
+    ([, val]) => tag("mi", val) + wrap("mo", "\u2061"),
+    ([, n_1]) => wrap("msqrt", row(n_1)),
+    ([, n_1, n_2]) => nest("mroot", n_1, n_2),
+    ([, ns]) => flat(ns),
+    ([, n_1, op]) => nest("mover", n_1, [TYPE_OP, op]),
+    (n) => {
       const [, env, rows] = n,
         is_cases = env === "cases",
         is_align = /^align|split/.test(env),
@@ -131,8 +112,13 @@ const MROW = "mrow",
         ? wrap(MROW, tag("mo", "([|‖{"[idx]) + tbl + (idx < 4 ? tag("mo", ")]‖‖"[idx]) : ""))
         : tbl;
     },
-    [TYPE_LINEBREAK]: () => wrap("mspace", "", ' linebreak="newline"'),
-  },
+    () => wrap("mspace", "", ' linebreak="newline"'),
+    ([, val]) => tag("mtext", val.replace(/ /g, "\u00A0")),
+    ([, val]) => wrap("mspace", "", ' width="' + val + '"'),
+    ([, style_id, node]) =>
+      STYLES[style_id] ? wrap(MROW, row(node), STYLES[style_id]) : row(node),
+    ([, n_1]) => wrap("mphantom", row(n_1)),
+  ],
   show = (n) => (n ? (n[0] <= 3 ? tag(TAGS[n[0]], n[1], n[2]) : SHOW_MAP[n[0]](n)) : "");
 
 export default (tex, block) => {
@@ -141,7 +127,7 @@ export default (tex, block) => {
     "math",
     wrap(
       "semantics",
-      wrap(MROW, parse(lex(clean), [0, 0]).map(show).join("")) +
+      flat(parse(lex(clean), [0, 0])) +
         wrap("annotation", esc(clean), ' encoding="application/x-tex"'),
     ),
     ' xmlns="http://www.w3.org/1998/Math/MathML"' + (block ? ' display="block"' : ""),

@@ -11,7 +11,7 @@ This project compiles LaTeX math formulas into browser-native MathML Core markup
 Key Features:
 
 - **High Performance**: Compiles TeX formulas directly to native MathML. Processing speed exceeds 300,000 operations per second, 3 times faster than KaTeX and 40 times faster than MathJax.
-- **Lightweight**: Core package size is 9.16 KB (4.61 KB gzipped) with zero external dependencies.
+- **Lightweight**: Core package size is 8.95 KB (4.62 KB gzipped) with zero external dependencies.
 - **Zero Runtime Overhead**: Relies entirely on the browser's native engine for layout, eliminating client-side JavaScript formatting libraries.
 - **Robust Fault Tolerance**: Catches syntax errors (such as unclosed braces) and reverts to raw TeX string output to prevent application crashes.
 - **High Compatibility**: Generates standard MathML tags suitable for Server-Side Rendering (SSR), Static Site Generation (SSG), and Client-Side Rendering (CSR).

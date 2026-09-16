@@ -69,6 +69,10 @@ const MENCLOSE_MAP = {
   },
   // 窥视 idx 处 token 是否为 [type, val]
   at = (tokens, idx, type, val) => tokens[idx] === type && tokens[idx + 1] === val,
+  // end/right 出现即语法错误，按错误码生成抛出处理器
+  th = (code) => (tokens, ref, val, name) => {
+    throw [code, name];
+  },
   delim = (tokens, ref) => {
     const idx = ref[0];
     if (tokens[idx] == null) return null;
@@ -303,23 +307,16 @@ const MENCLOSE_MAP = {
     phantom,
     pmod,
     begin,
-    end: (tokens, ref, val, name) => {
-      throw [ERR_EXTRA_END, name];
-    },
-    right: (tokens, ref, val, name) => {
-      throw [ERR_EXTRA_RIGHT, name];
-    },
+    end: th(ERR_EXTRA_END),
+    right: th(ERR_EXTRA_RIGHT),
   },
-  TOK_MAP = {
-    [TOK_IDENT]: (val) => [TYPE_IDENT, val],
-    [TOK_OP]: (val) => CHAR_MAP[val] ?? [TYPE_OP, val],
-    [TOK_NUM]: (val) => [TYPE_NUM, val],
-    [TOK_LBRACE]: (val, tokens, ref) => {
-      const res = [TYPE_GROUP, parse(tokens, ref)];
-      tokens[ref[0]] > 0 && (ref[0] += 2);
-      return res;
-    },
-    [TOK_CMD]: (val, tokens, ref) => {
+  // 按 TOK.js 数字码位置排列，0/5/6 无处理器留空位
+  TOK_MAP = [
+    ,
+    (val) => [TYPE_NUM, val],
+    (val) => [TYPE_IDENT, val],
+    (val) => CHAR_MAP[val] ?? [TYPE_OP, val],
+    (val, tokens, ref) => {
       const name = val.slice(1),
         // \widehat 等与 \hat 共用同一处理，去掉 wide 前缀回退查表
         handler = CMD_MAP[name] || CMD_MAP[name.replace(/^wide/, "")];
@@ -335,7 +332,14 @@ const MENCLOSE_MAP = {
       if (sym) return sym;
       throw [ERR_UNKNOWN_CMD, val];
     },
-  },
+    ,
+    ,
+    (val, tokens, ref) => {
+      const res = [TYPE_GROUP, parse(tokens, ref)];
+      tokens[ref[0]] > 0 && (ref[0] += 2);
+      return res;
+    },
+  ],
   read = (tokens, ref, split_num) => {
     const idx = ref[0],
       type = tokens[idx],

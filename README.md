@@ -4,6 +4,10 @@
 
 <a id="en"></a>
 
+[![npm](https://img.shields.io/npm/v/@webc.site/math)](https://www.npmjs.com/package/@webc.site/math)
+[![X](https://img.shields.io/badge/X-@iwebcsite-000000?logo=x&logoColor=white)](https://x.com/iwebcsite)
+[![Bluesky](https://img.shields.io/badge/Bluesky-@webc.site-1185FE?logo=bluesky&logoColor=white)](https://webc-site.bsky.social)
+
 # @webc.site/math : The world's smallest and fastest web Markdown formula renderer
 
 - [1. Features](#1-features)
@@ -34,7 +38,7 @@ This project compiles LaTeX math formulas into browser-native MathML Core markup
 Key Features:
 
 - **High Performance**: Compiles TeX formulas directly to native MathML. Processing speed exceeds 300,000 operations per second, 3 times faster than KaTeX and 40 times faster than MathJax.
-- **Lightweight**: Core package size is 9.16 KB (4.61 KB gzipped) with zero external dependencies.
+- **Lightweight**: Core package size is 8.95 KB (4.62 KB gzipped) with zero external dependencies.
 - **Zero Runtime Overhead**: Relies entirely on the browser's native engine for layout, eliminating client-side JavaScript formatting libraries.
 - **Robust Fault Tolerance**: Catches syntax errors (such as unclosed braces) and reverts to raw TeX string output to prevent application crashes.
 - **High Compatibility**: Generates standard MathML tags suitable for Server-Side Rendering (SSR), Static Site Generation (SSG), and Client-Side Rendering (CSR).
@@ -267,6 +271,9 @@ In January 2023, Chrome 109 reintroduced support for the MathML Core specificati
 ---
 
 <a id="zh"></a>
+[![npm](https://img.shields.io/npm/v/@webc.site/math)](https://www.npmjs.com/package/@webc.site/math)
+[![X](https://img.shields.io/badge/X-@iwebcsite-000000?logo=x&logoColor=white)](https://x.com/iwebcsite)
+[![Bluesky](https://img.shields.io/badge/Bluesky-@webc.site-1185FE?logo=bluesky&logoColor=white)](https://webc-site.bsky.social)
 
 # @webc.site/math : 全球最小最快的网页 Markdown 公式渲染器
 
@@ -297,7 +304,7 @@ In January 2023, Chrome 109 reintroduced support for the MathML Core specificati
 核心特性：
 
 - **高性能**：TeX 公式直接转换为原生 MathML 标签，处理速度达每秒 300,000 次以上
-- **轻量化**：核心包体积 9.16 KB（Gzip 压缩后 4.61 KB），无外部依赖
+- **轻量化**：核心包体积 8.95 KB（Gzip 压缩后 4.62 KB），无外部依赖
 - **零运行开销**：完全依赖浏览器原生引擎排版与渲染
 - **高容错性**：自动捕获语法错误，降级输出原始 TeX 字符串
 - **强兼容性**：生成标准 MathML 标签，适配 SSR、SSG 和 CSR
