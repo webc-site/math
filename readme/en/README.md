@@ -1,3 +1,7 @@
+[![npm](https://img.shields.io/npm/v/@webc.site/math)](https://www.npmjs.com/package/@webc.site/math)
+[![X](https://img.shields.io/badge/X-@iwebcsite-000000?logo=x&logoColor=white)](https://x.com/iwebcsite)
+[![Bluesky](https://img.shields.io/badge/Bluesky-@webc.site-1185FE?logo=bluesky&logoColor=white)](https://webc-site.bsky.social)
+
 # @webc.site/math : The world's smallest and fastest web Markdown formula renderer
 
 ## 1. Features
@@ -7,7 +11,7 @@ This project compiles LaTeX math formulas into browser-native MathML Core markup
 Key Features:
 
 - **High Performance**: Compiles TeX formulas directly to native MathML. Processing speed exceeds 300,000 operations per second, 3 times faster than KaTeX and 40 times faster than MathJax.
-- **Lightweight**: Core package size is 9.13 KB (4.62 KB gzipped) with zero external dependencies.
+- **Lightweight**: Core package size is 9.16 KB (4.61 KB gzipped) with zero external dependencies.
 - **Zero Runtime Overhead**: Relies entirely on the browser's native engine for layout, eliminating client-side JavaScript formatting libraries.
 - **Robust Fault Tolerance**: Catches syntax errors (such as unclosed braces) and reverts to raw TeX string output to prevent application crashes.
 - **High Compatibility**: Generates standard MathML tags suitable for Server-Side Rendering (SSR), Static Site Generation (SSG), and Client-Side Rendering (CSR).

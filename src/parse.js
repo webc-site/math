@@ -67,6 +67,8 @@ const MENCLOSE_MAP = {
     ".": [TYPE_OP, ".", ATTR_NORMAL],
     "'": [TYPE_OP, "′"],
   },
+  // 窥视 idx 处 token 是否为 [type, val]
+  at = (tokens, idx, type, val) => tokens[idx] === type && tokens[idx + 1] === val,
   delim = (tokens, ref) => {
     const idx = ref[0];
     if (tokens[idx] == null) return null;
@@ -77,13 +79,9 @@ const MENCLOSE_MAP = {
   },
   opt = (tokens, ref, check_num) => {
     let idx = ref[0];
-    if (
-      tokens[idx] === TOK_OP &&
-      tokens[idx + 1] === "[" &&
-      (!check_num || tokens[idx + 2] === TOK_NUM)
-    ) {
+    if (at(tokens, idx, TOK_OP, "[") && (!check_num || tokens[idx + 2] === TOK_NUM)) {
       idx += 2;
-      while (tokens[idx] > 0 && (tokens[idx] !== TOK_OP || tokens[idx + 1] !== "]")) {
+      while (tokens[idx] > 0 && !at(tokens, idx, TOK_OP, "]")) {
         idx += 2;
       }
       tokens[idx] > 0 && (idx += 2);
@@ -187,10 +185,10 @@ const MENCLOSE_MAP = {
     return [TYPE_IDENT, val];
   },
   sqrt = (tokens, ref) => {
-    if (tokens[ref[0]] === TOK_OP && tokens[ref[0] + 1] === "[") {
+    if (at(tokens, ref[0], TOK_OP, "[")) {
       ref[0] += 2;
       const nodes = [];
-      while (tokens[ref[0]] > 0 && (tokens[ref[0]] !== TOK_OP || tokens[ref[0] + 1] !== "]")) {
+      while (tokens[ref[0]] > 0 && !at(tokens, ref[0], TOK_OP, "]")) {
         const node = grab(tokens, ref);
         if (node) nodes.push(node);
       }
@@ -202,7 +200,7 @@ const MENCLOSE_MAP = {
   fence = (tokens, ref) => {
     const left = delim(tokens, ref),
       body = parse(tokens, ref);
-    if (tokens[ref[0]] === TOK_CMD && tokens[ref[0] + 1] === "\\right") {
+    if (at(tokens, ref[0], TOK_CMD, "\\right")) {
       ref[0] += 2;
       return [TYPE_LEFT_RIGHT, [left, ...body, delim(tokens, ref)].filter(Boolean)];
     }
@@ -246,7 +244,7 @@ const MENCLOSE_MAP = {
   CMD_MAP = {
     __proto__: null,
     "\\": (tokens, ref) => {
-      tokens[ref[0]] === TOK_OP && tokens[ref[0] + 1] === "*" && (ref[0] += 2);
+      at(tokens, ref[0], TOK_OP, "*") && (ref[0] += 2);
       opt(tokens, ref, 1);
       return [TYPE_LINEBREAK];
     },
@@ -289,7 +287,7 @@ const MENCLOSE_MAP = {
     rm: mathFont(ATTR_NORMAL),
     bf: mathFont(ATTR_BOLD),
     operatorname: (tokens, ref) => {
-      tokens[ref[0]] === TOK_OP && tokens[ref[0] + 1] === "*" && (ref[0] += 2);
+      at(tokens, ref[0], TOK_OP, "*") && (ref[0] += 2);
       const node = read(tokens, ref, 1);
       return [
         TYPE_FUNC,
@@ -388,7 +386,7 @@ const MENCLOSE_MAP = {
     let type;
     while ((type = tokens[ref[0]]) > 0) {
       if (type === TOK_RBRACE) break;
-      if (type === TOK_CMD && tokens[ref[0] + 1] === "\\right") break;
+      if (at(tokens, ref[0], TOK_CMD, "\\right")) break;
       const node = grab(tokens, ref);
       if (node) nodes.push(node);
     }

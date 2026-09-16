@@ -1,3 +1,7 @@
+[![npm](https://img.shields.io/npm/v/@webc.site/math)](https://www.npmjs.com/package/@webc.site/math)
+[![X](https://img.shields.io/badge/X-@iwebcsite-000000?logo=x&logoColor=white)](https://x.com/iwebcsite)
+[![Bluesky](https://img.shields.io/badge/Bluesky-@webc.site-1185FE?logo=bluesky&logoColor=white)](https://webc-site.bsky.social)
+
 # @webc.site/math : 全球最小最快的网页 Markdown 公式渲染器
 
 ## 1. 功能介绍
@@ -7,7 +11,7 @@
 核心特性：
 
 - **高性能**：TeX 公式直接转换为原生 MathML 标签，处理速度达每秒 300,000 次以上
-- **轻量化**：核心包体积 9.13 KB（Gzip 压缩后 4.62 KB），无外部依赖
+- **轻量化**：核心包体积 9.16 KB（Gzip 压缩后 4.61 KB），无外部依赖
 - **零运行开销**：完全依赖浏览器原生引擎排版与渲染
 - **高容错性**：自动捕获语法错误，降级输出原始 TeX 字符串
 - **强兼容性**：生成标准 MathML 标签，适配 SSR、SSG 和 CSR
