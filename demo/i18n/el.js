@@ -20,6 +20,7 @@ export default () => ({
   comment_output: "Έξοδος",
   usage_formula: "Ταυτότητα του Euler: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "Κείμενο LaTeX (\\text)",
     "Ταυτότητα του Euler",
     "Ισοδυναμία μάζας-ενέργειας",
     "Ορισμός της παραγώγου",

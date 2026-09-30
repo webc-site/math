@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "آئوٽ پٽ",
   usage_formula: "ايولر جي سڃاڻپ: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX متن (\\text)",
     "ايولر جي سڃاڻپ",
     "مادي ۽ توانائي جي برابري",
     "مشتق جي تعريف",

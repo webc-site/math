@@ -1,4 +1,5 @@
 const FORMULAS = [
+  "\\text{LaTex}",
   "e^{i\\pi} + 1 = 0",
   "E = m \\cdot c^2",
   "\\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",

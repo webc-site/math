@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Wyjście",
   usage_formula: "Tożsamość Eulera: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "Tekst LaTeX (\\text)",
     "Tożsamość Eulera",
     "Równoważność masy i energii",
     "Definicja pochodnej",

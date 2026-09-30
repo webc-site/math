@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "المخرجات",
   usage_formula: "متطابقة أويلر: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "نص LaTeX (\\text)",
     "متطابقة أويلر",
     "تكافؤ الكتلة والطاقة",
     "تعريف المشتقة",

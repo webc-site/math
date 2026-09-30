@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Išvestis",
   usage_formula: "Eulerio tapatybė: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX tekstas (\\text)",
     "Eulerio tapatybė",
     "Masės ir energijos ekvivalentiškumas",
     "Išvestinės apibrėžimas",

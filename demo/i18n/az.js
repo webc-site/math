@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Çıxış",
   usage_formula: "Euler eyniliyi: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX mətni (\\text)",
     "Euler eyniliyi",
     "Kütlə-enerji ekvivalentliyi",
     "Törəmənin tərifi",

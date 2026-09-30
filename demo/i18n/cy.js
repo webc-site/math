@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Allbwn",
   usage_formula: "Hunaniaeth Euler: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "Testun LaTeX (\\text)",
     "Hunaniaeth Euler",
     "Gywerthedd Màs-Ynni",
     "Diffiniad o Ddeilliad",

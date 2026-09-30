@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Kimenet",
   usage_formula: "Euler-azonosság: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX szöveg (\\text)",
     "Euler-azonosság",
     "Tömeg-energia ekvivalencia",
     "Derivált definíciója",

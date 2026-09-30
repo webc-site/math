@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "פלט",
   usage_formula: "זהות אוילר: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "טקסט LaTeX (\\text)",
     "זהות אוילר",
     "שקילות מסה-אנרגיה",
     "הגדרת הנגזרת",

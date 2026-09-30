@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Output",
   usage_formula: "Eulers identitet: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX-tekst (\\text)",
     "Eulers identitet",
     "Masse-energi-ækvivalens",
     "Definition af afledt",

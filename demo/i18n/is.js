@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Úttak",
   usage_formula: "Jafna Eulers: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX-texti (\\text)",
     "Jafna Eulers",
     "Jafngildi massa og orku",
     "Skilgreining á afleiðu",

@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Izvade",
   usage_formula: "Eilera identitāte: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX teksts (\\text)",
     "Eilera identitāte",
     "Masas un enerģijas ekvivalence",
     "Atvasinājuma definīcija",

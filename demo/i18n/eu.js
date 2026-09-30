@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Irteera",
   usage_formula: "Eulerren identitatea: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX testua (\\text)",
     "Eulerren identitatea",
     "Masa-energia baliokidetasuna",
     "Deribatuaren definizioa",

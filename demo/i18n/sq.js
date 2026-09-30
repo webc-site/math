@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Dalja",
   usage_formula: "Identiteti i Eulerit: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "Tekst LaTeX (\\text)",
     "Identiteti i Eulerit",
     "Ekuivalenca masë-energji",
     "Përkufizimi i derivatit",

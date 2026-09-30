@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Matokeo",
   usage_formula: "Utambulisho wa Euler: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "Maandishi ya LaTeX (\\text)",
     "Utambulisho wa Euler",
     "Ulinganifu wa Misa na Nishati",
     "Ufafanuzi wa Derivative",

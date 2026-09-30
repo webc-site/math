@@ -20,6 +20,7 @@ export default () => ({
   comment_output: "Gawas",
   usage_formula: "Euler nga Identidad: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "Teksto sa LaTeX (\\text)",
     "Identidad ni Euler",
     "Ekwivalensya sa Masa ug Enerhiya",
     "Kahulugan sa Derivative",

@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "آؤٹ پٹ",
   usage_formula: "ایولر کی شناخت: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX متن (\\text)",
     "ایولر کی شناخت",
     "مادہ اور توانائی کی مساوات",
     "مشتق کی تعریف",

@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "خروجی",
   usage_formula: "اتحاد اویلر: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "متن LaTeX (\\text)",
     "اتحاد اویلر",
     "هم‌ارزی جرم و انرژی",
     "تعریف مشتق",

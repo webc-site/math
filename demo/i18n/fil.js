@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Kinalabasan",
   usage_formula: "Identidad ni Euler: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "Teksto ng LaTeX (\\text)",
     "Identidad ni Euler",
     "Ekwivalensya ng Mass-Energy",
     "Kahulugan ng Derivative",

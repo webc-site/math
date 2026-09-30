@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Izlaz",
   usage_formula: "Eulerov identitet: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX tekst (\\text)",
     "Eulerov identitet",
     "Ekvivalentnost mase i energije",
     "Definicija derivacije",

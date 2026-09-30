@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Sortida",
   usage_formula: "Identitat d'Euler: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "Text LaTeX (\\text)",
     "Identitat d'Euler",
     "Equivalència massa-energia",
     "Definició de derivada",

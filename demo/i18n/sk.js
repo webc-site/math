@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Výstup",
   usage_formula: "Eulerova rovnosť: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "Text LaTeX (\\text)",
     "Eulerova rovnosť",
     "Ekvivalencia hmotnosti a energie",
     "Definícia derivácie",

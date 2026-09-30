@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "출력",
   usage_formula: "오일러 항등식: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX 텍스트 (\\text)",
     "오일러 항등식",
     "질량-에너지 등가성",
     "도함수의 정의",

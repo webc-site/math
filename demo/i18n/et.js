@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Väljund",
   usage_formula: "Euleri valem: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX tekst (\\text)",
     "Euleri valem",
     "Massi ja energia samaväärsus",
     "Tuletise definitsioon",

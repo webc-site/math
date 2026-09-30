@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Đầu ra",
   usage_formula: "Đẳng thức Euler: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "Văn bản LaTeX (\\text)",
     "Đẳng thức Euler",
     "Sự tương đương khối lượng - năng lượng",
     "Định nghĩa của đạo hàm",

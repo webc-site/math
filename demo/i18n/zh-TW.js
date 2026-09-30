@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "輸出",
   usage_formula: "歐拉公式：$$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX 文本 (\\text)",
     "歐拉恆等式",
     "質能等價",
     "導數定義",

@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "出力",
   usage_formula: "オイラーの等式：$$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX テキスト (\\text)",
     "オイラーの等式",
     "質量とエネルギーの等価性",
     "微分の定義",

@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Utdata",
   usage_formula: "Eulers identitet: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX-text (\\text)",
     "Eulers identitet",
     "Mass-energiekvivalens",
     "Definition av derivata",

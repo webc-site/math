@@ -19,6 +19,7 @@ export default () => ({
   comment_output: "Chiqish",
   usage_formula: "Eyler ayniyati: $$e^{i\\pi} + 1 = 0$$",
   names: [
+    "LaTeX matni (\\text)",
     "Eyler ayniyati",
     "Massa va energiya ekvivalentligi",
     "Hosilaning ta'rifi",
